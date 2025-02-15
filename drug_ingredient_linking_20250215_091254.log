@@ -1,0 +1,28 @@
+2025-02-15 09:12:54,687 - INFO - Found 3401 known ingredients
+2025-02-15 09:12:54,742 - INFO - Working with sample of 10 drugs (random sampling)
+2025-02-15 09:12:54,742 - INFO - 
+Processing the following drugs:
+2025-02-15 09:12:54,743 - INFO - - fabuglycina 30 caps. (ID: 51489)
+2025-02-15 09:12:54,743 - INFO -   Active ingredients: iron
+2025-02-15 09:12:54,743 - INFO - - sprialypsy 500 mg 30 oral disintegrating tabs. (ID: 50250)
+2025-02-15 09:12:54,743 - INFO -   Active ingredients: levetiracetam
+2025-02-15 09:12:54,744 - INFO - - calster 500 mg 30 f.c. tabs. (ID: 18072)
+2025-02-15 09:12:54,744 - INFO -   Active ingredients: calcium
+2025-02-15 09:12:54,744 - INFO - - angilow 20mg 30 tab. (ID: 16851)
+2025-02-15 09:12:54,745 - INFO -   Active ingredients: nicorandil
+2025-02-15 09:12:54,746 - INFO - - fml liquifilm 0.1% eye drops 5 ml (ID: 40070)
+2025-02-15 09:12:54,746 - INFO -   Active ingredients: fluorometholone
+2025-02-15 09:12:54,746 - INFO - - orovex-h mouth wash 150 ml (ID: 24719)
+2025-02-15 09:12:54,746 - INFO -   Active ingredients: thymol+menthol+glycerin+sodium saccharine+sodium monofluorophosphate+chlorhexidine
+2025-02-15 09:12:54,747 - INFO - - opikast 4 mg 21 chew. tabs. (ID: 43973)
+2025-02-15 09:12:54,747 - INFO -   Active ingredients: montelukast
+2025-02-15 09:12:54,747 - INFO - - ultracaine 5% gel 30 gm (ID: 34668)
+2025-02-15 09:12:54,747 - INFO -   Active ingredients: lidocaine
+2025-02-15 09:12:54,748 - INFO - - dronadex 400 mg 10 tabs. (ID: 19683)
+2025-02-15 09:12:54,748 - INFO -   Active ingredients: dronedarone
+2025-02-15 09:12:54,748 - INFO - - chew-cal tab (ID: 1825)
+2025-02-15 09:12:54,748 - INFO -   Active ingredients: calcium
+2025-02-15 09:12:54,749 - INFO - 
+Processing batch 1/1
+2025-02-15 09:13:45,250 - INFO - Progress: 100.0% - Found 13 mappings in this batch
+2025-02-15 09:14:52,102 - INFO - Database connection closed

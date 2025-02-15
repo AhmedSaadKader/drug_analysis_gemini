@@ -1,0 +1,101 @@
+Drug-Ingredient Mapping Report
+Generated at: 2025-02-15 09:13:45.250875
+Total mappings proposed: 13
+Total failed mappings: 0
+
+=== Successful Mappings ===
+
+Drug: fabuglycina 30 caps. (ID: 51489)
+Proposed ingredient mappings:
+  Original: iron
+  Matched to: iron
+  Confidence: 0.95
+  Notes: Exact match
+
+
+Drug: sprialypsy 500 mg 30 oral disintegrating tabs. (ID: 50250)
+Proposed ingredient mappings:
+  Original: levetiracetam
+  Matched to: Levetiracetam
+  Confidence: 0.95
+  Notes: Exact match
+
+
+Drug: calster 500 mg 30 f.c. tabs. (ID: 18072)
+Proposed ingredient mappings:
+  Original: calcium
+  Matched to: Calcium
+  Confidence: 0.95
+  Notes: Exact match
+
+
+Drug: angilow 20mg 30 tab. (ID: 16851)
+Proposed ingredient mappings:
+  Original: nicorandil
+  Matched to: nicorandil
+  Confidence: 0.95
+  Notes: Exact match
+
+
+Drug: fml liquifilm 0.1% eye drops 5 ml (ID: 40070)
+Proposed ingredient mappings:
+  Original: fluorometholone
+  Matched to: Fluorometholone
+  Confidence: 0.95
+  Notes: Exact match
+
+
+Drug: orovex-h mouth wash 150 ml (ID: 24719)
+Proposed ingredient mappings:
+  Original: thymol
+  Matched to: Thymol
+  Confidence: 0.95
+  Notes: Exact match
+
+  Original: glycerin
+  Matched to: Glycerin
+  Confidence: 0.95
+  Notes: Exact match
+
+  Original: sodium monofluorophosphate
+  Matched to: Sodium monofluorophosphate
+  Confidence: 0.95
+  Notes: Exact match
+
+  Original: chlorhexidine
+  Matched to: Chlorhexidine
+  Confidence: 0.95
+  Notes: Exact match
+
+
+Drug: opikast 4 mg 21 chew. tabs. (ID: 43973)
+Proposed ingredient mappings:
+  Original: montelukast
+  Matched to: Montelukast
+  Confidence: 0.95
+  Notes: Exact match
+
+
+Drug: ultracaine 5% gel 30 gm (ID: 34668)
+Proposed ingredient mappings:
+  Original: lidocaine
+  Matched to: Lidocaine
+  Confidence: 0.95
+  Notes: Exact match
+
+
+Drug: dronadex 400 mg 10 tabs. (ID: 19683)
+Proposed ingredient mappings:
+  Original: dronedarone
+  Matched to: Dronedarone
+  Confidence: 0.95
+  Notes: Exact match
+
+
+Drug: chew-cal tab (ID: 1825)
+Proposed ingredient mappings:
+  Original: calcium
+  Matched to: Alfacalcidol
+  Confidence: 0.8
+  Notes: Potential, but unlikely, match based on 'cal' prefix and common association with bone health. Requires more context to confirm. Many calcium forms exist.
+

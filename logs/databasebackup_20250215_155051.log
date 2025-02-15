@@ -1,0 +1,5 @@
+2025-02-15 15:50:51,210 - INFO - Logging to file: logs\databasebackup_20250215_155051.log
+2025-02-15 15:50:51,211 - INFO - Extra logger initialized: backup_details
+2025-02-15 15:50:51,211 - INFO - Logger initialized: DatabaseBackup
+2025-02-15 15:50:51,212 - INFO - Starting database backup process
+2025-02-15 15:50:51,213 - INFO - Starting database backup to backups\20250215_155051\drug_database_backup_20250215_155051.sql

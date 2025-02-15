@@ -176,14 +176,6 @@ class DrugIngredientLinker:
             sample_groups: If True, tries to get samples from different drug groups
         """
         with conn.cursor() as cur:
-            cur.execute("""
-            CREATE TABLE IF NOT EXISTS drug_ingredients (
-                id SERIAL PRIMARY KEY,
-                drug_id INTEGER NOT NULL,
-                ingredient_id INTEGER NOT NULL,
-                UNIQUE (drug_id, ingredient_id)
-            );
-        """)
             if sample_size and sample_groups:
                 # Get sample from different drug groups
                 cur.execute("""
@@ -562,6 +554,8 @@ def main():
     parser.add_argument('--batch-size', type=int, default=25, help='Batch size for processing')
     parser.add_argument('--random-sample', action='store_true', 
                        help='Use random sampling instead of group-based sampling')
+    parser.add_argument('--auto-confirm', action='store_true',
+                       help='Automatically confirm and create links without prompting')
     args = parser.parse_args()
 
     linker = DrugIngredientLinker(batch_size=args.batch_size)
@@ -637,19 +631,15 @@ def main():
             report = linker.generate_mapping_report(all_mappings, all_failed_mappings)
             linker.write_report(report)
             
-            # Show summary and ask for confirmation
+            # Show summary and ask for confirmation (unless auto-confirm is set)
             print(f"\nFound {len(all_mappings)} potential mappings across {total_drugs} drugs")
             print(f"Detailed report written to: {linker.report_file}")
             
-            if args.sample:
-                print("\nThis was a test run. No changes will be made to the database.")
-                print("Review the report and if the results look good, run without --sample")
+            if args.auto_confirm or input("\nCreate these ingredient links? (yes/no): ").lower() == 'yes':
+                successful, errors = linker.create_links(conn, all_mappings)
+                print(f"\nCreated {successful} links with {errors} errors")
             else:
-                if input("\nCreate these ingredient links? (yes/no): ").lower() == 'yes':
-                    successful, errors = linker.create_links(conn, all_mappings)
-                    print(f"\nCreated {successful} links with {errors} errors")
-                else:
-                    print("Operation cancelled")
+                print("Operation cancelled")
             
         finally:
             conn.close()

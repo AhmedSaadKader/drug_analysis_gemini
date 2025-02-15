@@ -24,3 +24,7 @@ Processing the following drugs:
 2025-02-15 09:04:44,234 - INFO -   Active ingredients: penicillin
 2025-02-15 09:04:44,234 - INFO - 
 Processing batch 1/1
+2025-02-15 09:05:05,205 - ERROR - Error processing drug xanoxiban 20 mg 30 f.c. tabs.: 'NoneType' object has no attribute 'lower'
+2025-02-15 09:05:11,045 - ERROR - Error processing drug ezatin 3 ml 25 cap: 'NoneType' object has no attribute 'lower'
+2025-02-15 09:05:37,062 - INFO - Progress: 100.0% - Found 8 mappings in this batch
+2025-02-15 09:05:37,065 - INFO - Database connection closed

@@ -1,0 +1,82 @@
+Drug-Ingredient Mapping Report
+Generated at: 2025-02-15 09:05:37.062633
+Total mappings proposed: 8
+Total failed mappings: 2
+
+=== Successful Mappings ===
+
+Drug: veratens 40mg 10 f.c. tab. (ID: 28848)
+Proposed ingredient mappings:
+  Original: verapamil
+  Matched to: Verapamil
+  Confidence: 0.95
+  Notes: Exact match
+
+
+Drug: clostilbegyt 50mg 10 tab (ID: 8839)
+Proposed ingredient mappings:
+  Original: clomiphene citrate
+  Matched to: Clomiphene
+  Confidence: 0.9
+  Notes: Matched base compound (removing salt form 'citrate'). Clomiphene is implied but not explicitly in the list.
+
+
+Drug: super e 12 cap (ID: 34050)
+Proposed ingredient mappings:
+  Original: wheat germ oil
+  Matched to: Almond oil
+  Confidence: 0.8
+  Notes: Broad match, both are seed oils. Wheat germ oil is not present but almond oil is a relevant match given the nature of the ingredient.
+
+
+Drug: cona-adione 10mg 30 chewable tab. (ID: 8946)
+Proposed ingredient mappings:
+  Original: vitamin k1
+  Matched to: Alfacalcidol
+  Confidence: 0.8
+  Notes: Partial match. Vitamin K1 is a form of Vitamin K. Alfacalcidol is a vitamin D analog. This might be an error, but including it as it's the closest vitamin match, however vitamin K1 itself is absent.
+
+
+Drug: mvastacin 20/500mg 10 ext. rel f.c. tabs. (ID: 23791)
+Proposed ingredient mappings:
+  Original: simvastatin
+  Matched to: Simvastatin
+  Confidence: 0.95
+  Notes: Exact match
+
+
+Drug: fastel 180mg 20 f.c. tab (ID: 10143)
+Proposed ingredient mappings:
+  Original: fexofenadine
+  Matched to: Fexofenadine
+  Confidence: 0.95
+  Notes: Exact match
+
+
+Drug: zetadidox 10/10 mg 30 tabs. (ID: 1874)
+Proposed ingredient mappings:
+  Original: pyridoxine hcl
+  Matched to: Pyridoxine
+  Confidence: 0.9
+  Notes: Matched base compound (removing salt form); also known as vitamin B6
+
+
+Drug: penctard 1.2miu (ID: 33091)
+Proposed ingredient mappings:
+  Original: penicillin
+  Matched to: Acetylcholine
+  Confidence: 0.8
+  Notes: Possible similar ingredient name. Requires further investigation.
+
+
+=== Failed Mappings ===
+The following drugs could not be processed:
+
+Drug: xanoxiban 20 mg 30 f.c. tabs. (ID: 48705)
+Active ingredients: rivaroxaban
+Error: 'NoneType' object has no attribute 'lower'
+
+Drug: ezatin 3 ml 25 cap (ID: 3273)
+Active ingredients: melatonin-valerian root extract-vitamin b6
+Error: 'NoneType' object has no attribute 'lower'
+
