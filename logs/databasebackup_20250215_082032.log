@@ -1,0 +1,8 @@
+2025-02-15 08:20:32,631 - INFO - Logging to file: logs\databasebackup_20250215_082032.log
+2025-02-15 08:20:32,632 - INFO - Extra logger initialized: backup_details
+2025-02-15 08:20:32,632 - INFO - Logger initialized: DatabaseBackup
+2025-02-15 08:20:32,634 - INFO - Starting database backup process
+2025-02-15 08:20:32,635 - INFO - Starting database backup to backups\20250215_082032\drug_database_backup_20250215_082032.sql
+2025-02-15 08:20:33,762 - INFO - Backup completed successfully
+2025-02-15 08:20:33,765 - INFO - Created backup manifest: backups\20250215_082032\backup_manifest.txt
+2025-02-15 08:20:33,814 - INFO - Backup verified successfully: backups\20250215_082032\drug_database_backup_20250215_082032.sql

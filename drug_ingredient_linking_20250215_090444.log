@@ -1,0 +1,26 @@
+2025-02-15 09:04:44,160 - INFO - Found 3401 known ingredients
+2025-02-15 09:04:44,225 - INFO - Working with sample of 10 drugs (random sampling)
+2025-02-15 09:04:44,225 - INFO - 
+Processing the following drugs:
+2025-02-15 09:04:44,227 - INFO - - veratens 40mg 10 f.c. tab. (ID: 28848)
+2025-02-15 09:04:44,228 - INFO -   Active ingredients: verapamil
+2025-02-15 09:04:44,228 - INFO - - clostilbegyt 50mg 10 tab (ID: 8839)
+2025-02-15 09:04:44,229 - INFO -   Active ingredients: clomiphene citrate
+2025-02-15 09:04:44,229 - INFO - - super e 12 cap (ID: 34050)
+2025-02-15 09:04:44,229 - INFO -   Active ingredients: wheat germ oil-yeast
+2025-02-15 09:04:44,230 - INFO - - xanoxiban 20 mg 30 f.c. tabs. (ID: 48705)
+2025-02-15 09:04:44,231 - INFO -   Active ingredients: rivaroxaban
+2025-02-15 09:04:44,231 - INFO - - ezatin 3 ml 25 cap (ID: 3273)
+2025-02-15 09:04:44,231 - INFO -   Active ingredients: melatonin-valerian root extract-vitamin b6
+2025-02-15 09:04:44,231 - INFO - - cona-adione 10mg 30 chewable tab. (ID: 8946)
+2025-02-15 09:04:44,232 - INFO -   Active ingredients: vitamin k1
+2025-02-15 09:04:44,232 - INFO - - mvastacin 20/500mg 10 ext. rel f.c. tabs. (ID: 23791)
+2025-02-15 09:04:44,232 - INFO -   Active ingredients: simvastatin+niacin
+2025-02-15 09:04:44,233 - INFO - - fastel 180mg 20 f.c. tab (ID: 10143)
+2025-02-15 09:04:44,233 - INFO -   Active ingredients: fexofenadine
+2025-02-15 09:04:44,233 - INFO - - zetadidox 10/10 mg 30 tabs. (ID: 1874)
+2025-02-15 09:04:44,233 - INFO -   Active ingredients: doxylamine succinate+pyridoxine hcl(vitamin b6)
+2025-02-15 09:04:44,234 - INFO - - penctard 1.2miu (ID: 33091)
+2025-02-15 09:04:44,234 - INFO -   Active ingredients: penicillin
+2025-02-15 09:04:44,234 - INFO - 
+Processing batch 1/1

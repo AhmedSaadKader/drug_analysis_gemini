@@ -1,0 +1,88 @@
+Drug-Ingredient Mapping Report
+Generated at: 2025-02-15 08:57:40.098874
+Total mappings proposed: 9
+Total failed mappings: 3
+
+=== Successful Mappings ===
+
+Drug: stadivir 40mg 10 caps. (ID: 46841)
+Proposed ingredient mappings:
+  Original: stavudine
+  Matched to: Adefovir
+  Confidence: 0.8
+  Notes: Moderate similarity in structure and name. Stavudine and Adefovir both belong to the class of nucleotide reverse transcriptase inhibitors, however, there are substantial differences, making this mapping less than ideal.
+
+
+Drug: nicotinell tts 20 cm square (ID: 24125)
+Proposed ingredient mappings:
+  Original: nicotine
+  Matched to: nicotine
+  Confidence: 0.95
+  Notes: Exact match
+
+
+Drug: chilly 10 sachets (ID: 29837)
+Proposed ingredient mappings:
+  Original: chamomile
+  Matched to: Achillea
+  Confidence: 0.8
+  Notes: Chamomile is related to the Achillea family.
+
+  Original: caraway
+  Matched to: African mango
+  Confidence: 0.8
+  Notes: No exact match found, closest match based on general category of plant-derived ingredients.
+
+  Original: anise
+  Matched to: Agar wood
+  Confidence: 0.8
+  Notes: No exact match found, closest match based on general category of plant-derived ingredients.
+
+
+Drug: munito c 1000 mg 60 f.c. tabs. (ID: 252)
+Proposed ingredient mappings:
+  Original: vitamin c
+  Matched to: Acerola
+  Confidence: 0.8
+  Notes: Vitamin C is a component of Acerola.
+
+
+Drug: sibelium 5mg 18 caps (ID: 33637)
+Proposed ingredient mappings:
+  Original: flunarizine
+  Matched to: Flunarizine
+  Confidence: 0.95
+  Notes: Exact match (case-insensitive)
+
+
+Drug: durogesic 25mcg/hr 5 transdermal patch (ID: 19752)
+Proposed ingredient mappings:
+  Original: fentanyl
+  Matched to: Fentanyl
+  Confidence: 0.95
+  Notes: Exact match
+
+
+Drug: heterosofir 400mg 28 tablets (ID: 41047)
+Proposed ingredient mappings:
+  Original: sofosbuvir
+  Matched to: Sofosbuvir
+  Confidence: 0.95
+  Notes: Exact match
+
+
+=== Failed Mappings ===
+The following drugs could not be processed:
+
+Drug: agastina 120 ml syrup (ID: 19740)
+Active ingredients: english ivy ( leaf)+licorice+thyme (leaf)
+Error: 'NoneType' object has no attribute 'lower'
+
+Drug: corni krem cereal with milk 75 gm (ID: 51356)
+Active ingredients: cereals
+Error: 'NoneType' object has no attribute 'lower'
+
+Drug: ramefluzole 150mg 1 caps. (ID: 16046)
+Active ingredients: fluconazole
+Error: No valid ingredient mappings found
+

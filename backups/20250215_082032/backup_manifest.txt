@@ -1,0 +1,8 @@
+Database Backup Manifest
+=======================
+
+timestamp: 20250215_082032
+database: drug_database
+size: 4337108
+duration: 0:00:01.124850
+compression_level: 9

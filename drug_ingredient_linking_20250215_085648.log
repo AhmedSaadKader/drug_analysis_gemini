@@ -1,0 +1,30 @@
+2025-02-15 08:56:48,255 - INFO - Found 3401 known ingredients
+2025-02-15 08:56:48,348 - INFO - Working with sample of 10 drugs (random sampling)
+2025-02-15 08:56:48,348 - INFO - 
+Processing the following drugs:
+2025-02-15 08:56:48,349 - INFO - - agastina 120 ml syrup (ID: 19740)
+2025-02-15 08:56:48,350 - INFO -   Active ingredients: english ivy ( leaf)+licorice+thyme (leaf)
+2025-02-15 08:56:48,350 - INFO - - corni krem cereal with milk 75 gm (ID: 51356)
+2025-02-15 08:56:48,350 - INFO -   Active ingredients: cereals
+2025-02-15 08:56:48,351 - INFO - - stadivir 40mg 10 caps. (ID: 46841)
+2025-02-15 08:56:48,351 - INFO -   Active ingredients: stavudine
+2025-02-15 08:56:48,352 - INFO - - nicotinell tts 20 cm square (ID: 24125)
+2025-02-15 08:56:48,352 - INFO -   Active ingredients: nicotine
+2025-02-15 08:56:48,353 - INFO - - ramefluzole 150mg 1 caps. (ID: 16046)
+2025-02-15 08:56:48,353 - INFO -   Active ingredients: fluconazole
+2025-02-15 08:56:48,353 - INFO - - chilly 10 sachets (ID: 29837)
+2025-02-15 08:56:48,353 - INFO -   Active ingredients: chamomile+caraway+anise
+2025-02-15 08:56:48,354 - INFO - - munito c 1000 mg 60 f.c. tabs. (ID: 252)
+2025-02-15 08:56:48,354 - INFO -   Active ingredients: vitamin c
+2025-02-15 08:56:48,354 - INFO - - sibelium 5mg 18 caps (ID: 33637)
+2025-02-15 08:56:48,354 - INFO -   Active ingredients: flunarizine
+2025-02-15 08:56:48,355 - INFO - - durogesic 25mcg/hr 5 transdermal patch (ID: 19752)
+2025-02-15 08:56:48,355 - INFO -   Active ingredients: fentanyl
+2025-02-15 08:56:48,355 - INFO - - heterosofir 400mg 28 tablets (ID: 41047)
+2025-02-15 08:56:48,356 - INFO -   Active ingredients: sofosbuvir
+2025-02-15 08:56:48,356 - INFO - 
+Processing batch 1/1
+2025-02-15 08:56:54,603 - ERROR - Error processing drug agastina 120 ml syrup: 'NoneType' object has no attribute 'lower'
+2025-02-15 08:56:59,687 - ERROR - Error processing drug corni krem cereal with milk 75 gm: 'NoneType' object has no attribute 'lower'
+2025-02-15 08:57:40,098 - INFO - Progress: 100.0% - Found 9 mappings in this batch
+2025-02-15 08:57:40,446 - INFO - Database connection closed

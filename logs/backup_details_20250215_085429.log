@@ -1,0 +1,7 @@
+2025-02-15 08:54:29,537 - INFO - Backup configuration: compression_level=9
+2025-02-15 08:54:30,675 - INFO - Backup details:
+Duration: 0:00:01.137942
+Size: 4.13 MB
+Path: backups\20250215_085429\drug_database_backup_20250215_085429.sql
+2025-02-15 08:54:30,677 - INFO - Manifest metadata: {'timestamp': '20250215_085429', 'database': 'drug_database', 'size': 4333482, 'duration': '0:00:01.137942', 'compression_level': 9}
+2025-02-15 08:54:30,717 - INFO - Verified backup size: 4.13 MB
