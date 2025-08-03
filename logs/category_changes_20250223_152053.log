@@ -1,0 +1,130 @@
+2025-02-23 15:21:08,242 - INFO - Ingredient: bioperene
+Category: Herbal and Natural Products
+Confidence: 0.9
+Notes: Bioperene is a patented extract of black pepper (Piper nigrum) standardized to contain a minimum of 95% piperine. It's often used to enhance the bioavailability of other nutrients.
+--------------------------------------------------
+2025-02-23 15:21:08,242 - INFO - Ingredient: bioperene
+Category: Natural Supplements
+Confidence: 0.9
+Notes: Bioperene is a natural supplement derived from black pepper and used to enhance nutrient absorption.
+--------------------------------------------------
+2025-02-23 15:21:08,244 - INFO - Ingredient: stearic acid
+Category: Vitamins and Supplements
+Confidence: 0.8
+Notes: Stearic acid is a saturated fatty acid commonly used as a dietary supplement and excipient.
+--------------------------------------------------
+2025-02-23 15:21:08,245 - INFO - Ingredient: stearic acid
+Category: Fatty Acids
+Confidence: 0.8
+Notes: Stearic acid is a saturated fatty acid.
+--------------------------------------------------
+2025-02-23 15:21:08,246 - INFO - Ingredient: aluminium oxide
+Category: Antacids
+Confidence: 0.85
+Notes: Aluminium oxide, in the form of aluminium hydroxide, is a common ingredient in antacids. It helps to neutralize stomach acid.
+--------------------------------------------------
+2025-02-23 15:21:08,247 - INFO - Ingredient: aluminium oxide
+Category: Gastrointestinal System
+Confidence: 0.85
+Notes: Aluminium oxide (as aluminium hydroxide) acts on the gastrointestinal system as an antacid.
+--------------------------------------------------
+2025-02-23 15:21:08,248 - INFO - Ingredient: recombinate dna vaccine
+Category: Immunological Agents
+Confidence: 0.95
+Notes: Recombinant DNA vaccines use recombinant DNA technology to produce antigens that stimulate an immune response.
+--------------------------------------------------
+2025-02-23 15:21:08,248 - INFO - Ingredient: recombinate dna vaccine
+Category: Vaccines
+Confidence: 0.95
+Notes: Recombinant DNA vaccine is a type of vaccine.
+--------------------------------------------------
+2025-02-23 15:21:08,249 - INFO - Ingredient: salicylamide-paracetamol
+Category: Pain Management
+Confidence: 0.95
+Notes: Salicylamide and paracetamol are both analgesics (pain relievers).
+--------------------------------------------------
+2025-02-23 15:21:08,249 - INFO - Ingredient: salicylamide-paracetamol
+Category: Non-opioid Analgesics
+Confidence: 0.95
+Notes: Both salicylamide and paracetamol are classified as non-opioid analgesics.
+--------------------------------------------------
+2025-02-23 15:21:08,250 - INFO - Ingredient: vit b6 pyridoxin 100mg
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: Vitamin B6 (pyridoxine) is an essential vitamin.
+--------------------------------------------------
+2025-02-23 15:21:08,250 - INFO - Ingredient: vit b6 pyridoxin 100mg
+Category: Vitamins
+Confidence: 0.95
+Notes: Vitamin B6 (pyridoxine) belongs to the class of vitamins.
+--------------------------------------------------
+2025-02-23 15:21:08,250 - INFO - Ingredient: olea europaea fruit oil
+Category: Herbal and Natural Products
+Confidence: 0.9
+Notes: Olea europaea fruit oil, commonly known as olive oil, is derived from the olive tree.
+--------------------------------------------------
+2025-02-23 15:21:08,251 - INFO - Ingredient: olea europaea fruit oil
+Category: Essential Oils
+Confidence: 0.85
+Notes: While not strictly an essential oil in the steam-distilled sense, olive oil derived from Olea europaea possesses therapeutic properties and nutritional value.
+--------------------------------------------------
+2025-02-23 15:21:08,251 - INFO - Ingredient: olea europaea fruit oil
+Category: Natural Supplements
+Confidence: 0.8
+Notes: Olive oil can be used as a natural supplement for its health benefits.
+--------------------------------------------------
+2025-02-23 15:21:08,251 - INFO - Ingredient: rutin-heparinoid
+Category: Cardiovascular System
+Confidence: 0.85
+Notes: Heparinoid drugs are often used as anticoagulants to prevent blood clots.
+--------------------------------------------------
+2025-02-23 15:21:08,251 - INFO - Ingredient: rutin-heparinoid
+Category: Anticoagulants
+Confidence: 0.85
+Notes: Heparinoid component functions as an anticoagulant.
+--------------------------------------------------
+2025-02-23 15:21:08,251 - INFO - Ingredient: rutin-heparinoid
+Category: Blood Disorders
+Confidence: 0.8
+Notes: Used to treat some blood clotting disorders.
+--------------------------------------------------
+2025-02-23 15:21:08,252 - INFO - Ingredient: thyme oil
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Thyme oil is a volatile oil derived from the thyme plant.
+--------------------------------------------------
+2025-02-23 15:21:08,252 - INFO - Ingredient: thyme oil
+Category: Essential Oils
+Confidence: 0.95
+Notes: Thyme oil is a therapeutic plant oil.
+--------------------------------------------------
+2025-02-23 15:21:08,253 - INFO - Ingredient: thyme oil
+Category: Respiratory System
+Confidence: 0.8
+Notes: Thyme oil is sometimes used for respiratory ailments as an expectorant.
+--------------------------------------------------
+2025-02-23 15:21:08,253 - INFO - Ingredient: thyme oil
+Category: Expectorants
+Confidence: 0.8
+Notes: Thyme oil can help clear mucus from the respiratory tract.
+--------------------------------------------------
+2025-02-23 15:21:08,253 - INFO - Ingredient: ubiquinone
+Category: Vitamins and Supplements
+Confidence: 0.9
+Notes: Ubiquinone (Coenzyme Q10) is a naturally occurring antioxidant and is often taken as a supplement.
+--------------------------------------------------
+2025-02-23 15:21:08,253 - INFO - Ingredient: ubiquinone
+Category: Natural Supplements
+Confidence: 0.9
+Notes: Ubiquinone is a naturally occuring antioxidant.
+--------------------------------------------------
+2025-02-23 15:21:08,253 - INFO - Ingredient: ubiquinone
+Category: Metabolic Disorders
+Confidence: 0.8
+Notes: Ubiquinone plays an important role in mitochondrial function and energy production, often considered a metabolic modifier.
+--------------------------------------------------
+2025-02-23 15:21:08,254 - INFO - Ingredient: ubiquinone
+Category: Metabolic Modifiers
+Confidence: 0.8
+Notes: Ubiquinone is a coenzyme that affects metabolic processes.
+--------------------------------------------------

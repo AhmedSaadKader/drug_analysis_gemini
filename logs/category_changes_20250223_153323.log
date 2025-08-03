@@ -1,0 +1,850 @@
+2025-02-23 15:33:49,656 - INFO - Ingredient: cholorhexdiene
+Category: Antimicrobials
+Confidence: 0.85
+Notes: Misspelling of chlorhexidine. Chlorhexidine is a broad-spectrum antiseptic and antimicrobial agent.
+--------------------------------------------------
+2025-02-23 15:33:49,657 - INFO - Ingredient: propane/butane
+Category: Dermatological
+Confidence: 0.85
+Notes: Propane/butane is used as a propellant in topical aerosol products.
+--------------------------------------------------
+2025-02-23 15:33:49,658 - INFO - Ingredient: eucalyptus-fennel fruit-thyme
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Combination of herbal ingredients: eucalyptus, fennel fruit, and thyme.
+--------------------------------------------------
+2025-02-23 15:33:49,659 - INFO - Ingredient: eucalyptus-fennel fruit-thyme
+Category: Respiratory System
+Confidence: 0.85
+Notes: Eucalyptus and thyme are traditionally used for respiratory ailments, specifically as expectorants and for cough relief.
+--------------------------------------------------
+2025-02-23 15:33:49,659 - INFO - Ingredient: eucalyptus-fennel fruit-thyme
+Category: Traditional Medicine
+Confidence: 0.9
+Notes: Eucalyptus, fennel, and thyme have traditional uses in herbal medicine for various conditions.
+--------------------------------------------------
+2025-02-23 15:33:49,660 - INFO - Ingredient: otilonium bromide
+Category: Gastrointestinal System
+Confidence: 0.95
+Notes: Otilonium bromide is an antispasmodic medication used to treat irritable bowel syndrome (IBS).
+--------------------------------------------------
+2025-02-23 15:33:49,661 - INFO - Ingredient: sodium bicarbonate 1680 mg
+Category: Gastrointestinal System
+Confidence: 0.95
+Notes: Sodium bicarbonate is an antacid used to neutralize stomach acid.
+--------------------------------------------------
+2025-02-23 15:33:49,661 - INFO - Ingredient: sodium bicarbonate 1680 mg
+Category: Antacids
+Confidence: 0.95
+Notes: Sodium bicarbonate is a common antacid.
+--------------------------------------------------
+2025-02-23 15:33:49,661 - INFO - Ingredient: dienogest
+Category: Endocrine System
+Confidence: 0.95
+Notes: Dienogest is a synthetic progestin hormone.
+--------------------------------------------------
+2025-02-23 15:33:49,661 - INFO - Ingredient: dienogest
+Category: Reproductive Hormones
+Confidence: 0.95
+Notes: Dienogest is a progestin used in hormonal contraception and treatment of endometriosis.
+--------------------------------------------------
+2025-02-23 15:33:49,664 - INFO - Ingredient: coal tar
+Category: Dermatological
+Confidence: 0.95
+Notes: Coal tar is used topically to treat skin conditions like psoriasis and eczema.
+--------------------------------------------------
+2025-02-23 15:33:49,668 - INFO - Ingredient: lactoferin
+Category: Immunological Agents
+Confidence: 0.85
+Notes: Lactoferrin is an iron-binding glycoprotein with immunomodulatory properties.
+--------------------------------------------------
+2025-02-23 15:33:49,669 - INFO - Ingredient: guava-tilia-black seed
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Combination of herbal ingredients: guava, tilia (linden), and black seed (Nigella sativa).
+--------------------------------------------------
+2025-02-23 15:33:49,669 - INFO - Ingredient: guava-tilia-black seed
+Category: Traditional Medicine
+Confidence: 0.9
+Notes: Guava, tilia, and black seed have traditional uses in herbal medicine for various conditions.
+--------------------------------------------------
+2025-02-23 15:33:49,669 - INFO - Ingredient: ricinus communis-zinc oxide-beeswax
+Category: Dermatological
+Confidence: 0.95
+Notes: Ricinus communis (castor oil), zinc oxide, and beeswax are commonly used in topical preparations for skin protection and wound healing.
+--------------------------------------------------
+2025-02-23 15:33:49,670 - INFO - Ingredient: ricinus communis-zinc oxide-beeswax
+Category: Herbal and Natural Products
+Confidence: 0.85
+Notes: Ricinus communis is a plant-derived ingredient.
+--------------------------------------------------
+2025-02-23 15:33:49,671 - INFO - Ingredient: deferoxamine
+Category: Blood Disorders
+Confidence: 0.95
+Notes: Deferoxamine is a chelating agent used to treat iron overload.
+--------------------------------------------------
+2025-02-23 15:33:49,672 - INFO - Ingredient: liquid paraffin
+Category: Gastrointestinal System
+Confidence: 0.85
+Notes: Liquid paraffin (mineral oil) is sometimes used as a laxative to treat constipation.
+--------------------------------------------------
+2025-02-23 15:33:49,672 - INFO - Ingredient: liquid paraffin
+Category: Laxatives
+Confidence: 0.85
+Notes: Liquid paraffin is a lubricant laxative.
+--------------------------------------------------
+2025-02-23 15:33:49,672 - INFO - Ingredient: liquid paraffin
+Category: Dermatological
+Confidence: 0.85
+Notes: Liquid paraffin is a moisturizer.
+--------------------------------------------------
+2025-02-23 15:33:49,674 - INFO - Ingredient: lipids
+Category: Metabolic Disorders
+Confidence: 0.85
+Notes: Lipids are essential components of the body and are involved in various metabolic processes. Lipid formulations may be used in metabolic disorders.
+--------------------------------------------------
+2025-02-23 15:33:49,675 - INFO - Ingredient: alovera oil
+Category: Dermatological
+Confidence: 0.95
+Notes: Aloe vera oil is used topically for its soothing and wound-healing properties.
+--------------------------------------------------
+2025-02-23 15:33:49,675 - INFO - Ingredient: alovera oil
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Aloe vera is a plant-derived ingredient.
+--------------------------------------------------
+2025-02-23 15:33:49,676 - INFO - Ingredient: pentoxifylline
+Category: Cardiovascular System
+Confidence: 0.95
+Notes: Pentoxifylline is used to improve blood flow.
+--------------------------------------------------
+2025-02-23 15:33:49,679 - INFO - Ingredient: trazodone
+Category: Central Nervous System
+Confidence: 0.95
+Notes: Trazodone is an antidepressant medication.
+--------------------------------------------------
+2025-02-23 15:33:49,679 - INFO - Ingredient: trazodone
+Category: Antidepressants
+Confidence: 0.95
+Notes: Trazodone is classified as a serotonin antagonist and reuptake inhibitor (SARI).
+--------------------------------------------------
+2025-02-23 15:33:49,682 - INFO - Ingredient: cimicifuga racemosa(black cohosh)
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Cimicifuga racemosa, also known as black cohosh, is an herbal remedy.
+--------------------------------------------------
+2025-02-23 15:33:49,682 - INFO - Ingredient: cimicifuga racemosa(black cohosh)
+Category: Endocrine System
+Confidence: 0.85
+Notes: Black cohosh is used to treat menopausal symptoms.
+--------------------------------------------------
+2025-02-23 15:33:49,682 - INFO - Ingredient: cimicifuga racemosa(black cohosh)
+Category: Traditional Medicine
+Confidence: 0.9
+Notes: Black cohosh has traditional uses in herbal medicine for women's health.
+--------------------------------------------------
+2025-02-23 15:33:49,684 - INFO - Ingredient: calcium carbonate-vitamin c-vitamin d3
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: Combination supplement containing calcium carbonate (a mineral), vitamin C, and vitamin D3.
+--------------------------------------------------
+2025-02-23 15:33:49,684 - INFO - Ingredient: calcium carbonate-vitamin c-vitamin d3
+Category: Minerals
+Confidence: 0.9
+Notes: Calcium Carbonate is a mineral supplement.
+--------------------------------------------------
+2025-02-23 15:33:49,684 - INFO - Ingredient: calcium carbonate-vitamin c-vitamin d3
+Category: Vitamins
+Confidence: 0.9
+Notes: Vitamin C and D3 are vitamin supplements.
+--------------------------------------------------
+2025-02-23 15:33:49,684 - INFO - Ingredient: calcium carbonate-vitamin c-vitamin d3
+Category: Musculoskeletal System
+Confidence: 0.85
+Notes: Calcium and vitamin D3 are important for bone health.
+--------------------------------------------------
+2025-02-23 15:33:49,685 - INFO - Ingredient: artichoke leaves
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Artichoke leaf extract is a herbal product.
+--------------------------------------------------
+2025-02-23 15:33:49,685 - INFO - Ingredient: artichoke leaves
+Category: Gastrointestinal System
+Confidence: 0.85
+Notes: Artichoke leaf extract is sometimes used to aid digestion and improve liver function.
+--------------------------------------------------
+2025-02-23 15:33:49,686 - INFO - Ingredient: artichoke leaves
+Category: Traditional Medicine
+Confidence: 0.9
+Notes: Artichoke leaf has traditional uses in herbal medicine for digestive health.
+--------------------------------------------------
+2025-02-23 15:33:49,686 - INFO - Ingredient: chlorzoxazone
+Category: Musculoskeletal System
+Confidence: 0.95
+Notes: Chlorzoxazone is a muscle relaxant.
+--------------------------------------------------
+2025-02-23 15:33:49,686 - INFO - Ingredient: chlorzoxazone
+Category: Muscle Relaxants
+Confidence: 0.95
+Notes: Chlorzoxazone is used to relieve muscle spasms and pain.
+--------------------------------------------------
+2025-02-23 15:33:49,687 - INFO - Ingredient: benfotiamine(b1) - pyridoxine(b6) - cobalamin(b12) - folic acid(b9) - biotin - b2 - b3 - b5
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: Combination vitamin supplement containing various B vitamins (B1, B2, B3, B5, B6, B9, B12, and biotin).
+--------------------------------------------------
+2025-02-23 15:33:49,687 - INFO - Ingredient: benfotiamine(b1) - pyridoxine(b6) - cobalamin(b12) - folic acid(b9) - biotin - b2 - b3 - b5
+Category: Vitamins
+Confidence: 0.95
+Notes: Benfotiamine (B1), Pyridoxine (B6), Cobalamin (B12), Folic Acid (B9), Biotin, B2, B3, and B5 are all essential vitamins.
+--------------------------------------------------
+2025-02-23 15:34:14,950 - INFO - Ingredient: caprylic triglyceride
+Category: Dermatological
+Confidence: 0.85
+Notes: Common emollient used in topical skincare products; considered a skin-conditioning agent.
+--------------------------------------------------
+2025-02-23 15:34:14,953 - INFO - Ingredient: calcium oyster shell 1500 gm
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: Calcium derived from oyster shells is a mineral supplement.
+--------------------------------------------------
+2025-02-23 15:34:14,953 - INFO - Ingredient: calcium oyster shell 1500 gm
+Category: Minerals
+Confidence: 0.95
+Notes: Calcium is an essential mineral supplement
+--------------------------------------------------
+2025-02-23 15:34:14,954 - INFO - Ingredient: cetrimide-carbomer-sorbitol
+Category: Antimicrobials
+Confidence: 0.85
+Notes: Cetrimide is an antiseptic. Carbomer and Sorbitol are excipients.
+--------------------------------------------------
+2025-02-23 15:34:14,955 - INFO - Ingredient: dl-alpha tocopherol
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: dl-alpha tocopherol is a synthetic form of Vitamin E.
+--------------------------------------------------
+2025-02-23 15:34:14,955 - INFO - Ingredient: dl-alpha tocopherol
+Category: Vitamins
+Confidence: 0.95
+Notes: Vitamin E is an essential vitamin.
+--------------------------------------------------
+2025-02-23 15:34:14,957 - INFO - Ingredient: gliclazide
+Category: Endocrine System
+Confidence: 0.95
+Notes: Gliclazide is a sulfonylurea antidiabetic drug.
+--------------------------------------------------
+2025-02-23 15:34:14,957 - INFO - Ingredient: gliclazide
+Category: Antidiabetics
+Confidence: 0.95
+Notes: Gliclazide is used to control blood sugar levels in type 2 diabetes.
+--------------------------------------------------
+2025-02-23 15:34:14,957 - INFO - Ingredient: sodium camosulphonate
+Category: Respiratory System
+Confidence: 0.85
+Notes: Sodium camosulphonate is used as an expectorant.
+--------------------------------------------------
+2025-02-23 15:34:14,957 - INFO - Ingredient: sodium camosulphonate
+Category: Expectorants
+Confidence: 0.85
+Notes: Medication used to help clear mucus from the airways.
+--------------------------------------------------
+2025-02-23 15:34:14,958 - INFO - Ingredient: folate 111.33 mcg
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: Folate (Vitamin B9) is an essential vitamin supplement.
+--------------------------------------------------
+2025-02-23 15:34:14,958 - INFO - Ingredient: folate 111.33 mcg
+Category: Vitamins
+Confidence: 0.95
+Notes: Folate is a B vitamin
+--------------------------------------------------
+2025-02-23 15:34:14,959 - INFO - Ingredient: olive leaves extract
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Olive leaves extract is a herbal extract with potential antioxidant and anti-inflammatory properties.
+--------------------------------------------------
+2025-02-23 15:34:14,959 - INFO - Ingredient: olive leaves extract
+Category: Herbal Extracts
+Confidence: 0.95
+Notes: Derived from the olive plant.
+--------------------------------------------------
+2025-02-23 15:34:14,961 - INFO - Ingredient: glabridin
+Category: Dermatological
+Confidence: 0.85
+Notes: Glabridin, found in licorice root extract, is used in skin-lightening products.
+--------------------------------------------------
+2025-02-23 15:34:14,962 - INFO - Ingredient: dichlorophenylcarbinol
+Category: Antimicrobials
+Confidence: 0.85
+Notes: Ingredient with antimicrobial properties.
+--------------------------------------------------
+2025-02-23 15:34:14,963 - INFO - Ingredient: pancreatin
+Category: Gastrointestinal System
+Confidence: 0.95
+Notes: Pancreatin is a digestive enzyme supplement.
+--------------------------------------------------
+2025-02-23 15:34:14,963 - INFO - Ingredient: pancreatin
+Category: Digestive Enzymes
+Confidence: 0.95
+Notes: Pancreatin contains enzymes like amylase, lipase, and protease to aid digestion.
+--------------------------------------------------
+2025-02-23 15:34:14,964 - INFO - Ingredient: cefpirome
+Category: Antimicrobials
+Confidence: 0.95
+Notes: Cefpirome is a fourth-generation cephalosporin antibiotic.
+--------------------------------------------------
+2025-02-23 15:34:14,964 - INFO - Ingredient: cefpirome
+Category: Antibiotics
+Confidence: 0.95
+Notes: Cefpirome is used to treat bacterial infections.
+--------------------------------------------------
+2025-02-23 15:34:14,967 - INFO - Ingredient: anise oil
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Anise oil is an essential oil derived from anise seeds.
+--------------------------------------------------
+2025-02-23 15:34:14,968 - INFO - Ingredient: anise oil
+Category: Essential Oils
+Confidence: 0.95
+Notes: Anise oil used for therapeutic purposes.
+--------------------------------------------------
+2025-02-23 15:34:14,968 - INFO - Ingredient: hydrocortisone sodium succinate
+Category: Endocrine System
+Confidence: 0.95
+Notes: Hydrocortisone sodium succinate is a corticosteroid.
+--------------------------------------------------
+2025-02-23 15:34:14,969 - INFO - Ingredient: hydrocortisone sodium succinate
+Category: Corticosteroids
+Confidence: 0.95
+Notes: Synthetic version of cortisol.
+--------------------------------------------------
+2025-02-23 15:34:14,969 - INFO - Ingredient: hydrocortisone sodium succinate
+Category: Anti-inflammatory Agents
+Confidence: 0.85
+Notes: Corticosteroids are used to reduce inflammation.
+--------------------------------------------------
+2025-02-23 15:34:14,969 - INFO - Ingredient: hydrocortisone sodium succinate
+Category: Musculoskeletal System
+Confidence: 0.85
+Notes: Can be used for inflammation related to the musculoskeletal system.
+--------------------------------------------------
+2025-02-23 15:34:14,972 - INFO - Ingredient: lavander oil
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Lavender oil is an essential oil with calming and antiseptic properties.
+--------------------------------------------------
+2025-02-23 15:34:14,972 - INFO - Ingredient: lavander oil
+Category: Essential Oils
+Confidence: 0.95
+Notes: Lavender oil is known for therapeutic uses.
+--------------------------------------------------
+2025-02-23 15:34:14,973 - INFO - Ingredient: glucose(dextrose)
+Category: Metabolic Disorders
+Confidence: 0.85
+Notes: Used to treat hypoglycemia and provide energy.
+--------------------------------------------------
+2025-02-23 15:34:14,973 - INFO - Ingredient: glucose(dextrose)
+Category: Metabolic Modifiers
+Confidence: 0.85
+Notes: Affects blood sugar levels.
+--------------------------------------------------
+2025-02-23 15:34:14,975 - INFO - Ingredient: tilio-guava-thyme-black seed
+Category: Herbal and Natural Products
+Confidence: 0.9
+Notes: Mixture of several herbal ingredients; each one can have different therapeutic uses.
+--------------------------------------------------
+2025-02-23 15:34:14,978 - INFO - Ingredient: tincture grindelia
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Tincture of Grindelia is a herbal extract used for respiratory conditions and skin irritations.
+--------------------------------------------------
+2025-02-23 15:34:14,979 - INFO - Ingredient: tincture grindelia
+Category: Herbal Extracts
+Confidence: 0.95
+Notes: Grindelia plant extraction.
+--------------------------------------------------
+2025-02-23 15:34:14,979 - INFO - Ingredient: tincture grindelia
+Category: Respiratory System
+Confidence: 0.85
+Notes: Used as an expectorant.
+--------------------------------------------------
+2025-02-23 15:34:14,979 - INFO - Ingredient: tincture grindelia
+Category: Expectorants
+Confidence: 0.85
+Notes: Can help to loosen and clear mucus.
+--------------------------------------------------
+2025-02-23 15:34:14,980 - INFO - Ingredient: domiphen
+Category: Antimicrobials
+Confidence: 0.85
+Notes: Domiphen is a topical antiseptic and disinfectant.
+--------------------------------------------------
+2025-02-23 15:34:14,981 - INFO - Ingredient: rosehip seed oil
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Rosehip seed oil is a natural oil with skin-conditioning and antioxidant properties.
+--------------------------------------------------
+2025-02-23 15:34:14,981 - INFO - Ingredient: rosehip seed oil
+Category: Essential Oils
+Confidence: 0.85
+Notes: Oil has therapeutic properties.
+--------------------------------------------------
+2025-02-23 15:34:14,981 - INFO - Ingredient: rosehip seed oil
+Category: Dermatological
+Confidence: 0.9
+Notes: Used as a skin moisturizer.
+--------------------------------------------------
+2025-02-23 15:34:14,982 - INFO - Ingredient: cocamido triethanolamine
+Category: Dermatological
+Confidence: 0.85
+Notes: Surfactant used in topical skincare products for cleansing and foaming.
+--------------------------------------------------
+2025-02-23 15:34:14,983 - INFO - Ingredient: erlotinib
+Category: Oncology
+Confidence: 0.95
+Notes: Erlotinib is a targeted therapy used in cancer treatment.
+--------------------------------------------------
+2025-02-23 15:34:14,984 - INFO - Ingredient: erlotinib
+Category: Targeted Therapy
+Confidence: 0.95
+Notes: Inhibits EGFR.
+--------------------------------------------------
+2025-02-23 15:34:14,984 - INFO - Ingredient: erlotinib
+Category: Chemotherapy
+Confidence: 0.85
+Notes: Medication used in cancer treatment.
+--------------------------------------------------
+2025-02-23 15:34:14,984 - INFO - Ingredient: recombinant human interferon alfa 2b
+Category: Immunological Agents
+Confidence: 0.95
+Notes: Recombinant human interferon alfa 2b is an immunostimulant used in cancer treatment and viral infections.
+--------------------------------------------------
+2025-02-23 15:34:14,985 - INFO - Ingredient: recombinant human interferon alfa 2b
+Category: Immunostimulants
+Confidence: 0.95
+Notes: Enhances the immune response.
+--------------------------------------------------
+2025-02-23 15:34:14,985 - INFO - Ingredient: recombinant human interferon alfa 2b
+Category: Oncology
+Confidence: 0.85
+Notes: Used as cancer treatment
+--------------------------------------------------
+2025-02-23 15:34:14,985 - INFO - Ingredient: recombinant human interferon alfa 2b
+Category: Antivirals
+Confidence: 0.85
+Notes: Used to treat viral infections.
+--------------------------------------------------
+2025-02-23 15:34:14,985 - INFO - Ingredient: recombinant human interferon alfa 2b
+Category: Antimicrobials
+Confidence: 0.85
+Notes: Antiviral properties
+--------------------------------------------------
+2025-02-23 15:34:14,986 - INFO - Ingredient: hydrolyzed elastin
+Category: Dermatological
+Confidence: 0.85
+Notes: Used in topical skincare as a moisturizing and skin-conditioning agent.
+--------------------------------------------------
+2025-02-23 15:34:14,987 - INFO - Ingredient: l-selenium
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: L-selenium is a mineral supplement.
+--------------------------------------------------
+2025-02-23 15:34:14,987 - INFO - Ingredient: l-selenium
+Category: Minerals
+Confidence: 0.95
+Notes: Selenium is an essential mineral supplement.
+--------------------------------------------------
+2025-02-23 15:34:38,914 - INFO - Ingredient: slippery elm
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Slippery elm is a well-known herbal remedy used for various conditions.
+--------------------------------------------------
+2025-02-23 15:34:38,914 - INFO - Ingredient: slippery elm
+Category: Gastrointestinal System
+Confidence: 0.85
+Notes: Slippery elm is commonly used to soothe the gastrointestinal tract.
+--------------------------------------------------
+2025-02-23 15:34:38,916 - INFO - Ingredient: lemon grass
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Lemongrass is a herb used in traditional medicine and aromatherapy.
+--------------------------------------------------
+2025-02-23 15:34:38,916 - INFO - Ingredient: lemon grass
+Category: Essential Oils
+Confidence: 0.85
+Notes: Lemon grass can be extracted to create essential oils.
+--------------------------------------------------
+2025-02-23 15:34:38,916 - INFO - Ingredient: levetiracetam
+Category: Central Nervous System
+Confidence: 0.95
+Notes: Levetiracetam is an anticonvulsant medication primarily used in the treatment of epilepsy.
+--------------------------------------------------
+2025-02-23 15:34:38,919 - INFO - Ingredient: coffe aribica
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Coffee Arabica is a source of caffeine and other compounds.
+--------------------------------------------------
+2025-02-23 15:34:38,922 - INFO - Ingredient: clove ext.
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Clove extract is derived from cloves and used for medicinal purposes.
+--------------------------------------------------
+2025-02-23 15:34:38,923 - INFO - Ingredient: cholecalciferol 10mcg eq.to vit d3 400 iu
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: Cholecalciferol is Vitamin D3.
+--------------------------------------------------
+2025-02-23 15:34:38,923 - INFO - Ingredient: cholecalciferol 10mcg eq.to vit d3 400 iu
+Category: Vitamins
+Confidence: 0.95
+Notes: Vitamin D3 is an essential vitamin.
+--------------------------------------------------
+2025-02-23 15:34:38,927 - INFO - Ingredient: potassium iodide
+Category: Endocrine System
+Confidence: 0.85
+Notes: Potassium iodide is used in certain thyroid conditions to protect the thyroid gland from radioactive iodine uptake.
+--------------------------------------------------
+2025-02-23 15:34:38,927 - INFO - Ingredient: potassium iodide
+Category: Thyroid Medications
+Confidence: 0.85
+Notes: Potassium iodide is used in certain thyroid conditions.
+--------------------------------------------------
+2025-02-23 15:34:38,928 - INFO - Ingredient: thym
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Thyme is a herb used for medicinal purposes.
+--------------------------------------------------
+2025-02-23 15:34:38,931 - INFO - Ingredient: hip rose
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Rose hips are used for medicinal purposes.
+--------------------------------------------------
+2025-02-23 15:34:38,934 - INFO - Ingredient: chemotrypsin
+Category: Metabolic Disorders
+Confidence: 0.85
+Notes: Chemotrypsin is an enzyme and can be used for enzyme replacement therapy.
+--------------------------------------------------
+2025-02-23 15:34:38,934 - INFO - Ingredient: chemotrypsin
+Category: Enzyme Replacement
+Confidence: 0.85
+Notes: Chemotrypsin is an enzyme used for enzyme replacement therapy.
+--------------------------------------------------
+2025-02-23 15:34:38,935 - INFO - Ingredient: tincture primula root
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Tincture of primula root is a herbal remedy.
+--------------------------------------------------
+2025-02-23 15:34:38,935 - INFO - Ingredient: tincture primula root
+Category: Respiratory System
+Confidence: 0.85
+Notes: Primula root is used as an expectorant.
+--------------------------------------------------
+2025-02-23 15:34:38,935 - INFO - Ingredient: tincture primula root
+Category: Expectorants
+Confidence: 0.85
+Notes: Primula root is used as an expectorant.
+--------------------------------------------------
+2025-02-23 15:34:38,938 - INFO - Ingredient: ternidazole
+Category: Antimicrobials
+Confidence: 0.95
+Notes: Ternidazole is an antimicrobial medication.
+--------------------------------------------------
+2025-02-23 15:34:38,939 - INFO - Ingredient: ternidazole
+Category: Antifungals
+Confidence: 0.9
+Notes: Ternidazole is primarily used to treat fungal infections.
+--------------------------------------------------
+2025-02-23 15:34:38,940 - INFO - Ingredient: formamol-piperazine-lithium carbonate
+Category: Central Nervous System
+Confidence: 0.9
+Notes: Lithium carbonate is used to treat bipolar disorder. Formamol-piperazine would act as excipient.
+--------------------------------------------------
+2025-02-23 15:34:38,940 - INFO - Ingredient: formamol-piperazine-lithium carbonate
+Category: Antipsychotics
+Confidence: 0.85
+Notes: Lithium carbonate is sometimes used as an adjunct in psychotic disorders.
+--------------------------------------------------
+2025-02-23 15:34:38,941 - INFO - Ingredient: paliperidone
+Category: Central Nervous System
+Confidence: 0.95
+Notes: Paliperidone is an antipsychotic medication.
+--------------------------------------------------
+2025-02-23 15:34:38,941 - INFO - Ingredient: paliperidone
+Category: Antipsychotics
+Confidence: 0.95
+Notes: Paliperidone is an antipsychotic medication used to treat schizophrenia and schizoaffective disorder.
+--------------------------------------------------
+2025-02-23 15:34:38,942 - INFO - Ingredient: insulin isophane protamine human
+Category: Endocrine System
+Confidence: 0.95
+Notes: Insulin is used to regulate blood sugar levels.
+--------------------------------------------------
+2025-02-23 15:34:38,942 - INFO - Ingredient: insulin isophane protamine human
+Category: Antidiabetics
+Confidence: 0.95
+Notes: Insulin is a primary treatment for diabetes.
+--------------------------------------------------
+2025-02-23 15:34:38,943 - INFO - Ingredient: silver sulphadiazine 1%
+Category: Dermatological
+Confidence: 0.95
+Notes: Silver sulfadiazine is used topically to prevent infection in burns.
+--------------------------------------------------
+2025-02-23 15:34:38,943 - INFO - Ingredient: silver sulphadiazine 1%
+Category: Topical Antibiotics
+Confidence: 0.95
+Notes: Silver sulfadiazine has antibacterial properties and is applied topically.
+--------------------------------------------------
+2025-02-23 15:34:38,943 - INFO - Ingredient: silver sulphadiazine 1%
+Category: Antimicrobials
+Confidence: 0.9
+Notes: Silver sulfadiazine is an antimicrobial agent.
+--------------------------------------------------
+2025-02-23 15:34:38,943 - INFO - Ingredient: silver sulphadiazine 1%
+Category: Antibiotics
+Confidence: 0.9
+Notes: Silver sulfadiazine is an antibacterial agent.
+--------------------------------------------------
+2025-02-23 15:34:38,945 - INFO - Ingredient: chlorhexidine gluconate 0.1%
+Category: Antimicrobials
+Confidence: 0.95
+Notes: Chlorhexidine gluconate is an antiseptic and disinfectant.
+--------------------------------------------------
+2025-02-23 15:34:38,945 - INFO - Ingredient: chlorhexidine gluconate 0.1%
+Category: Dermatological
+Confidence: 0.85
+Notes: Chlorhexidine gluconate is used in topical antiseptic applications.
+--------------------------------------------------
+2025-02-23 15:34:38,946 - INFO - Ingredient: olanzapine
+Category: Central Nervous System
+Confidence: 0.95
+Notes: Olanzapine is an antipsychotic medication.
+--------------------------------------------------
+2025-02-23 15:34:38,947 - INFO - Ingredient: olanzapine
+Category: Antipsychotics
+Confidence: 0.95
+Notes: Olanzapine is used in the treatment of schizophrenia and bipolar disorder.
+--------------------------------------------------
+2025-02-23 15:34:38,947 - INFO - Ingredient: fluorouracil
+Category: Oncology
+Confidence: 0.95
+Notes: Fluorouracil is a chemotherapy drug.
+--------------------------------------------------
+2025-02-23 15:34:38,948 - INFO - Ingredient: fluorouracil
+Category: Chemotherapy
+Confidence: 0.95
+Notes: Fluorouracil is a chemotherapy drug used to treat various cancers.
+--------------------------------------------------
+2025-02-23 15:34:38,948 - INFO - Ingredient: fluorouracil
+Category: Dermatological
+Confidence: 0.85
+Notes: Fluorouracil can be used topically for certain skin cancers.
+--------------------------------------------------
+2025-02-23 15:34:38,949 - INFO - Ingredient: molnupiravir
+Category: Antimicrobials
+Confidence: 0.95
+Notes: Molnupiravir is an antiviral medication.
+--------------------------------------------------
+2025-02-23 15:34:38,949 - INFO - Ingredient: molnupiravir
+Category: Antivirals
+Confidence: 0.95
+Notes: Molnupiravir is used to treat viral infections.
+--------------------------------------------------
+2025-02-23 15:34:38,950 - INFO - Ingredient: enalapril-hydrochlorothiazide
+Category: Cardiovascular System
+Confidence: 0.95
+Notes: Enalapril is an ACE inhibitor and hydrochlorothiazide is a diuretic, both used to treat hypertension.
+--------------------------------------------------
+2025-02-23 15:34:38,950 - INFO - Ingredient: enalapril-hydrochlorothiazide
+Category: Antihypertensives
+Confidence: 0.95
+Notes: Combination of Enalapril and hydrochlorothiazide lowers blood pressure.
+--------------------------------------------------
+2025-02-23 15:34:38,952 - INFO - Ingredient: sandal
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Sandalwood is used in traditional medicine and aromatherapy.
+--------------------------------------------------
+2025-02-23 15:34:38,953 - INFO - Ingredient: sandal
+Category: Essential Oils
+Confidence: 0.85
+Notes: Sandalwood oil can be extracted.
+--------------------------------------------------
+2025-02-23 15:34:38,953 - INFO - Ingredient: carisoprodol
+Category: Musculoskeletal System
+Confidence: 0.95
+Notes: Carisoprodol is a muscle relaxant.
+--------------------------------------------------
+2025-02-23 15:34:38,953 - INFO - Ingredient: carisoprodol
+Category: Muscle Relaxants
+Confidence: 0.95
+Notes: Carisoprodol is used to relieve muscle spasms and pain.
+--------------------------------------------------
+2025-02-23 15:34:58,196 - INFO - Ingredient: rosewater
+Category: Herbal and Natural Products
+Confidence: 0.85
+Notes: Rosewater is a natural product with potential therapeutic properties.
+--------------------------------------------------
+2025-02-23 15:34:58,199 - INFO - Ingredient: olea europaea fruit oil (olive oil)
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Olive oil is a natural product with potential therapeutic properties and nutritional value.
+--------------------------------------------------
+2025-02-23 15:34:58,201 - INFO - Ingredient: spurulina maxima
+Category: Vitamins and Supplements
+Confidence: 0.9
+Notes: Spirulina maxima is a cyanobacterium that is a source of vitamins, minerals, and protein.
+--------------------------------------------------
+2025-02-23 15:34:58,202 - INFO - Ingredient: spurulina maxima
+Category: Herbal and Natural Products
+Confidence: 0.85
+Notes: Spirulina maxima is a natural product with potential therapeutic properties.
+--------------------------------------------------
+2025-02-23 15:34:58,204 - INFO - Ingredient: potassium citrate
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: Potassium citrate is a mineral supplement.
+--------------------------------------------------
+2025-02-23 15:34:58,205 - INFO - Ingredient: omega-3 fish oil 1000 mg
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: Omega-3 fish oil is a fatty acid supplement.
+--------------------------------------------------
+2025-02-23 15:34:58,205 - INFO - Ingredient: omega-3 fish oil 1000 mg
+Category: Cardiovascular System
+Confidence: 0.85
+Notes: Omega-3 fatty acids can have beneficial effects on the cardiovascular system.
+--------------------------------------------------
+2025-02-23 15:34:58,208 - INFO - Ingredient: b8
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: B8 refers to Inositol, which is a Vitamin Supplement.
+--------------------------------------------------
+2025-02-23 15:34:58,209 - INFO - Ingredient: se
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: Se refers to Selenium, which is a mineral supplement.
+--------------------------------------------------
+2025-02-23 15:34:58,210 - INFO - Ingredient: dipyridamol
+Category: Cardiovascular System
+Confidence: 0.95
+Notes: Dipyridamole is a antiplatelet medication used to prevent blood clots.
+--------------------------------------------------
+2025-02-23 15:34:58,210 - INFO - Ingredient: dipyridamol
+Category: Anticoagulants
+Confidence: 0.9
+Notes: Dipyridamole has anticoagulant effects.
+--------------------------------------------------
+2025-02-23 15:34:58,211 - INFO - Ingredient: vitaminb1
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: Vitamin B1 is a vitamin supplement.
+--------------------------------------------------
+2025-02-23 15:34:58,213 - INFO - Ingredient: shea putter
+Category: Herbal and Natural Products
+Confidence: 0.9
+Notes: Shea butter is a natural product used for skin moisturizing and potentially has some anti-inflammatory properties.
+--------------------------------------------------
+2025-02-23 15:34:58,214 - INFO - Ingredient: minerals
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: Minerals are essential nutrients and dietary supplements.
+--------------------------------------------------
+2025-02-23 15:34:58,215 - INFO - Ingredient: nettle(urtica) leaves
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Nettle leaves are a natural product with potential therapeutic properties, commonly used in traditional medicine.
+--------------------------------------------------
+2025-02-23 15:34:58,217 - INFO - Ingredient: deferoxamine(desferrioxamine)
+Category: Blood Disorders
+Confidence: 0.95
+Notes: Deferoxamine is used to treat iron overload.
+--------------------------------------------------
+2025-02-23 15:34:58,217 - INFO - Ingredient: fish flax & borage oils
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: Fish, flax and borage oils are sources of essential fatty acids.
+--------------------------------------------------
+2025-02-23 15:34:58,218 - INFO - Ingredient: mg sulphate
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: Mg sulphate (Magnesium Sulfate) is a mineral supplement.
+--------------------------------------------------
+2025-02-23 15:34:58,218 - INFO - Ingredient: mg sulphate
+Category: Gastrointestinal System
+Confidence: 0.85
+Notes: Magnesium sulfate can be used as a laxative.
+--------------------------------------------------
+2025-02-23 15:34:58,219 - INFO - Ingredient: methylprednisolone aceponate
+Category: Endocrine System
+Confidence: 0.9
+Notes: Methylprednisolone aceponate is a synthetic corticosteroid.
+--------------------------------------------------
+2025-02-23 15:34:58,219 - INFO - Ingredient: methylprednisolone aceponate
+Category: Anti-inflammatory Agents
+Confidence: 0.9
+Notes: Methylprednisolone aceponate is used for anti-inflammatory purposes.
+--------------------------------------------------
+2025-02-23 15:34:58,219 - INFO - Ingredient: methylprednisolone aceponate
+Category: Musculoskeletal System
+Confidence: 0.85
+Notes: Methylprednisolone aceponate can be used for musculoskeletal inflammation
+--------------------------------------------------
+2025-02-23 15:34:58,219 - INFO - Ingredient: methylprednisolone aceponate
+Category: Dermatological
+Confidence: 0.9
+Notes: Methylprednisolone aceponate can be used topically
+--------------------------------------------------
+2025-02-23 15:34:58,219 - INFO - Ingredient: methylprednisolone aceponate
+Category: Topical Corticosteroids
+Confidence: 0.95
+Notes: Methylprednisolone aceponate is often administered topically for skin inflammation
+--------------------------------------------------
+2025-02-23 15:34:58,219 - INFO - Ingredient: electrolytes for haemodyalisis-bicarbonate
+Category: Metabolic Disorders
+Confidence: 0.95
+Notes: Electrolytes for hemodialysis are used to correct electrolyte imbalances in patients with kidney failure.
+--------------------------------------------------
+2025-02-23 15:34:58,224 - INFO - Ingredient: vit c 90 mg
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: Vit C (Vitamin C) is a vitamin supplement.
+--------------------------------------------------
+2025-02-23 15:34:58,226 - INFO - Ingredient: green tea ex
+Category: Herbal and Natural Products
+Confidence: 0.95
+Notes: Green tea extract is a natural product with potential therapeutic properties.
+--------------------------------------------------
+2025-02-23 15:34:58,227 - INFO - Ingredient: vit c?copper
+Category: Vitamins and Supplements
+Confidence: 0.95
+Notes: Vitamin C and Copper are essential nutrients and dietary supplements.
+--------------------------------------------------
+2025-02-23 15:34:58,230 - INFO - Ingredient: fluticasone propionate
+Category: Respiratory System
+Confidence: 0.95
+Notes: Fluticasone propionate is an inhaled corticosteroid used to treat respiratory conditions like asthma.
+--------------------------------------------------
+2025-02-23 15:34:58,230 - INFO - Ingredient: fluticasone propionate
+Category: Anti-inflammatory Respiratory
+Confidence: 0.95
+Notes: Fluticasone propionate acts as an anti-inflammatory in the respiratory system.
+--------------------------------------------------
+2025-02-23 15:34:58,230 - INFO - Ingredient: fluticasone propionate
+Category: Endocrine System
+Confidence: 0.9
+Notes: Fluticasone propionate is a synthetic corticosteroid.
+--------------------------------------------------
+2025-02-23 15:34:58,231 - INFO - Ingredient: fluticasone propionate
+Category: Topical Corticosteroids
+Confidence: 0.9
+Notes: Fluticasone propionate is a corticosteroid, that can be used topically.
+--------------------------------------------------
+2025-02-23 15:34:58,234 - INFO - Ingredient: salicylic acid - capryloyl salicylic acid
+Category: Dermatological
+Confidence: 0.95
+Notes: Salicylic acid is used to treat various skin conditions.
+--------------------------------------------------
+2025-02-23 15:34:58,234 - INFO - Ingredient: salicylic acid - capryloyl salicylic acid
+Category: Topical Analgesics
+Confidence: 0.85
+Notes: Salicylic acid is often administered topically as an analgesic.
+--------------------------------------------------

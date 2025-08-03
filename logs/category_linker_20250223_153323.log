@@ -1,0 +1,141 @@
+2025-02-23 15:33:23,134 - INFO - Main log file: logs\category_linker_20250223_153323.log
+2025-02-23 15:33:23,135 - INFO - Changes log file: logs\category_changes_20250223_153323.log
+2025-02-23 15:33:23,136 - INFO - PharmaceuticalCategoryLinker initialized successfully
+2025-02-23 15:33:27,656 - INFO - Processing batch of 25 ingredients
+2025-02-23 15:33:49,655 - INFO - Skipping low confidence mapping: cholorhexdiene -> Antibiotics (confidence: 0.8)
+2025-02-23 15:33:49,655 - INFO - Found 1 valid categories for cholorhexdiene
+2025-02-23 15:33:49,656 - INFO - Found 1 valid categories for propane/butane
+2025-02-23 15:33:49,657 - INFO - Found 3 valid categories for eucalyptus-fennel fruit-thyme
+2025-02-23 15:33:49,659 - INFO - Skipping low confidence mapping: veltol plus -> Metabolic Disorders (confidence: 0.8)
+2025-02-23 15:33:49,659 - INFO - Skipping low confidence mapping: veltol plus -> Vitamins and Supplements (confidence: 0.8)
+2025-02-23 15:33:49,660 - INFO - Found 1 valid categories for otilonium bromide
+2025-02-23 15:33:49,660 - INFO - Found 2 valid categories for sodium bicarbonate 1680 mg
+2025-02-23 15:33:49,661 - INFO - Found 2 valid categories for dienogest
+2025-02-23 15:33:49,661 - INFO - Skipping low confidence mapping: dimetyl dicarboxylate -> Metabolic Disorders (confidence: 0.8)
+2025-02-23 15:33:49,662 - INFO - Skipping low confidence mapping: dimetyl dicarboxylate -> Enzyme Replacement (confidence: 0.8)
+2025-02-23 15:33:49,663 - INFO - Found 1 valid categories for coal tar
+2025-02-23 15:33:49,664 - INFO - Skipping low confidence mapping: lactoferin -> Immunostimulants (confidence: 0.8)
+2025-02-23 15:33:49,665 - INFO - Skipping low confidence mapping: lactoferin -> Vitamins and Supplements (confidence: 0.8)
+2025-02-23 15:33:49,667 - INFO - Found 1 valid categories for lactoferin
+2025-02-23 15:33:49,668 - INFO - Found 2 valid categories for guava-tilia-black seed
+2025-02-23 15:33:49,669 - INFO - Found 2 valid categories for ricinus communis-zinc oxide-beeswax
+2025-02-23 15:33:49,670 - INFO - Found 1 valid categories for deferoxamine
+2025-02-23 15:33:49,671 - INFO - Found 3 valid categories for liquid paraffin
+2025-02-23 15:33:49,672 - INFO - Skipping low confidence mapping: lipids -> Nutritional Supplements (confidence: 0.8)
+2025-02-23 15:33:49,673 - INFO - Found 1 valid categories for lipids
+2025-02-23 15:33:49,674 - INFO - Found 2 valid categories for alovera oil
+2025-02-23 15:33:49,675 - INFO - Found 1 valid categories for pentoxifylline
+2025-02-23 15:33:49,676 - INFO - Found 2 valid categories for trazodone
+2025-02-23 15:33:49,680 - INFO - Skipping low confidence mapping: piperazine-khellin -> Pain Management (confidence: 0.8)
+2025-02-23 15:33:49,680 - INFO - Skipping low confidence mapping: piperazine-khellin -> Musculoskeletal System (confidence: 0.8)
+2025-02-23 15:33:49,681 - INFO - Found 3 valid categories for cimicifuga racemosa(black cohosh)
+2025-02-23 15:33:49,682 - INFO - Skipping low confidence mapping: calcium carbonate-vitamin c-vitamin d3 -> Bone Density Medications (confidence: 0.8)
+2025-02-23 15:33:49,683 - INFO - Found 4 valid categories for calcium carbonate-vitamin c-vitamin d3
+2025-02-23 15:33:49,684 - INFO - Skipping low confidence mapping: hoden -> Herbal and Natural Products (confidence: 0.8)
+2025-02-23 15:33:49,685 - INFO - Found 3 valid categories for artichoke leaves
+2025-02-23 15:33:49,686 - INFO - Found 2 valid categories for chlorzoxazone
+2025-02-23 15:33:49,686 - INFO - Found 2 valid categories for benfotiamine(b1) - pyridoxine(b6) - cobalamin(b12) - folic acid(b9) - biotin - b2 - b3 - b5
+2025-02-23 15:33:53,691 - INFO - Processing batch of 25 ingredients
+2025-02-23 15:34:14,949 - INFO - Found 1 valid categories for caprylic triglyceride
+2025-02-23 15:34:14,950 - INFO - Found 2 valid categories for calcium oyster shell 1500 gm
+2025-02-23 15:34:14,953 - INFO - Skipping low confidence mapping: cetrimide-carbomer-sorbitol -> Dermatological (confidence: 0.8)
+2025-02-23 15:34:14,953 - INFO - Found 1 valid categories for cetrimide-carbomer-sorbitol
+2025-02-23 15:34:14,954 - INFO - Found 2 valid categories for dl-alpha tocopherol
+2025-02-23 15:34:14,955 - INFO - Found 2 valid categories for gliclazide
+2025-02-23 15:34:14,957 - INFO - Found 2 valid categories for sodium camosulphonate
+2025-02-23 15:34:14,958 - INFO - Found 2 valid categories for folate 111.33 mcg
+2025-02-23 15:34:14,958 - INFO - Found 2 valid categories for olive leaves extract
+2025-02-23 15:34:14,959 - INFO - Skipping low confidence mapping: glabridin -> Herbal and Natural Products (confidence: 0.8)
+2025-02-23 15:34:14,960 - INFO - Found 1 valid categories for glabridin
+2025-02-23 15:34:14,961 - INFO - Found 1 valid categories for dichlorophenylcarbinol
+2025-02-23 15:34:14,962 - INFO - Found 2 valid categories for pancreatin
+2025-02-23 15:34:14,963 - INFO - Found 2 valid categories for cefpirome
+2025-02-23 15:34:14,964 - INFO - Skipping low confidence mapping: anise oil -> Respiratory System (confidence: 0.8)
+2025-02-23 15:34:14,965 - INFO - Skipping low confidence mapping: anise oil -> Expectorants (confidence: 0.8)
+2025-02-23 15:34:14,966 - INFO - Found 2 valid categories for anise oil
+2025-02-23 15:34:14,968 - INFO - Found 4 valid categories for hydrocortisone sodium succinate
+2025-02-23 15:34:14,969 - INFO - Skipping low confidence mapping: lavander oil -> Central Nervous System (confidence: 0.8)
+2025-02-23 15:34:14,970 - INFO - Skipping low confidence mapping: lavander oil -> Anxiolytics (confidence: 0.8)
+2025-02-23 15:34:14,970 - INFO - Skipping low confidence mapping: lavander oil -> Dermatological (confidence: 0.8)
+2025-02-23 15:34:14,971 - INFO - Found 2 valid categories for lavander oil
+2025-02-23 15:34:14,972 - INFO - Found 2 valid categories for glucose(dextrose)
+2025-02-23 15:34:14,973 - INFO - Skipping low confidence mapping: tilio-guava-thyme-black seed -> Traditional Medicine (confidence: 0.8)
+2025-02-23 15:34:14,974 - INFO - Found 1 valid categories for tilio-guava-thyme-black seed
+2025-02-23 15:34:14,975 - INFO - Skipping low confidence mapping: tincture grindelia -> Dermatological (confidence: 0.8)
+2025-02-23 15:34:14,976 - INFO - Found 4 valid categories for tincture grindelia
+2025-02-23 15:34:14,979 - INFO - Found 1 valid categories for domiphen
+2025-02-23 15:34:14,980 - INFO - Found 3 valid categories for rosehip seed oil
+2025-02-23 15:34:14,982 - INFO - Found 1 valid categories for cocamido triethanolamine
+2025-02-23 15:34:14,982 - INFO - Found 3 valid categories for erlotinib
+2025-02-23 15:34:14,984 - INFO - Found 5 valid categories for recombinant human interferon alfa 2b
+2025-02-23 15:34:14,985 - INFO - Found 1 valid categories for hydrolyzed elastin
+2025-02-23 15:34:14,986 - INFO - Found 2 valid categories for l-selenium
+2025-02-23 15:34:18,990 - INFO - Processing batch of 25 ingredients
+2025-02-23 15:34:38,913 - INFO - Found 2 valid categories for slippery elm
+2025-02-23 15:34:38,914 - INFO - Found 2 valid categories for lemon grass
+2025-02-23 15:34:38,916 - INFO - Found 1 valid categories for levetiracetam
+2025-02-23 15:34:38,917 - INFO - Skipping low confidence mapping: coffe aribica -> Central Nervous System (confidence: 0.8)
+2025-02-23 15:34:38,918 - INFO - Found 1 valid categories for coffe aribica
+2025-02-23 15:34:38,919 - INFO - Skipping low confidence mapping: clove ext. -> Pain Management (confidence: 0.8)
+2025-02-23 15:34:38,921 - INFO - Found 1 valid categories for clove ext.
+2025-02-23 15:34:38,922 - INFO - Found 2 valid categories for cholecalciferol 10mcg eq.to vit d3 400 iu
+2025-02-23 15:34:38,924 - INFO - Skipping low confidence mapping: potassium iodide -> Minerals (confidence: 0.8)
+2025-02-23 15:34:38,924 - INFO - Skipping low confidence mapping: potassium iodide -> Vitamins and Supplements (confidence: 0.8)
+2025-02-23 15:34:38,925 - INFO - Found 2 valid categories for potassium iodide
+2025-02-23 15:34:38,927 - INFO - Skipping low confidence mapping: thym -> Respiratory System (confidence: 0.8)
+2025-02-23 15:34:38,928 - INFO - Found 1 valid categories for thym
+2025-02-23 15:34:38,929 - INFO - Skipping low confidence mapping: hip rose -> Vitamins and Supplements (confidence: 0.8)
+2025-02-23 15:34:38,929 - INFO - Skipping low confidence mapping: hip rose -> Vitamins (confidence: 0.8)
+2025-02-23 15:34:38,930 - INFO - Found 1 valid categories for hip rose
+2025-02-23 15:34:38,931 - INFO - Skipping low confidence mapping: chemotrypsin -> Musculoskeletal System (confidence: 0.8)
+2025-02-23 15:34:38,932 - INFO - Skipping low confidence mapping: chemotrypsin -> Anti-inflammatory Agents (confidence: 0.8)
+2025-02-23 15:34:38,933 - INFO - Found 2 valid categories for chemotrypsin
+2025-02-23 15:34:38,934 - INFO - Found 3 valid categories for tincture primula root
+2025-02-23 15:34:38,935 - INFO - Found 2 valid categories for ternidazole
+2025-02-23 15:34:38,939 - INFO - Found 2 valid categories for formamol-piperazine-lithium carbonate
+2025-02-23 15:34:38,940 - INFO - Found 2 valid categories for paliperidone
+2025-02-23 15:34:38,941 - INFO - Found 2 valid categories for insulin isophane protamine human
+2025-02-23 15:34:38,942 - INFO - Found 4 valid categories for silver sulphadiazine 1%
+2025-02-23 15:34:38,943 - INFO - Skipping low confidence mapping: chlorhexidine gluconate 0.1% -> Topical Antibiotics (confidence: 0.8)
+2025-02-23 15:34:38,944 - INFO - Found 2 valid categories for chlorhexidine gluconate 0.1%
+2025-02-23 15:34:38,945 - INFO - Found 2 valid categories for olanzapine
+2025-02-23 15:34:38,947 - INFO - Found 3 valid categories for fluorouracil
+2025-02-23 15:34:38,948 - INFO - Found 2 valid categories for molnupiravir
+2025-02-23 15:34:38,949 - INFO - Found 2 valid categories for enalapril-hydrochlorothiazide
+2025-02-23 15:34:38,950 - INFO - Found 2 valid categories for sandal
+2025-02-23 15:34:38,953 - INFO - Found 2 valid categories for carisoprodol
+2025-02-23 15:34:42,959 - INFO - Processing batch of 25 ingredients
+2025-02-23 15:34:58,195 - INFO - Found 1 valid categories for rosewater
+2025-02-23 15:34:58,196 - INFO - Skipping low confidence mapping: olea europaea fruit oil (olive oil) -> Vitamins and Supplements (confidence: 0.8)
+2025-02-23 15:34:58,198 - INFO - Found 1 valid categories for olea europaea fruit oil (olive oil)
+2025-02-23 15:34:58,200 - INFO - Skipping low confidence mapping: bha -> Herbal and Natural Products (confidence: 0.8)
+2025-02-23 15:34:58,201 - INFO - Found 2 valid categories for spurulina maxima
+2025-02-23 15:34:58,202 - INFO - Skipping low confidence mapping: potassium citrate -> Metabolic Disorders (confidence: 0.8)
+2025-02-23 15:34:58,203 - INFO - Found 1 valid categories for potassium citrate
+2025-02-23 15:34:58,204 - INFO - Found 2 valid categories for omega-3 fish oil 1000 mg
+2025-02-23 15:34:58,206 - INFO - Found 1 valid categories for b8
+2025-02-23 15:34:58,209 - INFO - Found 1 valid categories for se
+2025-02-23 15:34:58,209 - INFO - Found 2 valid categories for dipyridamol
+2025-02-23 15:34:58,210 - INFO - Found 1 valid categories for vitaminb1
+2025-02-23 15:34:58,212 - INFO - Skipping low confidence mapping: shea putter -> Dermatological (confidence: 0.8)
+2025-02-23 15:34:58,212 - INFO - Found 1 valid categories for shea putter
+2025-02-23 15:34:58,213 - INFO - Found 1 valid categories for minerals
+2025-02-23 15:34:58,214 - INFO - Found 1 valid categories for nettle(urtica) leaves
+2025-02-23 15:34:58,215 - INFO - Skipping low confidence mapping: dimethylpolysiloxan -> Gastrointestinal System (confidence: 0.8)
+2025-02-23 15:34:58,216 - INFO - Found 1 valid categories for deferoxamine(desferrioxamine)
+2025-02-23 15:34:58,217 - INFO - Found 1 valid categories for fish flax & borage oils
+2025-02-23 15:34:58,217 - INFO - Found 2 valid categories for mg sulphate
+2025-02-23 15:34:58,218 - INFO - Found 5 valid categories for methylprednisolone aceponate
+2025-02-23 15:34:58,219 - INFO - Found 1 valid categories for electrolytes for haemodyalisis-bicarbonate
+2025-02-23 15:34:58,220 - INFO - Skipping low confidence mapping: starch -> Gastrointestinal System (confidence: 0.8)
+2025-02-23 15:34:58,220 - INFO - Found 1 valid categories for vit c 90 mg
+2025-02-23 15:34:58,224 - INFO - Skipping low confidence mapping: green tea ex -> Vitamins and Supplements (confidence: 0.8)
+2025-02-23 15:34:58,225 - INFO - Found 1 valid categories for green tea ex
+2025-02-23 15:34:58,227 - INFO - Found 1 valid categories for vit c?copper
+2025-02-23 15:34:58,228 - INFO - Skipping low confidence mapping: fluticasone propionate -> Anti-inflammatory Agents (confidence: 0.8)
+2025-02-23 15:34:58,228 - INFO - Skipping low confidence mapping: fluticasone propionate -> Dermatological (confidence: 0.8)
+2025-02-23 15:34:58,229 - INFO - Found 4 valid categories for fluticasone propionate
+2025-02-23 15:34:58,231 - INFO - Skipping low confidence mapping: salicylic acid - capryloyl salicylic acid -> Pain Management (confidence: 0.8)
+2025-02-23 15:34:58,231 - INFO - Skipping low confidence mapping: salicylic acid - capryloyl salicylic acid -> Musculoskeletal System (confidence: 0.8)
+2025-02-23 15:34:58,232 - INFO - Skipping low confidence mapping: salicylic acid - capryloyl salicylic acid -> Anti-inflammatory Agents (confidence: 0.8)
+2025-02-23 15:34:58,233 - INFO - Found 2 valid categories for salicylic acid - capryloyl salicylic acid

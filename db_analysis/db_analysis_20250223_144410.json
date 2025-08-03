@@ -1,0 +1,1060 @@
+{
+  "database": "pharmacy_db",
+  "timestamp": "20250223_144410",
+  "tables": {
+    "active_ingredients": {
+      "schema": [
+        {
+          "name": "ingredient_id",
+          "type": "uuid",
+          "max_length": null,
+          "default": "uuid_generate_v4()",
+          "nullable": "NO"
+        },
+        {
+          "name": "name",
+          "type": "character varying",
+          "max_length": 255,
+          "default": null,
+          "nullable": "NO"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "active_ingredients_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (ingredient_id)"
+        },
+        {
+          "name": "active_ingredients_name_key",
+          "type": "u",
+          "definition": "UNIQUE (name)"
+        }
+      ],
+      "indexes": [
+        {
+          "name": "active_ingredients_name_key",
+          "column": "name",
+          "unique": true,
+          "primary": false
+        },
+        {
+          "name": "active_ingredients_pkey",
+          "column": "ingredient_id",
+          "unique": true,
+          "primary": true
+        },
+        {
+          "name": "idx_active_ingredients_name",
+          "column": "name",
+          "unique": false,
+          "primary": false
+        }
+      ],
+      "statistics": {
+        "row_count": 7884,
+        "total_size": "6200 kB",
+        "table_size": "544 kB",
+        "index_size": "5656 kB"
+      },
+      "sample_data": [
+        {
+          "ingredient_id": "44aba773-750f-44f1-ad69-7bad6a60551e",
+          "name": "pro"
+        },
+        {
+          "ingredient_id": "11bc6dc4-dfdf-40c5-979e-4f7059466d17",
+          "name": "thiocolchicoside-floctafenine"
+        },
+        {
+          "ingredient_id": "d410934b-1b90-460f-a050-2d9a495abc3d",
+          "name": "hydrochlorothiazide"
+        },
+        {
+          "ingredient_id": "01a4262b-44c4-4265-88d1-747b2e0dd21c",
+          "name": "URIDINE MONO PHOSPHATE"
+        },
+        {
+          "ingredient_id": "16b996e7-1741-4019-bf01-28cc1577a390",
+          "name": "folate"
+        }
+      ]
+    },
+    "companies": {
+      "schema": [
+        {
+          "name": "company_id",
+          "type": "uuid",
+          "max_length": null,
+          "default": "uuid_generate_v4()",
+          "nullable": "NO"
+        },
+        {
+          "name": "name",
+          "type": "character varying",
+          "max_length": 255,
+          "default": null,
+          "nullable": "NO"
+        },
+        {
+          "name": "parent_company",
+          "type": "character varying",
+          "max_length": 255,
+          "default": null,
+          "nullable": "YES"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "companies_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (company_id)"
+        },
+        {
+          "name": "companies_name_parent_company_key",
+          "type": "u",
+          "definition": "UNIQUE (name, parent_company)"
+        }
+      ],
+      "indexes": [
+        {
+          "name": "companies_name_parent_company_key",
+          "column": "name",
+          "unique": true,
+          "primary": false
+        },
+        {
+          "name": "companies_name_parent_company_key",
+          "column": "parent_company",
+          "unique": true,
+          "primary": false
+        },
+        {
+          "name": "companies_pkey",
+          "column": "company_id",
+          "unique": true,
+          "primary": true
+        }
+      ],
+      "statistics": {
+        "row_count": 4600,
+        "total_size": "1640 kB",
+        "table_size": "384 kB",
+        "index_size": "1256 kB"
+      },
+      "sample_data": [
+        {
+          "company_id": "66a301e6-7dcd-4a9e-8a4a-c338d579e394",
+          "name": "BIOTECH EGYPT",
+          "parent_company": null
+        },
+        {
+          "company_id": "59a5ffad-d147-4588-92ca-3c2de93e8090",
+          "name": "lamar pharma",
+          "parent_company": "debeiky"
+        },
+        {
+          "company_id": "2af51dd1-f953-4643-baf6-4c86833bf3a2",
+          "name": "jamjoom pharmaceuticals-k.s.a",
+          "parent_company": "jamjoom pharma"
+        },
+        {
+          "company_id": "a0d6f52d-3d4b-4ab5-8d1c-3b2312995678",
+          "name": "sanofi pasteur-france",
+          "parent_company": "medico pharma scientific office"
+        },
+        {
+          "company_id": "6e39b61d-3709-4bea-9283-1aae2b9f3298",
+          "name": "hi-care",
+          "parent_company": "skiva pharmaceuticals"
+        }
+      ]
+    },
+    "forms": {
+      "schema": [
+        {
+          "name": "form_id",
+          "type": "uuid",
+          "max_length": null,
+          "default": "uuid_generate_v4()",
+          "nullable": "NO"
+        },
+        {
+          "name": "name",
+          "type": "character varying",
+          "max_length": 255,
+          "default": null,
+          "nullable": "NO"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "forms_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (form_id)"
+        },
+        {
+          "name": "forms_name_key",
+          "type": "u",
+          "definition": "UNIQUE (name)"
+        }
+      ],
+      "indexes": [
+        {
+          "name": "forms_name_key",
+          "column": "name",
+          "unique": true,
+          "primary": false
+        },
+        {
+          "name": "forms_pkey",
+          "column": "form_id",
+          "unique": true,
+          "primary": true
+        }
+      ],
+      "statistics": {
+        "row_count": 55,
+        "total_size": "56 kB",
+        "table_size": "24 kB",
+        "index_size": "32 kB"
+      },
+      "sample_data": [
+        {
+          "form_id": "1404fd90-2819-4aad-a3bb-266c5ad457d6",
+          "name": "nasal drops"
+        },
+        {
+          "form_id": "58fed3d1-b3ad-43e2-a995-88790fb99a70",
+          "name": "pen"
+        },
+        {
+          "form_id": "944017fb-15bd-4d8a-832b-42590c332039",
+          "name": "lotion"
+        },
+        {
+          "form_id": "782ca92e-e0d1-4fd3-bc72-5143301ae417",
+          "name": "soap"
+        },
+        {
+          "form_id": "c998715b-888f-4603-a94b-bfa38b2e4a35",
+          "name": "paint"
+        }
+      ]
+    },
+    "groups": {
+      "schema": [
+        {
+          "name": "group_id",
+          "type": "uuid",
+          "max_length": null,
+          "default": "uuid_generate_v4()",
+          "nullable": "NO"
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "max_length": null,
+          "default": null,
+          "nullable": "NO"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "groups_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (group_id)"
+        },
+        {
+          "name": "groups_name_key",
+          "type": "u",
+          "definition": "UNIQUE (name)"
+        }
+      ],
+      "indexes": [
+        {
+          "name": "groups_name_key",
+          "column": "name",
+          "unique": true,
+          "primary": false
+        },
+        {
+          "name": "groups_pkey",
+          "column": "group_id",
+          "unique": true,
+          "primary": true
+        }
+      ],
+      "statistics": {
+        "row_count": 2162,
+        "total_size": "792 kB",
+        "table_size": "200 kB",
+        "index_size": "592 kB"
+      },
+      "sample_data": [
+        {
+          "group_id": "3e9d84b9-de12-497b-8ec7-16e93234b7b6",
+          "name": "depolarizing neuromuscular blocker"
+        },
+        {
+          "group_id": "8ba4e2de-fcb4-4c7d-a7c7-236ab085606c",
+          "name": "non-steroidal aromatase inhibitor. infertility"
+        },
+        {
+          "group_id": "9e43f37b-0640-4402-b083-635e1d4a7741",
+          "name": "respiratory distress syndrome (rds)"
+        },
+        {
+          "group_id": "6524c5af-bb1d-456b-a587-b8dac0ba0e43",
+          "name": "+zink+vitamin c+vitamin b12 +vitamin b6+le?n+lactoferrin"
+        },
+        {
+          "group_id": "6f784433-a41c-4e6a-8dd3-4db75ca607c3",
+          "name": "snake oil+garlicoil+olive oil+wheat germ oil+almond oil+aloeoil"
+        }
+      ]
+    },
+    "pharmaceutical_categories": {
+      "schema": [
+        {
+          "name": "category_id",
+          "type": "uuid",
+          "max_length": null,
+          "default": null,
+          "nullable": "NO"
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "max_length": null,
+          "default": null,
+          "nullable": "NO"
+        },
+        {
+          "name": "parent_category_id",
+          "type": "uuid",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "description",
+          "type": "text",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "max_length": null,
+          "default": "CURRENT_TIMESTAMP",
+          "nullable": "NO"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "max_length": null,
+          "default": "CURRENT_TIMESTAMP",
+          "nullable": "NO"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "pk_pharmaceutical_categories",
+          "type": "p",
+          "definition": "PRIMARY KEY (category_id)"
+        },
+        {
+          "name": "fk_pharmaceutical_categories_parent",
+          "type": "f",
+          "definition": "FOREIGN KEY (parent_category_id) REFERENCES pharmaceutical_categories(category_id) ON DELETE RESTRICT"
+        }
+      ],
+      "indexes": [
+        {
+          "name": "ix_pharmaceutical_categories_parent_id",
+          "column": "parent_category_id",
+          "unique": false,
+          "primary": false
+        },
+        {
+          "name": "pk_pharmaceutical_categories",
+          "column": "category_id",
+          "unique": true,
+          "primary": true
+        }
+      ],
+      "statistics": {
+        "row_count": 32,
+        "total_size": "48 kB",
+        "table_size": "16 kB",
+        "index_size": "32 kB"
+      },
+      "sample_data": [
+        {
+          "category_id": "10000000-0000-0000-0000-000000000001",
+          "name": "Cardiovascular System",
+          "parent_category_id": null,
+          "description": "Drugs that act on the heart and blood vessels",
+          "created_at": "2025-02-23 14:12:08.017551+02:00",
+          "updated_at": "2025-02-23 14:12:08.017551+02:00"
+        },
+        {
+          "category_id": "11000000-0000-0000-0000-000000000001",
+          "name": "Antihypertensives",
+          "parent_category_id": "10000000-0000-0000-0000-000000000001",
+          "description": "Medications used to treat high blood pressure",
+          "created_at": "2025-02-23 14:12:08.017551+02:00",
+          "updated_at": "2025-02-23 14:12:08.017551+02:00"
+        },
+        {
+          "category_id": "11000000-0000-0000-0000-000000000002",
+          "name": "Antiarrhythmics",
+          "parent_category_id": "10000000-0000-0000-0000-000000000001",
+          "description": "Drugs used to treat irregular heartbeats",
+          "created_at": "2025-02-23 14:12:08.017551+02:00",
+          "updated_at": "2025-02-23 14:12:08.017551+02:00"
+        },
+        {
+          "category_id": "11000000-0000-0000-0000-000000000003",
+          "name": "Anticoagulants",
+          "parent_category_id": "10000000-0000-0000-0000-000000000001",
+          "description": "Blood thinners that prevent clot formation",
+          "created_at": "2025-02-23 14:12:08.017551+02:00",
+          "updated_at": "2025-02-23 14:12:08.017551+02:00"
+        },
+        {
+          "category_id": "20000000-0000-0000-0000-000000000001",
+          "name": "Central Nervous System",
+          "parent_category_id": null,
+          "description": "Drugs that affect the brain and spinal cord",
+          "created_at": "2025-02-23 14:12:08.017551+02:00",
+          "updated_at": "2025-02-23 14:12:08.017551+02:00"
+        }
+      ]
+    },
+    "pharmaceutical_category_relations": {
+      "schema": [
+        {
+          "name": "ingredient_id",
+          "type": "uuid",
+          "max_length": null,
+          "default": null,
+          "nullable": "NO"
+        },
+        {
+          "name": "category_id",
+          "type": "uuid",
+          "max_length": null,
+          "default": null,
+          "nullable": "NO"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "max_length": null,
+          "default": "CURRENT_TIMESTAMP",
+          "nullable": "NO"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "pk_pharmaceutical_category_relations",
+          "type": "p",
+          "definition": "PRIMARY KEY (ingredient_id, category_id)"
+        },
+        {
+          "name": "fk_pharmaceutical_category_relations_ingredient",
+          "type": "f",
+          "definition": "FOREIGN KEY (ingredient_id) REFERENCES active_ingredients(ingredient_id) ON DELETE CASCADE"
+        },
+        {
+          "name": "fk_pharmaceutical_category_relations_category",
+          "type": "f",
+          "definition": "FOREIGN KEY (category_id) REFERENCES pharmaceutical_categories(category_id) ON DELETE CASCADE"
+        }
+      ],
+      "indexes": [
+        {
+          "name": "ix_pharmaceutical_category_relations_category_id",
+          "column": "category_id",
+          "unique": false,
+          "primary": false
+        },
+        {
+          "name": "pk_pharmaceutical_category_relations",
+          "column": "ingredient_id",
+          "unique": true,
+          "primary": true
+        },
+        {
+          "name": "pk_pharmaceutical_category_relations",
+          "column": "category_id",
+          "unique": true,
+          "primary": true
+        }
+      ],
+      "statistics": {
+        "row_count": 0,
+        "total_size": "16 kB",
+        "table_size": "0 bytes",
+        "index_size": "16 kB"
+      },
+      "sample_data": []
+    },
+    "product_ingredients": {
+      "schema": [
+        {
+          "name": "product_id",
+          "type": "uuid",
+          "max_length": null,
+          "default": null,
+          "nullable": "NO"
+        },
+        {
+          "name": "ingredient_id",
+          "type": "uuid",
+          "max_length": null,
+          "default": null,
+          "nullable": "NO"
+        },
+        {
+          "name": "strength",
+          "type": "character varying",
+          "max_length": 255,
+          "default": null,
+          "nullable": "YES"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "product_ingredients_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (product_id, ingredient_id)"
+        },
+        {
+          "name": "product_ingredients_product_id_fkey",
+          "type": "f",
+          "definition": "FOREIGN KEY (product_id) REFERENCES products(product_id)"
+        },
+        {
+          "name": "product_ingredients_ingredient_id_fkey",
+          "type": "f",
+          "definition": "FOREIGN KEY (ingredient_id) REFERENCES active_ingredients(ingredient_id)"
+        }
+      ],
+      "indexes": [
+        {
+          "name": "product_ingredients_pkey",
+          "column": "product_id",
+          "unique": true,
+          "primary": true
+        },
+        {
+          "name": "product_ingredients_pkey",
+          "column": "ingredient_id",
+          "unique": true,
+          "primary": true
+        }
+      ],
+      "statistics": {
+        "row_count": 50469,
+        "total_size": "6200 kB",
+        "table_size": "3008 kB",
+        "index_size": "3192 kB"
+      },
+      "sample_data": [
+        {
+          "product_id": "36f90c05-af46-4fd3-82d4-35c8fe99c7ad",
+          "ingredient_id": "f824dad4-b17a-410a-b7fa-2a6f4c601575",
+          "strength": null
+        },
+        {
+          "product_id": "70cbcd97-3b9b-4fe4-a1bb-387bcd9d7ce5",
+          "ingredient_id": "4db3dcc5-e0d8-413a-ab5e-64433fec37c8",
+          "strength": null
+        },
+        {
+          "product_id": "703a5ca6-ae4a-43a7-9fb5-96e5364006ce",
+          "ingredient_id": "63f793e4-9647-42e4-a17d-ccf5e83239b2",
+          "strength": null
+        },
+        {
+          "product_id": "103ed1e9-1d92-4e1c-a9eb-9bf6ebc3d86b",
+          "ingredient_id": "137f311a-6932-40d5-9400-294754ca1e7a",
+          "strength": null
+        },
+        {
+          "product_id": "9c37c6cf-0712-43af-82d2-d492a7fb410a",
+          "ingredient_id": "686af0b7-0ceb-49c3-a293-4aeae6fc95d4",
+          "strength": null
+        }
+      ]
+    },
+    "products": {
+      "schema": [
+        {
+          "name": "product_id",
+          "type": "uuid",
+          "max_length": null,
+          "default": "uuid_generate_v4()",
+          "nullable": "NO"
+        },
+        {
+          "name": "trade_name",
+          "type": "character varying",
+          "max_length": 255,
+          "default": null,
+          "nullable": "NO"
+        },
+        {
+          "name": "company_id",
+          "type": "uuid",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "form_id",
+          "type": "uuid",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "route_id",
+          "type": "uuid",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "group_id",
+          "type": "uuid",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "price",
+          "type": "numeric",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "pharmacology",
+          "type": "text",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "strength",
+          "type": "character varying",
+          "max_length": 255,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "package_size",
+          "type": "character varying",
+          "max_length": 255,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "max_length": null,
+          "default": "CURRENT_TIMESTAMP",
+          "nullable": "YES"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "max_length": null,
+          "default": "CURRENT_TIMESTAMP",
+          "nullable": "YES"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "products_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (product_id)"
+        },
+        {
+          "name": "products_trade_name_key",
+          "type": "u",
+          "definition": "UNIQUE (trade_name)"
+        },
+        {
+          "name": "products_company_id_fkey",
+          "type": "f",
+          "definition": "FOREIGN KEY (company_id) REFERENCES companies(company_id)"
+        },
+        {
+          "name": "products_form_id_fkey",
+          "type": "f",
+          "definition": "FOREIGN KEY (form_id) REFERENCES forms(form_id)"
+        },
+        {
+          "name": "products_route_id_fkey",
+          "type": "f",
+          "definition": "FOREIGN KEY (route_id) REFERENCES routes(route_id)"
+        },
+        {
+          "name": "products_group_id_fkey",
+          "type": "f",
+          "definition": "FOREIGN KEY (group_id) REFERENCES groups(group_id)"
+        }
+      ],
+      "indexes": [
+        {
+          "name": "idx_product_company",
+          "column": "company_id",
+          "unique": false,
+          "primary": false
+        },
+        {
+          "name": "idx_product_group",
+          "column": "group_id",
+          "unique": false,
+          "primary": false
+        },
+        {
+          "name": "idx_products_price",
+          "column": "price",
+          "unique": false,
+          "primary": false
+        },
+        {
+          "name": "idx_products_trade_name",
+          "column": "trade_name",
+          "unique": false,
+          "primary": false
+        },
+        {
+          "name": "products_pkey",
+          "column": "product_id",
+          "unique": true,
+          "primary": true
+        },
+        {
+          "name": "products_trade_name_key",
+          "column": "trade_name",
+          "unique": true,
+          "primary": false
+        }
+      ],
+      "statistics": {
+        "row_count": 26200,
+        "total_size": "21 MB",
+        "table_size": "7304 kB",
+        "index_size": "14 MB"
+      },
+      "sample_data": [
+        {
+          "product_id": "8da3a810-869c-4a99-a974-6bba0b0a5baa",
+          "trade_name": "1 2 3 (one two three) 20 f.c.tabs.",
+          "company_id": "31664eed-3d71-44ca-81e1-3eb724b4dba8",
+          "form_id": "549b0380-f8d0-4459-ae9d-1748936eb799",
+          "route_id": "9129f88e-832c-412e-8bdc-ae733c11854d",
+          "group_id": "485545d7-bc48-43dc-be20-5fbf4bb62088",
+          "price": "24.00",
+          "pharmacology": "indication: runny noses blocked noses and sinus sneezing watery itchy eyes sinus pain fever headache body aches & pain information: pseudoephedrine hydrochloride belongs to a group of medicines called sympathomimetic decongestants. it works by reducing co",
+          "strength": null,
+          "package_size": null,
+          "created_at": "2025-02-18 06:53:29.206417+02:00",
+          "updated_at": "2025-02-18 06:53:29.206417+02:00"
+        },
+        {
+          "product_id": "4b861f63-1f50-43e6-9f00-26fe1112d33e",
+          "trade_name": "1 2 3 (one two three) syrup 120 ml",
+          "company_id": "31664eed-3d71-44ca-81e1-3eb724b4dba8",
+          "form_id": "7bb93605-f943-4fa8-a994-3cfcb8bf7233",
+          "route_id": "186933d6-d3e2-4107-ac0c-bfa78ee61855",
+          "group_id": "485545d7-bc48-43dc-be20-5fbf4bb62088",
+          "price": "32.00",
+          "pharmacology": "each 5 ml contains: paracetamol .. 160 mg chlorphineramine .. 1 mg pseudoephedrine .. 15 mg indication: runny noses blocked noses and sinus sneezing watery itchy eyes sinus pain fever headache body aches & pain information: pseudoephedrine hydrochloride b",
+          "strength": null,
+          "package_size": null,
+          "created_at": "2025-02-18 06:53:29.206417+02:00",
+          "updated_at": "2025-02-18 06:53:29.206417+02:00"
+        },
+        {
+          "product_id": "6369d998-3998-4571-a71a-9824e8f4293b",
+          "trade_name": "1 2 3 extra 20 f.c. tab.",
+          "company_id": "021f5946-0f24-46ba-8224-8c4f45f95a78",
+          "form_id": "549b0380-f8d0-4459-ae9d-1748936eb799",
+          "route_id": "9129f88e-832c-412e-8bdc-ae733c11854d",
+          "group_id": "485545d7-bc48-43dc-be20-5fbf4bb62088",
+          "price": "33.00",
+          "pharmacology": "",
+          "strength": null,
+          "package_size": null,
+          "created_at": "2025-02-18 06:53:29.206417+02:00",
+          "updated_at": "2025-02-18 06:53:29.206417+02:00"
+        },
+        {
+          "product_id": "a91bb4c0-293e-4d43-ba21-ac81ba5f718e",
+          "trade_name": "4 wet intimate gel 100 ml",
+          "company_id": "7079cf3a-4d5b-4bec-8fd5-e825dc2dd94b",
+          "form_id": "6777ac21-e286-420d-905f-ca916e5b1877",
+          "route_id": "2b09a03f-d8da-421b-82b0-2a67fb21ba44",
+          "group_id": "bff4356e-89b1-4d20-baed-4f94e1c91ed1",
+          "price": "40.00",
+          "pharmacology": "non-sterile transparent greaseless and light amber in colour water soluble jelly. condom safe",
+          "strength": null,
+          "package_size": null,
+          "created_at": "2025-02-18 06:53:29.206417+02:00",
+          "updated_at": "2025-02-18 06:53:29.206417+02:00"
+        },
+        {
+          "product_id": "9b203b89-1f15-4ea6-954c-414783d98a6e",
+          "trade_name": "5-fluorouracil-ebewe 250mg/5ml i.v. vial",
+          "company_id": "22bebf3a-8341-4b5e-92e7-de6fd1b43e4f",
+          "form_id": "14c6a6f1-e28d-4df2-a7f5-860eb269585f",
+          "route_id": "8ef33b41-2669-4d98-8fca-10d3f467a660",
+          "group_id": "5f005099-4a6e-4883-b261-4f0e8e4bfe54",
+          "price": "50.00",
+          "pharmacology": "description a pyrimidine analog that is an antineoplastic antimetabolite. it interferes with dna synthesis by blocking the thymidylate synthetase conversion of deoxyuridylic acid to thymidylic acid mechanism of action the precise mechanism of action has n",
+          "strength": null,
+          "package_size": null,
+          "created_at": "2025-02-18 06:53:29.206417+02:00",
+          "updated_at": "2025-02-18 06:53:29.206417+02:00"
+        }
+      ]
+    },
+    "routes": {
+      "schema": [
+        {
+          "name": "route_id",
+          "type": "uuid",
+          "max_length": null,
+          "default": "uuid_generate_v4()",
+          "nullable": "NO"
+        },
+        {
+          "name": "name",
+          "type": "character varying",
+          "max_length": 255,
+          "default": null,
+          "nullable": "NO"
+        }
+      ],
+      "constraints": [
+        {
+          "name": "routes_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (route_id)"
+        },
+        {
+          "name": "routes_name_key",
+          "type": "u",
+          "definition": "UNIQUE (name)"
+        }
+      ],
+      "indexes": [
+        {
+          "name": "routes_name_key",
+          "column": "name",
+          "unique": true,
+          "primary": false
+        },
+        {
+          "name": "routes_pkey",
+          "column": "route_id",
+          "unique": true,
+          "primary": true
+        }
+      ],
+      "statistics": {
+        "row_count": 19,
+        "total_size": "56 kB",
+        "table_size": "24 kB",
+        "index_size": "32 kB"
+      },
+      "sample_data": [
+        {
+          "route_id": "809b369a-0ffc-42dd-9a7d-8a3db7182e55",
+          "name": "mouth"
+        },
+        {
+          "route_id": "f7f9e5e3-2589-44da-ab53-4ded60dd04c8",
+          "name": "Eye"
+        },
+        {
+          "route_id": "9129f88e-832c-412e-8bdc-ae733c11854d",
+          "name": "oral.solid"
+        },
+        {
+          "route_id": "11396b01-a83f-4f1c-b508-3a03a0d84ff4",
+          "name": "soap"
+        },
+        {
+          "route_id": "545ad5d0-703c-4a7a-a024-bbeb6d7a9dec",
+          "name": "ear"
+        }
+      ]
+    },
+    "source_table": {
+      "schema": [
+        {
+          "name": "activeingredient",
+          "type": "text",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "company",
+          "type": "text",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "created",
+          "type": "text",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "form",
+          "type": "text",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "group",
+          "type": "text",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "id",
+          "type": "text",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "new_price",
+          "type": "text",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "pharmacology",
+          "type": "text",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "route",
+          "type": "text",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "tradename",
+          "type": "text",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        },
+        {
+          "name": "updated",
+          "type": "text",
+          "max_length": null,
+          "default": null,
+          "nullable": "YES"
+        }
+      ],
+      "constraints": [],
+      "indexes": [],
+      "statistics": {
+        "row_count": 26201,
+        "total_size": "8840 kB",
+        "table_size": "8840 kB",
+        "index_size": "0 bytes"
+      },
+      "sample_data": [
+        {
+          "activeingredient": "pseudoephedrine+paracetamol+chlorpheniramine",
+          "company": "hikma",
+          "created": "2024-08-03 01:41:02.489Z",
+          "form": "syrup",
+          "group": "cold drugs",
+          "id": "r4398b30b7ec826",
+          "new_price": "32",
+          "pharmacology": "each 5 ml contains: paracetamol .. 160 mg chlorphineramine .. 1 mg pseudoephedrine .. 15 mg indication: runny noses blocked noses and sinus sneezing watery itchy eyes sinus pain fever headache body aches & pain information: pseudoephedrine hydrochloride b",
+          "route": "oral.liquid",
+          "tradename": "1 2 3 (one two three) syrup 120 ml",
+          "updated": "2024-08-03 01:41:02.489Z"
+        },
+        {
+          "activeingredient": "pseudoephedrine+paracetamol+chlorpheniramine",
+          "company": "hikma",
+          "created": "2024-08-03 01:41:02.489Z",
+          "form": "tablet",
+          "group": "cold drugs",
+          "id": "r2c089cc79207d2",
+          "new_price": "24",
+          "pharmacology": "indication: runny noses blocked noses and sinus sneezing watery itchy eyes sinus pain fever headache body aches & pain information: pseudoephedrine hydrochloride belongs to a group of medicines called sympathomimetic decongestants. it works by reducing co",
+          "route": "oral.solid",
+          "tradename": "1 2 3 (one two three) 20 f.c.tabs.",
+          "updated": "2024-08-03 01:41:02.489Z"
+        },
+        {
+          "activeingredient": "fluorouracil",
+          "company": "shanghai xudong haipu pharmaceutical > acdima international trading",
+          "created": "2024-08-03 01:41:02.489Z",
+          "form": "vial",
+          "group": "antineoplastic",
+          "id": "rf97db2c018adfb",
+          "new_price": "50",
+          "pharmacology": "description a pyrimidine analog that is an antineoplastic antimetabolite. it interferes with dna synthesis by blocking the thymidylate synthetase conversion of deoxyuridylic acid to thymidylic acid mechanism of action the precise mechanism of action has n",
+          "route": "injection",
+          "tradename": "5-fluorouracil-ebewe 250mg/5ml i.v. vial",
+          "updated": "2024-08-03 01:41:02.489Z"
+        },
+        {
+          "activeingredient": "agar",
+          "company": "hexa pharma company",
+          "created": "2024-08-03 01:41:02.489Z",
+          "form": "sachet",
+          "group": "jaundice",
+          "id": "r7117678f0c1580",
+          "new_price": "75",
+          "pharmacology": "agar",
+          "route": "eff",
+          "tradename": "mooagar sachets",
+          "updated": "2024-08-03 01:41:02.489Z"
+        },
+        {
+          "activeingredient": "lactoferrin",
+          "company": "eva pharma",
+          "created": "2024-08-03 01:41:02.489Z",
+          "form": "sachet",
+          "group": "iron supplement",
+          "id": "r34886d1d09f551",
+          "new_price": "324",
+          "pharmacology": "\u00ef- supports a healthy immune system for all family.",
+          "route": "eff",
+          "tradename": "limitless lactoferrin 100 mg 30 sachets",
+          "updated": "2024-08-03 01:41:02.489Z"
+        }
+      ]
+    }
+  }
+}

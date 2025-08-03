@@ -1,0 +1,14 @@
+2025-02-23 15:20:53,798 - INFO - Main log file: logs\category_linker_20250223_152053.log
+2025-02-23 15:20:53,798 - INFO - Changes log file: logs\category_changes_20250223_152053.log
+2025-02-23 15:20:53,799 - INFO - PharmaceuticalCategoryLinker initialized successfully
+2025-02-23 15:20:57,920 - INFO - Processing batch of 10 ingredients
+2025-02-23 15:21:08,242 - INFO - Found 2 valid categories for bioperene
+2025-02-23 15:21:08,243 - INFO - Found 2 valid categories for stearic acid
+2025-02-23 15:21:08,245 - INFO - Found 2 valid categories for aluminium oxide
+2025-02-23 15:21:08,247 - INFO - Found 2 valid categories for recombinate dna vaccine
+2025-02-23 15:21:08,248 - INFO - Found 2 valid categories for salicylamide-paracetamol
+2025-02-23 15:21:08,249 - INFO - Found 2 valid categories for vit b6 pyridoxin 100mg
+2025-02-23 15:21:08,250 - INFO - Found 3 valid categories for olea europaea fruit oil
+2025-02-23 15:21:08,251 - INFO - Found 3 valid categories for rutin-heparinoid
+2025-02-23 15:21:08,252 - INFO - Found 4 valid categories for thyme oil
+2025-02-23 15:21:08,253 - INFO - Found 4 valid categories for ubiquinone

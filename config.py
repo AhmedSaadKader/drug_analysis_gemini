@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Database Configuration
-DB_NAME = "drug_database"
+DB_NAME = "pharmacy_db"
 DB_USER = "postgres"
 DB_HOST = "localhost"
 
