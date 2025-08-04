@@ -1,0 +1,211 @@
+{% extends 'admin/master.html' %}
+
+{% block head_css %}
+{{ super() }}
+<style>
+    .stat-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .stat-number {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .stat-label {
+        font-size: 0.9em;
+        opacity: 0.9;
+    }
+    
+    .recent-mappings {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .mapping-item {
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+    }
+    
+    .mapping-item:last-child {
+        border-bottom: none;
+    }
+    
+    .confidence-badge {
+        background: #28a745;
+        color: white;
+        padding: 2px 8px;
+        border-radius: 12px;
+        font-size: 0.8em;
+    }
+    
+    .confidence-badge.medium {
+        background: #ffc107;
+        color: #212529;
+    }
+    
+    .confidence-badge.low {
+        background: #dc3545;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="mb-4">
+                🧬 Drug Analysis Dashboard
+                <small class="text-muted">Pharmaceutical Ingredient Mapping System</small>
+            </h1>
+        </div>
+    </div>
+    
+    <!-- Statistics Cards -->
+    <div class="row">
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-number">{{ "{:,}".format(stats.total_raw_ingredients) }}</div>
+                <div class="stat-label">Raw Ingredients</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                <div class="stat-number">{{ "{:,}".format(stats.total_extended_ingredients) }}</div>
+                <div class="stat-label">Clean Ingredients</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <div class="stat-number">{{ "{:,}".format(stats.total_mappings) }}</div>
+                <div class="stat-label">Total Mappings</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                <div class="stat-number">{{ "{:.1f}%".format(stats.avg_confidence * 100) }}</div>
+                <div class="stat-label">Avg Confidence</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Quality Metrics -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="recent-mappings">
+                <h4>Mapping Quality</h4>
+                <div class="row">
+                    <div class="col-6">
+                        <strong>Verified:</strong> {{ "{:,}".format(stats.verified_mappings) }}
+                        <br><small class="text-success">Approved mappings</small>
+                    </div>
+                    <div class="col-6">
+                        <strong>Pending:</strong> {{ "{:,}".format(stats.pending_mappings) }}
+                        <br><small class="text-warning">Awaiting review</small>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="progress">
+                        {% set verification_rate = (stats.verified_mappings / stats.total_mappings * 100) if stats.total_mappings > 0 else 0 %}
+                        <div class="progress-bar bg-success" style="width: {{ verification_rate }}%">
+                            {{ "{:.1f}%".format(verification_rate) }} Verified
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <small class="text-muted">
+                        <strong>High Confidence (>90%):</strong> 
+                        {% set high_conf_count = stats.get('high_confidence_mappings', 0) %}
+                        {{ "{:,}".format(high_conf_count) }} mappings
+                    </small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="recent-mappings">
+                <h4>🔗 Recent Mappings</h4>
+                {% for mapping in stats.recent_mappings %}
+                <div class="mapping-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>{{ mapping.raw_ingredient.name }}</strong>
+                            <br>
+                            <small class="text-muted">→ {{ mapping.extended_ingredient.ingredient_name }}</small>
+                        </div>
+                        <div>
+                            {% set confidence = mapping.confidence|float %}
+                            {% if confidence >= 0.9 %}
+                                <span class="confidence-badge">{{ "{:.0f}%".format(confidence * 100) }}</span>
+                            {% elif confidence >= 0.7 %}
+                                <span class="confidence-badge medium">{{ "{:.0f}%".format(confidence * 100) }}</span>
+                            {% else %}
+                                <span class="confidence-badge low">{{ "{:.0f}%".format(confidence * 100) }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <!-- Quick Actions -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="recent-mappings">
+                <h4>⚡ Quick Actions</h4>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="{{ url_for('activeingredient.index_view') }}" class="btn btn-primary btn-block">
+                            📋 Browse Raw Ingredients
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="{{ url_for('activeingredientextended.index_view') }}" class="btn btn-success btn-block">
+                            ✨ Manage Clean Ingredients
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="{{ url_for('ingredientmapping.index_view') }}" class="btn btn-info btn-block">
+                            🔗 Review Mappings
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="{{ url_for('ingredientmapping.index_view') }}?flt1_5=0" class="btn btn-warning btn-block">
+                            ⏳ Pending Approvals
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Claude Mapping Actions -->
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <a href="{{ url_for('claudemappingview.index') }}" class="btn btn-primary btn-block" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none;">
+                            🧠 Claude Mapper
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="{{ url_for('claudemappingview.start_session') }}" class="btn btn-success btn-block">
+                            🚀 New Mapping Session
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="{{ url_for('ingredientmapping.index_view') }}?flt1_2=claude_interactive" class="btn btn-info btn-block">
+                            🔍 Claude Mappings
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

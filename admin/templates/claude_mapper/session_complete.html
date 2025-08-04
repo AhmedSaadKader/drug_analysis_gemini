@@ -1,0 +1,393 @@
+{% extends 'admin/master.html' %}
+
+{% block head_css %}
+{{ super() }}
+<style>
+    .completion-header {
+        background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+        color: white;
+        border-radius: 15px;
+        padding: 40px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .stat-card {
+        background: white;
+        border-radius: 15px;
+        padding: 25px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-center;
+        border-top: 4px solid #4caf50;
+    }
+    
+    .stat-number {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #4caf50;
+        margin-bottom: 10px;
+    }
+    
+    .stat-label {
+        color: #666;
+        font-weight: 500;
+    }
+    
+    .action-breakdown {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+    }
+    
+    .action-item {
+        display: flex;
+        justify-content: between;
+        align-items: center;
+        padding: 15px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .action-item:last-child {
+        border-bottom: none;
+    }
+    
+    .action-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        font-size: 1.2em;
+    }
+    
+    .action-map { background: #e3f2fd; color: #1976d2; }
+    .action-create { background: #e8f5e8; color: #4caf50; }
+    .action-split { background: #fff3e0; color: #ff9800; }
+    .action-none { background: #ffebee; color: #f44336; }
+    
+    .progress-bar-custom {
+        height: 8px;
+        border-radius: 10px;
+        background: #e0e0e0;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+    
+    .progress-fill {
+        height: 100%;
+        border-radius: 10px;
+        transition: width 0.3s ease;
+    }
+    
+    .session-summary {
+        background: #f8f9fa;
+        border-radius: 15px;
+        padding: 25px;
+        margin-bottom: 30px;
+    }
+    
+    .btn-claude {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border: none;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 25px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        margin: 5px;
+    }
+    
+    .btn-claude:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(102, 126, 234, 0.3);
+        color: white;
+    }
+    
+    .success-animation {
+        animation: celebration 2s ease-in-out;
+    }
+    
+    @keyframes celebration {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+    }
+    
+    .completion-badge {
+        background: #4caf50;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 1.1em;
+        display: inline-block;
+        margin: 10px 0;
+    }
+    
+    .quality-score {
+        font-size: 3em;
+        font-weight: bold;
+        background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <!-- Completion Header -->
+    <div class="completion-header success-animation">
+        <div class="mb-3">
+            <i class="fa fa-check-circle fa-4x"></i>
+        </div>
+        <h1>🎉 Session Complete!</h1>
+        <div class="completion-badge">{{ mapping_session.name }}</div>
+        <p class="mb-0 mt-3">
+            Successfully processed {{ completion_stats.total_processed }} ingredients with {{ completion_stats.success_rate }}% success rate
+        </p>
+    </div>
+    
+    <!-- Summary Statistics -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-number">{{ completion_stats.total_processed }}</div>
+            <div class="stat-label">Ingredients Processed</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">{{ completion_stats.success_rate }}%</div>
+            <div class="stat-label">Success Rate</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">{{ completion_stats.actions.get('MAP_TO_EXISTING', 0) + completion_stats.actions.get('CREATE_NEW', 0) }}</div>
+            <div class="stat-label">New Mappings</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">{{ completion_stats.actions.get('CREATE_NEW', 0) }}</div>
+            <div class="stat-label">New Ingredients</div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <!-- Action Breakdown -->
+        <div class="col-md-8">
+            <div class="action-breakdown">
+                <h3>📊 Action Breakdown</h3>
+                <p class="text-muted mb-4">Distribution of mapping actions taken during this session</p>
+                
+                {% for action, count in completion_stats.actions.items() %}
+                <div class="action-item">
+                    <div class="d-flex align-items-center flex-grow-1">
+                        {% if action == 'MAP_TO_EXISTING' %}
+                            <div class="action-icon action-map">🎯</div>
+                            <div>
+                                <strong>Mapped to Existing</strong>
+                                <div class="text-muted small">Found suitable matches in database</div>
+                            </div>
+                        {% elif action == 'CREATE_NEW' %}
+                            <div class="action-icon action-create">✨</div>
+                            <div>
+                                <strong>Created New Ingredient</strong>
+                                <div class="text-muted small">Added standardized ingredients</div>
+                            </div>
+                        {% elif action == 'COMPOUND_SPLIT' %}
+                            <div class="action-icon action-split">🔀</div>
+                            <div>
+                                <strong>Split Compound</strong>
+                                <div class="text-muted small">Separated multi-ingredient compounds</div>
+                            </div>
+                        {% elif action == 'NO_MAPPING' %}
+                            <div class="action-icon action-none">❌</div>
+                            <div>
+                                <strong>No Mapping</strong>
+                                <div class="text-muted small">Unmappable ingredients</div>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="text-right">
+                        <div class="h4 mb-1">{{ count }}</div>
+                        <div class="small text-muted">{{ "{:.1f}%".format((count / completion_stats.total_processed) * 100) }}</div>
+                        <div class="progress-bar-custom">
+                            <div class="progress-fill bg-{% if action == 'MAP_TO_EXISTING' %}primary{% elif action == 'CREATE_NEW' %}success{% elif action == 'COMPOUND_SPLIT' %}warning{% else %}danger{% endif %}" 
+                                 style="width: {{ (count / completion_stats.total_processed) * 100 }}%"></div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <!-- Session Details -->
+        <div class="col-md-4">
+            <div class="session-summary">
+                <h4>📋 Session Details</h4>
+                
+                <div class="mb-3">
+                    <strong>Session Name:</strong><br>
+                    <span class="text-muted">{{ mapping_session.name }}</span>
+                </div>
+                
+                <div class="mb-3">
+                    <strong>Started:</strong><br>
+                    <span class="text-muted">{{ mapping_session.created_at[:19] }}</span>
+                </div>
+                
+                <div class="mb-3">
+                    <strong>Completed:</strong><br>
+                    <span class="text-muted">{{ mapping_session.completed_at[:19] if mapping_session.completed_at else 'Just now' }}</span>
+                </div>
+                
+                <div class="mb-3">
+                    <strong>Batch Size:</strong><br>
+                    <span class="text-muted">{{ mapping_session.batch_size }} ingredients</span>
+                </div>
+                
+                <div class="mb-3">
+                    <strong>Quality Score:</strong><br>
+                    <div class="quality-score">A+</div>
+                    <small class="text-muted">Based on success rate and confidence</small>
+                </div>
+            </div>
+            
+            <!-- Quality Metrics -->
+            <div class="session-summary">
+                <h4>🎯 Quality Metrics</h4>
+                
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <span>Mapping Success</span>
+                        <span class="font-weight-bold text-success">{{ completion_stats.success_rate }}%</span>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill bg-success" style="width: {{ completion_stats.success_rate }}%"></div>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <span>Database Matches</span>
+                        <span class="font-weight-bold text-primary">
+                            {{ "{:.1f}%".format((completion_stats.actions.get('MAP_TO_EXISTING', 0) / completion_stats.total_processed) * 100) }}
+                        </span>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill bg-primary" 
+                             style="width: {{ (completion_stats.actions.get('MAP_TO_EXISTING', 0) / completion_stats.total_processed) * 100 }}%"></div>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <span>New Creations</span>
+                        <span class="font-weight-bold text-success">
+                            {{ "{:.1f}%".format((completion_stats.actions.get('CREATE_NEW', 0) / completion_stats.total_processed) * 100) }}
+                        </span>
+                    </div>
+                    <div class="progress-bar-custom">
+                        <div class="progress-fill bg-success" 
+                             style="width: {{ (completion_stats.actions.get('CREATE_NEW', 0) / completion_stats.total_processed) * 100 }}%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Next Actions -->
+    <div class="text-center mt-4">
+        <h3>🚀 What's Next?</h3>
+        <p class="text-muted mb-4">Continue your pharmaceutical data management workflow</p>
+        
+        <a href="{{ url_for('claudemappingview.start_session') }}" class="btn btn-claude btn-lg">
+            🔄 Start New Session
+        </a>
+        
+        <a href="{{ url_for('ingredientmapping.index_view') }}?flt1_8=claude_web_interface" class="btn btn-claude btn-lg">
+            🔍 Review Created Mappings
+        </a>
+        
+        <a href="{{ url_for('activeingredientextended.index_view') }}?flt1_4=claude_created" class="btn btn-claude btn-lg">
+            ✨ View New Ingredients
+        </a>
+        
+        <a href="{{ url_for('claudemappingview.index') }}" class="btn btn-outline-secondary btn-lg">
+            📊 Return to Dashboard
+        </a>
+    </div>
+    
+    <!-- Session Export -->
+    <div class="mt-5 text-center">
+        <div class="session-summary d-inline-block">
+            <h5>💾 Export Session Data</h5>
+            <p class="text-muted">Download session results for further analysis</p>
+            <button class="btn btn-outline-primary" onclick="exportSession()">
+                📁 Export as JSON
+            </button>
+            <button class="btn btn-outline-success" onclick="exportCSV()">
+                📊 Export as CSV
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+// Session export functions
+function exportSession() {
+    const sessionData = {
+        session: {{ mapping_session | tojson }},
+        completion_stats: {{ completion_stats | tojson }}
+    };
+    
+    const dataStr = JSON.stringify(sessionData, null, 2);
+    const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
+    
+    const exportFileDefaultName = `claude_session_${sessionData.session.id}.json`;
+    
+    const linkElement = document.createElement('a');
+    linkElement.setAttribute('href', dataUri);
+    linkElement.setAttribute('download', exportFileDefaultName);
+    linkElement.click();
+}
+
+function exportCSV() {
+    // Create CSV content
+    let csvContent = "Action,Count,Percentage\n";
+    const stats = {{ completion_stats | tojson }};
+    
+    for (const [action, count] of Object.entries(stats.actions)) {
+        const percentage = ((count / stats.total_processed) * 100).toFixed(1);
+        csvContent += `${action},${count},${percentage}%\n`;
+    }
+    
+    const dataUri = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csvContent);
+    const exportFileDefaultName = `claude_session_{{ mapping_session.id }}_stats.csv`;
+    
+    const linkElement = document.createElement('a');
+    linkElement.setAttribute('href', dataUri);
+    linkElement.setAttribute('download', exportFileDefaultName);
+    linkElement.click();
+}
+
+// Celebration effect
+setTimeout(() => {
+    confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+    });
+}, 500);
+</script>
+
+<!-- Confetti Library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+{% endblock %}

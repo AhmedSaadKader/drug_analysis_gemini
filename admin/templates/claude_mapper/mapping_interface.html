@@ -1,0 +1,529 @@
+{% extends 'admin/master.html' %}
+
+{% block head_css %}
+{{ super() }}
+<style>
+    .mapping-interface {
+        background: #f8f9fa;
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+    
+    .progress-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 15px;
+        padding: 20px 30px;
+        margin-bottom: 30px;
+    }
+    
+    .ingredient-card {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+    
+    .ingredient-header {
+        background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+        padding: 25px 30px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .ingredient-name {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #1565c0;
+        margin-bottom: 5px;
+    }
+    
+    .frequency-badge {
+        background: #4caf50;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+    
+    .similar-ingredients {
+        padding: 25px 30px;
+    }
+    
+    .similar-item {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-left: 4px solid #667eea;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .similar-item:hover {
+        background: #e3f2fd;
+        transform: translateX(5px);
+    }
+    
+    .similar-item.selected {
+        background: #e8f5e8;
+        border-left-color: #4caf50;
+    }
+    
+    .similar-name {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 3px;
+    }
+    
+    .similar-description {
+        color: #666;
+        font-size: 0.9em;
+        line-height: 1.3;
+    }
+    
+    .claude-analysis {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+    }
+    
+    .claude-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    
+    .action-section {
+        border: 2px solid #e0e0e0;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .action-section.selected {
+        border-color: #667eea;
+        background: #f8f9ff;
+    }
+    
+    .action-radio {
+        margin-right: 10px;
+        transform: scale(1.2);
+    }
+    
+    .action-title {
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .action-description {
+        color: #666;
+        margin-bottom: 15px;
+    }
+    
+    .form-group label {
+        font-weight: 600;
+        color: #333;
+    }
+    
+    .btn-claude {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border: none;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-weight: 600;
+        font-size: 1.1em;
+        transition: all 0.3s ease;
+    }
+    
+    .btn-claude:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(102, 126, 234, 0.3);
+        color: white;
+    }
+    
+    .confidence-slider {
+        margin: 15px 0;
+    }
+    
+    .confidence-value {
+        background: #667eea;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-weight: 600;
+        font-size: 0.9em;
+    }
+    
+    .compound-components {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 15px;
+        margin-top: 15px;
+    }
+    
+    .component-item {
+        background: white;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-left: 3px solid #ff9800;
+    }
+    
+    .progress-circle {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: conic-gradient(#667eea 0deg, #667eea {{ ingredient_data.session_progress.percentage * 3.6 }}deg, #e9ecef {{ ingredient_data.session_progress.percentage * 3.6 }}deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .progress-inner {
+        width: 60px;
+        height: 60px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: bold;
+        color: #667eea;
+    }
+    
+    .no-similar {
+        text-align: center;
+        padding: 40px;
+        color: #666;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="mapping-interface">
+    <div class="container-fluid">
+        <!-- Progress Header -->
+        <div class="progress-header">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2>🧠 Claude Interactive Mapping</h2>
+                    <p class="mb-0">
+                        <strong>Session:</strong> {{ mapping_session.name }} | 
+                        <strong>Progress:</strong> {{ ingredient_data.session_progress.current }}/{{ ingredient_data.session_progress.total }} 
+                        ({{ ingredient_data.session_progress.percentage }}% complete)
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="progress-circle">
+                        <div class="progress-inner">
+                            <div style="font-size: 0.9em;">{{ ingredient_data.session_progress.current }}</div>
+                            <div style="font-size: 0.7em;">/{{ ingredient_data.session_progress.total }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <!-- Current Ingredient -->
+            <div class="col-md-6">
+                <div class="ingredient-card">
+                    <div class="ingredient-header">
+                        <div class="ingredient-name">{{ ingredient_data.current.name }}</div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="frequency-badge">
+                                Frequency: {{ "{:,}".format(ingredient_data.current.frequency) }} uses
+                            </span>
+                            <small class="text-muted">ID: {{ ingredient_data.current.id }}</small>
+                        </div>
+                    </div>
+                    
+                    <div class="similar-ingredients">
+                        <h4>🔍 Database Search Results</h4>
+                        {% if ingredient_data.similar %}
+                            <p class="text-muted mb-3">
+                                Found {{ ingredient_data.similar|length }} similar ingredients in database:
+                            </p>
+                            
+                            <div id="similar-list">
+                                {% for similar in ingredient_data.similar %}
+                                <div class="similar-item" onclick="selectSimilar({{ similar.id }}, '{{ similar.name }}')">
+                                    <div class="similar-name">{{ similar.name }}</div>
+                                    {% if similar.description %}
+                                    <div class="similar-description">{{ similar.description }}</div>
+                                    {% endif %}
+                                    <small class="text-muted">ID: {{ similar.id }}</small>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            <div class="no-similar">
+                                <div class="mb-3">
+                                    <i class="fa fa-search fa-3x text-muted"></i>
+                                </div>
+                                <h5>No Similar Ingredients Found</h5>
+                                <p class="text-muted">
+                                    No matching ingredients found in the database.<br>
+                                    Consider creating a new standardized ingredient.
+                                </p>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Claude Analysis & Actions -->
+            <div class="col-md-6">
+                <div class="claude-analysis">
+                    <div class="claude-header">
+                        <h3>🧠 Claude Analysis Required</h3>
+                        <p class="mb-0">Select the appropriate mapping action for this ingredient</p>
+                    </div>
+                    
+                    <form id="mapping-form" method="POST" action="{{ url_for('claudemappingview.process_mapping') }}">
+                        <input type="hidden" name="ingredient_id" value="{{ ingredient_data.current.id }}">
+                        
+                        <!-- Map to Existing -->
+                        <div class="action-section" id="map-existing-section">
+                            <div class="action-title">
+                                <input type="radio" name="action" value="MAP_TO_EXISTING" class="action-radio" id="map-existing">
+                                <label for="map-existing">🎯 Map to Existing Ingredient</label>
+                            </div>
+                            <div class="action-description">
+                                Map this ingredient to an existing standardized ingredient in the database
+                            </div>
+                            <div id="map-existing-fields" style="display: none;">
+                                <div class="form-group">
+                                    <label>Selected Target Ingredient:</label>
+                                    <input type="hidden" name="target_id" id="target-id">
+                                    <div id="selected-target" class="alert alert-info">
+                                        Click on a similar ingredient above to select it
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Create New -->
+                        <div class="action-section" id="create-new-section">
+                            <div class="action-title">
+                                <input type="radio" name="action" value="CREATE_NEW" class="action-radio" id="create-new">
+                                <label for="create-new">✨ Create New Ingredient</label>
+                            </div>
+                            <div class="action-description">
+                                Create a new standardized ingredient with proper pharmaceutical information
+                            </div>
+                            <div id="create-new-fields" style="display: none;">
+                                <div class="form-group">
+                                    <label>Standardized Name:</label>
+                                    <input type="text" name="new_name" class="form-control" placeholder="e.g., Acetaminophen">
+                                </div>
+                                <div class="form-group">
+                                    <label>Description:</label>
+                                    <textarea name="new_description" class="form-control" rows="3" placeholder="Brief pharmaceutical description..."></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Common Uses:</label>
+                                    <textarea name="new_uses" class="form-control" rows="2" placeholder="Pain relief, fever reduction..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Compound Split -->
+                        <div class="action-section" id="compound-split-section">
+                            <div class="action-title">
+                                <input type="radio" name="action" value="COMPOUND_SPLIT" class="action-radio" id="compound-split">
+                                <label for="compound-split">🔀 Split Compound Ingredient</label>
+                            </div>
+                            <div class="action-description">
+                                Split this ingredient into multiple individual components
+                            </div>
+                            <div id="compound-split-fields" style="display: none;">
+                                <div class="compound-components">
+                                    <h5>Components:</h5>
+                                    <div id="components-list">
+                                        <div class="component-item">
+                                            <input type="text" class="form-control mb-2" placeholder="Component name" name="component_name[]">
+                                            <textarea class="form-control" placeholder="Component description" name="component_desc[]" rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm" onclick="addComponent()">
+                                        + Add Component
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- No Mapping -->
+                        <div class="action-section" id="no-mapping-section">
+                            <div class="action-title">
+                                <input type="radio" name="action" value="NO_MAPPING" class="action-radio" id="no-mapping">
+                                <label for="no-mapping">❌ No Mapping Possible</label>
+                            </div>
+                            <div class="action-description">
+                                This ingredient cannot be mapped (e.g., invalid, non-pharmaceutical)
+                            </div>
+                        </div>
+                        
+                        <!-- Confidence & Notes -->
+                        <div class="mt-4">
+                            <div class="form-group">
+                                <label>Confidence Level:</label>
+                                <div class="confidence-slider">
+                                    <input type="range" name="confidence" min="0.5" max="1.0" step="0.1" value="1.0" 
+                                           class="form-control-range" id="confidence-slider" onchange="updateConfidence()">
+                                    <div class="text-center mt-2">
+                                        <span class="confidence-value" id="confidence-display">100%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Notes (Optional):</label>
+                                <textarea name="notes" class="form-control" rows="2" placeholder="Additional notes about this mapping decision..."></textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- Submit Buttons -->
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-claude btn-lg">
+                                ✅ Process Mapping
+                            </button>
+                            <a href="{{ url_for('claudemappingview.index') }}" class="btn btn-outline-secondary btn-lg ml-3">
+                                ⏸️ Pause Session
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Handle action selection
+document.querySelectorAll('input[name="action"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+        // Hide all field sections
+        document.querySelectorAll('[id$="-fields"]').forEach(section => {
+            section.style.display = 'none';
+        });
+        
+        // Remove selected class from all sections
+        document.querySelectorAll('.action-section').forEach(section => {
+            section.classList.remove('selected');
+        });
+        
+        // Show relevant fields and highlight section
+        const actionValue = this.value.toLowerCase().replace('_', '-');
+        const fieldsSection = document.getElementById(actionValue + '-fields');
+        const parentSection = this.closest('.action-section');
+        
+        if (fieldsSection) {
+            fieldsSection.style.display = 'block';
+        }
+        parentSection.classList.add('selected');
+    });
+});
+
+// Handle similar ingredient selection
+function selectSimilar(id, name) {
+    // Remove previous selections
+    document.querySelectorAll('.similar-item').forEach(item => {
+        item.classList.remove('selected');
+    });
+    
+    // Select current item
+    event.target.closest('.similar-item').classList.add('selected');
+    
+    // Update form
+    document.getElementById('target-id').value = id;
+    document.getElementById('selected-target').innerHTML = `
+        <strong>Selected:</strong> ${name} <small>(ID: ${id})</small>
+    `;
+    document.getElementById('selected-target').className = 'alert alert-success';
+    
+    // Auto-select map to existing
+    document.getElementById('map-existing').checked = true;
+    document.getElementById('map-existing').dispatchEvent(new Event('change'));
+}
+
+// Update confidence display
+function updateConfidence() {
+    const slider = document.getElementById('confidence-slider');
+    const display = document.getElementById('confidence-display');
+    const percentage = Math.round(slider.value * 100);
+    display.textContent = percentage + '%';
+    
+    // Update color based on confidence
+    if (percentage >= 90) {
+        display.className = 'confidence-value bg-success';
+    } else if (percentage >= 70) {
+        display.className = 'confidence-value bg-warning text-dark';
+    } else {
+        display.className = 'confidence-value bg-danger';
+    }
+}
+
+// Add compound component
+function addComponent() {
+    const componentsList = document.getElementById('components-list');
+    const newComponent = document.createElement('div');
+    newComponent.className = 'component-item';
+    newComponent.innerHTML = `
+        <input type="text" class="form-control mb-2" placeholder="Component name" name="component_name[]">
+        <textarea class="form-control" placeholder="Component description" name="component_desc[]" rows="2"></textarea>
+        <button type="button" class="btn btn-outline-danger btn-sm mt-2" onclick="removeComponent(this)">
+            Remove
+        </button>
+    `;
+    componentsList.appendChild(newComponent);
+}
+
+// Remove compound component
+function removeComponent(button) {
+    button.closest('.component-item').remove();
+}
+
+// Form submission handling
+document.getElementById('mapping-form').addEventListener('submit', function(e) {
+    const selectedAction = document.querySelector('input[name="action"]:checked');
+    
+    if (!selectedAction) {
+        alert('Please select a mapping action.');
+        e.preventDefault();
+        return;
+    }
+    
+    if (selectedAction.value === 'MAP_TO_EXISTING') {
+        const targetId = document.getElementById('target-id').value;
+        if (!targetId) {
+            alert('Please select a target ingredient to map to.');
+            e.preventDefault();
+            return;
+        }
+    }
+    
+    if (selectedAction.value === 'CREATE_NEW') {
+        const newName = document.querySelector('input[name="new_name"]').value;
+        const newDesc = document.querySelector('textarea[name="new_description"]').value;
+        
+        if (!newName || !newDesc) {
+            alert('Please provide both name and description for the new ingredient.');
+            e.preventDefault();
+            return;
+        }
+    }
+});
+</script>
+{% endblock %}

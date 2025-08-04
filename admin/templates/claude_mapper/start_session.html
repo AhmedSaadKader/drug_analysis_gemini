@@ -1,0 +1,316 @@
+{% extends 'admin/master.html' %}
+
+{% block head_css %}
+{{ super() }}
+<style>
+    .session-config {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+    }
+    
+    .config-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .form-group label {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 8px;
+    }
+    
+    .form-control {
+        border-radius: 8px;
+        border: 2px solid #e9ecef;
+        padding: 12px 15px;
+        transition: all 0.3s ease;
+    }
+    
+    .form-control:focus {
+        border-color: #667eea;
+        box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+    }
+    
+    .btn-claude {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border: none;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-weight: 600;
+        font-size: 1.1em;
+        transition: all 0.3s ease;
+    }
+    
+    .btn-claude:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(102, 126, 234, 0.3);
+        color: white;
+    }
+    
+    .stats-preview {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .batch-size-info {
+        background: #e3f2fd;
+        border-left: 4px solid #2196f3;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    .recommended-badge {
+        background: #4caf50;
+        color: white;
+        padding: 2px 8px;
+        border-radius: 10px;
+        font-size: 0.8em;
+        font-weight: 500;
+    }
+    
+    .performance-indicator {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+    
+    .perf-optimal { background: #4caf50; }
+    .perf-good { background: #ff9800; }
+    .perf-slow { background: #f44336; }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="config-header">
+        <h1>🚀 Configure Claude Mapping Session</h1>
+        <p class="mb-0">Set up a new interactive ingredient mapping session with Claude</p>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-8">
+            <div class="session-config">
+                <h3>⚙️ Session Configuration</h3>
+                
+                <form method="POST" action="{{ url_for('claudemappingview.start_session') }}">
+                    <div class="form-group">
+                        <label for="session_name">Session Name</label>
+                        <input type="text" 
+                               class="form-control" 
+                               id="session_name" 
+                               name="session_name" 
+                               placeholder="e.g., High-Priority Ingredients Batch 1">
+                        <small class="form-text text-muted">
+                            Give your mapping session a descriptive name for tracking
+                        </small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="batch_size">Batch Size</label>
+                        <select class="form-control" id="batch_size" name="batch_size" onchange="updateBatchInfo()">
+                            <option value="10">10 ingredients</option>
+                            <option value="20" selected>20 ingredients <span class="recommended-badge">Recommended</span></option>
+                            <option value="30">30 ingredients</option>
+                            <option value="50">50 ingredients</option>
+                            <option value="100">100 ingredients</option>
+                        </select>
+                        
+                        <div id="batch-info" class="batch-size-info">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <strong><span class="performance-indicator perf-optimal"></span>Performance:</strong> Optimal<br>
+                                    <strong>⏱️ Estimated Time:</strong> 10-15 minutes<br>
+                                    <strong>🎯 Quality:</strong> Highest accuracy
+                                </div>
+                                <div class="col-md-6">
+                                    <strong>💡 Recommended for:</strong><br>
+                                    • Regular mapping sessions<br>
+                                    • Quality-focused processing<br>
+                                    • Interactive analysis
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="auto_create" name="auto_create" checked>
+                            <label class="form-check-label" for="auto_create">
+                                <strong>Auto-create new ingredients</strong>
+                            </label>
+                            <div class="form-text text-muted">
+                                Allow Claude to automatically create new standardized ingredients when no suitable match exists
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="compound_splitting" name="compound_splitting" checked>
+                            <label class="form-check-label" for="compound_splitting">
+                                <strong>Enable compound splitting</strong>
+                            </label>
+                            <div class="form-text text-muted">
+                                Allow Claude to split complex multi-ingredient compounds into individual components
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-claude btn-lg">
+                            🧠 Start Claude Mapping Session
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="stats-preview">
+                <h4>📊 Current Status</h4>
+                <div class="mb-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="text-center">
+                                <div class="h3 text-warning">{{ "{:,}".format(unmapped_count) }}</div>
+                                <small>Unmapped Ingredients</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center">
+                                <div class="h3 text-success">{{ "{:,}".format((unmapped_count / 20) | round(0, 'ceil') if unmapped_count > 0 else 0) }}</div>
+                                <small>Estimated Sessions</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                {% if unmapped_count > 0 %}
+                    <div class="alert alert-info mb-3">
+                        <small>
+                            <strong>Ready to process:</strong><br>
+                            {{ "{:,}".format(unmapped_count) }} ingredients are waiting for Claude analysis
+                        </small>
+                    </div>
+                {% else %}
+                    <div class="alert alert-success mb-3">
+                        <small>
+                            <strong>🎉 All ingredients mapped!</strong><br>
+                            No unmapped ingredients found
+                        </small>
+                    </div>
+                {% endif %}
+            </div>
+            
+            <div class="stats-preview">
+                <h4>🧠 Claude Mapping Process</h4>
+                <div class="process-steps">
+                    <div class="step mb-2">
+                        <strong>1. Ingredient Analysis</strong><br>
+                        <small class="text-muted">Claude analyzes ingredient name and pharmaceutical context</small>
+                    </div>
+                    <div class="step mb-2">
+                        <strong>2. Database Search</strong><br>
+                        <small class="text-muted">Search through 3,400+ clean ingredients for matches</small>
+                    </div>
+                    <div class="step mb-2">
+                        <strong>3. Intelligent Mapping</strong><br>
+                        <small class="text-muted">Claude decides: map existing, create new, or split compound</small>
+                    </div>
+                    <div class="step mb-2">
+                        <strong>4. Quality Verification</strong><br>
+                        <small class="text-muted">Confidence scoring and automatic verification</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-preview">
+                <h4>⚡ Performance Guide</h4>
+                <div class="perf-guide">
+                    <div class="mb-2">
+                        <span class="performance-indicator perf-optimal"></span>
+                        <strong>10-20 ingredients:</strong> Optimal quality & speed
+                    </div>
+                    <div class="mb-2">
+                        <span class="performance-indicator perf-good"></span>
+                        <strong>30-50 ingredients:</strong> Good for larger batches
+                    </div>
+                    <div class="mb-2">
+                        <span class="performance-indicator perf-slow"></span>
+                        <strong>100+ ingredients:</strong> Slower, bulk processing
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function updateBatchInfo() {
+    const batchSize = document.getElementById('batch_size').value;
+    const batchInfo = document.getElementById('batch-info');
+    
+    let performance, time, quality, recommendations;
+    
+    switch(batchSize) {
+        case '10':
+            performance = { class: 'perf-optimal', text: 'Optimal' };
+            time = '5-10 minutes';
+            quality = 'Highest accuracy';
+            recommendations = ['Quick testing', 'Quality validation', 'New user sessions'];
+            break;
+        case '20':
+            performance = { class: 'perf-optimal', text: 'Optimal' };
+            time = '10-15 minutes';
+            quality = 'Highest accuracy';
+            recommendations = ['Regular mapping sessions', 'Quality-focused processing', 'Interactive analysis'];
+            break;
+        case '30':
+            performance = { class: 'perf-good', text: 'Good' };
+            time = '15-25 minutes';
+            quality = 'High accuracy';
+            recommendations = ['Medium batch processing', 'Efficient workflows', 'Balanced approach'];
+            break;
+        case '50':
+            performance = { class: 'perf-good', text: 'Good' };
+            time = '25-40 minutes';
+            quality = 'High accuracy';
+            recommendations = ['Large batch processing', 'Extended sessions', 'Bulk mapping'];
+            break;
+        case '100':
+            performance = { class: 'perf-slow', text: 'Slower' };
+            time = '50-80 minutes';
+            quality = 'Good accuracy';
+            recommendations = ['Bulk processing', 'Background tasks', 'Long sessions'];
+            break;
+    }
+    
+    batchInfo.innerHTML = `
+        <div class="row">
+            <div class="col-md-6">
+                <strong><span class="performance-indicator ${performance.class}"></span>Performance:</strong> ${performance.text}<br>
+                <strong>⏱️ Estimated Time:</strong> ${time}<br>
+                <strong>🎯 Quality:</strong> ${quality}
+            </div>
+            <div class="col-md-6">
+                <strong>💡 Recommended for:</strong><br>
+                ${recommendations.map(r => `• ${r}`).join('<br>')}
+            </div>
+        </div>
+    `;
+}
+</script>
+{% endblock %}
