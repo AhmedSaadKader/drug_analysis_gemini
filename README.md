@@ -156,7 +156,7 @@ python scripts/backup.py
 python scripts/db_analyzer.py
 ```
 
-## Installation & Setup
+## 🚀 Installation & Setup
 
 ### Prerequisites
 
@@ -164,18 +164,52 @@ python scripts/db_analyzer.py
 - PostgreSQL database
 - Google Gemini API access
 
-### Environment Variables
+### Quick Start
 
-Create a `.env` file with:
-```
-DB_PASSWORD=your_postgres_password
-GOOGLE_API_KEY=your_gemini_api_key
-```
-
-### Dependencies
-
+1. **Clone and Setup**
 ```bash
-pip install psycopg2-binary google-generativeai python-dotenv
+git clone <repository-url>
+cd drug_analysis_gemini
+pip install -r requirements.txt
+```
+
+2. **Environment Configuration**
+```bash
+cp .env.example .env
+# Edit .env with your database and API credentials
+```
+
+3. **Verify Installation**
+```bash
+python scripts/production/db_analyzer.py
+```
+
+### Project Structure (NEW - Organized!)
+
+```
+drug_analysis_gemini/
+├── README.md                    # Main documentation
+├── CLAUDE.md                   # Detailed technical guide
+├── requirements.txt            # Python dependencies
+├── .env.example               # Environment template
+├── src/                       # Core application code
+│   ├── core/                  # Core business logic
+│   ├── models/                # Database models
+│   ├── services/              # External services (Gemini API)
+│   └── utils/                 # Shared utilities
+├── scripts/
+│   ├── production/            # Ready-to-use scripts
+│   │   ├── claude_interactive_mapper.py    # 🌟 PRIMARY TOOL
+│   │   ├── ingredient_mapping_processor.py # Gemini mapper
+│   │   ├── pharmaceutical_category_linker.py
+│   │   ├── backup.py
+│   │   └── db_analyzer.py
+│   └── legacy/                # Deprecated scripts
+├── logs/                      # Application logs
+├── backups/                   # Database backups
+├── docs/                      # Additional documentation
+├── tests/                     # Unit tests
+└── admin/                     # Future web interface
 ```
 
 ## Database Configuration

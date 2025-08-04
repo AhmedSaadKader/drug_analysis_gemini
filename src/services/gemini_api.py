@@ -1,14 +1,25 @@
-# src/gemini_api.py
+"""
+Gemini API Service Module
+Provides interface to Google Gemini AI for content generation
+"""
 import google.generativeai as genai
-import config
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 model = None  # Define global model
 
 def initialize_gemini():
     """Initializes the Gemini API."""
     global model  # Make model accessible
-    genai.configure(api_key=config.GOOGLE_API_KEY)
-    model = genai.GenerativeModel('gemini-2.0-flash')  # Access the Gemini API here
+    api_key = os.getenv('GOOGLE_API_KEY')
+    if not api_key:
+        raise ValueError("GOOGLE_API_KEY environment variable not set")
+    
+    genai.configure(api_key=api_key)
+    model = genai.GenerativeModel('gemini-2.0-flash')
 
 def generate_content(prompt):
     """Generates content using the Gemini API.
