@@ -1,0 +1,8 @@
+2025-08-04 01:57:00,236 - INFO - Logging to file: logs\databasebackup_20250804_015700.log
+2025-08-04 01:57:00,237 - INFO - Extra logger initialized: backup_details
+2025-08-04 01:57:00,237 - INFO - Logger initialized: DatabaseBackup
+2025-08-04 01:57:00,237 - INFO - Starting database backup process
+2025-08-04 01:57:00,238 - INFO - Starting database backup to backups\20250804_015700\pharmacy_db_backup_20250804_015700.sql
+2025-08-04 01:57:01,885 - INFO - Backup completed successfully
+2025-08-04 01:57:01,902 - INFO - Created backup manifest: backups\20250804_015700\backup_manifest.txt
+2025-08-04 01:57:02,116 - INFO - Backup verified successfully: backups\20250804_015700\pharmacy_db_backup_20250804_015700.sql

@@ -1,0 +1,15 @@
+2025-08-04 01:52:10,342 - INFO - Logging to file: logs\ingredientqualityanalyzer_20250804_015210.log
+2025-08-04 01:52:10,343 - INFO - Extra logger initialized: ingredient_analysis
+2025-08-04 01:52:10,343 - INFO - Logger initialized: IngredientQualityAnalyzer
+2025-08-04 01:52:10,343 - INFO - Ingredient Quality Analyzer initialized
+2025-08-04 01:52:10,567 - INFO - Starting ingredient quality analysis (sample size: 20)
+2025-08-04 01:52:10,609 - INFO - Loaded 20 sample ingredients
+2025-08-04 01:52:10,609 - INFO - Loaded 3401 extended ingredients
+2025-08-04 01:52:10,609 - INFO - Analyzing 20 ingredients with AI
+2025-08-04 01:52:20,367 - INFO - === INGREDIENT QUALITY ANALYSIS RESULTS ===
+2025-08-04 01:52:20,368 - INFO - Sample size: 20
+2025-08-04 01:52:20,368 - INFO - Extended ingredients available: 3401
+2025-08-04 01:52:20,369 - INFO - Exact matches: 9
+2025-08-04 01:52:20,369 - INFO - Fuzzy matches: 11
+2025-08-04 01:52:20,369 - INFO - No matches: 0
+2025-08-04 01:52:20,372 - INFO - Report generated: ingredient_quality_report_20250804_015220.txt

@@ -1,0 +1,7 @@
+2025-08-04 15:13:43,860 - INFO - Logging to file: logs\claudeinteractivemapper_20250804_151343.log
+2025-08-04 15:13:43,860 - INFO - Logger initialized: ClaudeInteractiveMapper
+2025-08-04 15:13:43,954 - ERROR - Error in interactive mapping: column ai.id does not exist
+LINE 4:         LEFT JOIN ingredient_mappings im ON ai.id = im.raw_i...
+                                                    ^
+HINT:  Perhaps you meant to reference the column "im.id".
+

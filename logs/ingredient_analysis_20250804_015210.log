@@ -1,0 +1,221 @@
+2025-08-04 01:52:20,370 - INFO - DETAILED ANALYSIS RESULTS
+2025-08-04 01:52:20,370 - INFO - ==================================================
+2025-08-04 01:52:20,370 - INFO - {
+  "timestamp": "2025-08-04T01:52:20.357504",
+  "sample_size": 20,
+  "extended_count": 3401,
+  "ai_analysis": {
+    "analysis": [
+      {
+        "original": "oils(silicone",
+        "issues": [
+          "Typo/Formatting",
+          "Incomplete name"
+        ],
+        "suggested_clean": "Silicone oil",
+        "potential_matches": [],
+        "confidence": 0.9,
+        "notes": "Corrected typo and formatting. Assumed 'oils' refers to silicone oil."
+      },
+      {
+        "original": "ox-bile extract",
+        "issues": [],
+        "suggested_clean": "Ox bile extract",
+        "potential_matches": [],
+        "confidence": 0.95,
+        "notes": "Standardized spacing. No further issues identified."
+      },
+      {
+        "original": "glycerol 0.9%",
+        "issues": [
+          "Dosage information mixed with ingredient name"
+        ],
+        "suggested_clean": "Glycerol",
+        "potential_matches": [
+          "Glycerol"
+        ],
+        "confidence": 0.9,
+        "notes": "Removed dosage information. Found exact match in reference ingredients."
+      },
+      {
+        "original": "capilectinetm",
+        "issues": [
+          "Proprietary name",
+          "Unknown Ingredient"
+        ],
+        "suggested_clean": "Capilectine TM",
+        "potential_matches": [],
+        "confidence": 0.1,
+        "notes": "Appears to be a proprietary name or trademarked ingredient. No known match."
+      },
+      {
+        "original": "glyceryl mon",
+        "issues": [
+          "Incomplete name"
+        ],
+        "suggested_clean": "Glyceryl mono...",
+        "potential_matches": [],
+        "confidence": 0.3,
+        "notes": "Incomplete ingredient name. Needs further investigation. Could be glyceryl monooleate, monostearate, etc."
+      },
+      {
+        "original": "disodium cocoamphodiacetate",
+        "issues": [],
+        "suggested_clean": "Disodium cocoamphodiacetate",
+        "potential_matches": [],
+        "confidence": 1.0,
+        "notes": "No issues identified. Name appears correct."
+      },
+      {
+        "original": "miglitol",
+        "issues": [],
+        "suggested_clean": "Miglitol",
+        "potential_matches": [],
+        "confidence": 1.0,
+        "notes": "No issues identified. Name appears correct."
+      },
+      {
+        "original": "capecitabine",
+        "issues": [],
+        "suggested_clean": "Capecitabine",
+        "potential_matches": [],
+        "confidence": 1.0,
+        "notes": "No issues identified. Name appears correct."
+      },
+      {
+        "original": "melatonin",
+        "issues": [],
+        "suggested_clean": "Melatonin",
+        "potential_matches": [],
+        "confidence": 1.0,
+        "notes": "No issues identified. Name appears correct."
+      },
+      {
+        "original": "allium cepa",
+        "issues": [],
+        "suggested_clean": "Allium cepa",
+        "potential_matches": [],
+        "confidence": 1.0,
+        "notes": "No issues identified. Correct binomial nomenclature for onion."
+      },
+      {
+        "original": "branch chained fatty acid",
+        "issues": [
+          "Incomplete name",
+          "Non-specific"
+        ],
+        "suggested_clean": "Branched-chain fatty acid",
+        "potential_matches": [],
+        "confidence": 0.6,
+        "notes": "Added hyphen for clarity.  The term is non-specific; needs more context. Could be isostearic acid or similar."
+      },
+      {
+        "original": "serum for blood group test",
+        "issues": [
+          "Too descriptive",
+          "Non-specific"
+        ],
+        "suggested_clean": "Blood typing serum",
+        "potential_matches": [],
+        "confidence": 0.5,
+        "notes": "Simplified to a more standard term. The specific serum would vary depending on the test."
+      },
+      {
+        "original": "hydroxyethylcellulose (hec)",
+        "issues": [
+          "Non-standard abbreviation"
+        ],
+        "suggested_clean": "Hydroxyethylcellulose",
+        "potential_matches": [],
+        "confidence": 0.95,
+        "notes": "Removed abbreviation. Full name is preferred."
+      },
+      {
+        "original": "yeast - biotin",
+        "issues": [
+          "Compound ingredient",
+          "Ambiguous"
+        ],
+        "suggested_clean": "Yeast extract and Biotin",
+        "potential_matches": [
+          "Biotin"
+        ],
+        "confidence": 0.7,
+        "notes": "Assumed 'yeast' is yeast extract. Separated into two ingredients: yeast extract and biotin. Biotin is in the reference list."
+      },
+      {
+        "original": "antiseptic pastillia",
+        "issues": [
+          "Typo",
+          "Non-specific"
+        ],
+        "suggested_clean": "Antiseptic pastille",
+        "potential_matches": [],
+        "confidence": 0.7,
+        "notes": "Corrected typo ('pastillia' to 'pastille').  'Antiseptic' is a general property, not a specific ingredient."
+      },
+      {
+        "original": "nabumetone",
+        "issues": [],
+        "suggested_clean": "Nabumetone",
+        "potential_matches": [],
+        "confidence": 1.0,
+        "notes": "No issues identified. Name appears correct."
+      },
+      {
+        "original": "marine filling sphere",
+        "issues": [
+          "Non-specific",
+          "Unclear ingredient"
+        ],
+        "suggested_clean": "Marine-derived filling sphere",
+        "potential_matches": [],
+        "confidence": 0.2,
+        "notes": "Very vague ingredient description.  Requires more information to identify. Corrected formatting."
+      },
+      {
+        "original": "noscapine 13.3mg",
+        "issues": [
+          "Dosage information mixed with ingredient name"
+        ],
+        "suggested_clean": "Noscapine",
+        "potential_matches": [],
+        "confidence": 0.9,
+        "notes": "Removed dosage information."
+      },
+      {
+        "original": "cellulose",
+        "issues": [],
+        "suggested_clean": "Cellulose",
+        "potential_matches": [],
+        "confidence": 1.0,
+        "notes": "No issues identified. Name appears correct."
+      },
+      {
+        "original": "polyquaternium-10",
+        "issues": [],
+        "suggested_clean": "Polyquaternium-10",
+        "potential_matches": [],
+        "confidence": 1.0,
+        "notes": "No issues identified. Name appears correct."
+      }
+    ]
+  },
+  "manual_analysis": {
+    "exact_matches": 9,
+    "fuzzy_matches": 11,
+    "no_matches": 0,
+    "quality_issues": {
+      "likely_typos": [],
+      "compound_ingredients": [
+        "yeast - biotin",
+        "noscapine 13.3mg"
+      ],
+      "formatting_issues": [
+        "oils(silicone",
+        "hydroxyethylcellulose (hec)"
+      ],
+      "missing_ingredients": []
+    }
+  }
+}

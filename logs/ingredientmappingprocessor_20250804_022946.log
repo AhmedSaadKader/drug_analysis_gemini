@@ -1,0 +1,24 @@
+2025-08-04 02:29:46,903 - INFO - Logging to file: logs\ingredientmappingprocessor_20250804_022946.log
+2025-08-04 02:29:46,904 - INFO - Extra logger initialized: mapping_details
+2025-08-04 02:29:46,904 - INFO - Logger initialized: IngredientMappingProcessor
+2025-08-04 02:29:46,905 - INFO - Ingredient Mapping Processor initialized with batch_size=25
+2025-08-04 02:29:46,905 - INFO - Starting ingredient mapping process
+2025-08-04 02:29:46,983 - INFO - Loading extended ingredients...
+2025-08-04 02:29:47,016 - INFO - Loaded 3401 extended ingredients
+2025-08-04 02:29:47,016 - INFO - Loading unprocessed ingredients...
+2025-08-04 02:29:47,032 - INFO - Processing sample of 10 ingredients
+2025-08-04 02:29:47,033 - INFO - Processing batch 1/1
+2025-08-04 02:29:51,033 - INFO - Processing batch of 10 ingredients with AI
+2025-08-04 02:29:56,565 - INFO - Batch processed: 3 mappings created, 0 errors
+2025-08-04 02:29:56,586 - INFO - Saved 3 mappings to database
+2025-08-04 02:29:56,587 - INFO - Progress: 100.0% - Total mappings created: 3
+2025-08-04 02:29:56,587 - INFO - 
+                Processing Complete!
+                Duration: 0:00:09.682286
+                Total mappings created: 3
+                Total errors: 0
+                Ingredients processed: 10
+                Success rate: 100.0%
+                
+2025-08-04 02:29:56,591 - INFO - Database stats: (33, 0, 30, 0, Decimal('0.980'))
+2025-08-04 02:29:56,592 - INFO - Database connection closed

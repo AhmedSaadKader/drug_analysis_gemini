@@ -1,0 +1,27 @@
+2025-08-04 02:14:33,721 - INFO - Logging to file: logs\ingredientmappingprocessor_20250804_021433.log
+2025-08-04 02:14:33,721 - INFO - Extra logger initialized: mapping_details
+2025-08-04 02:14:33,721 - INFO - Logger initialized: IngredientMappingProcessor
+2025-08-04 02:14:33,722 - INFO - Ingredient Mapping Processor initialized with batch_size=25
+2025-08-04 02:14:33,722 - INFO - Starting ingredient mapping process
+2025-08-04 02:14:33,897 - INFO - Loading extended ingredients...
+2025-08-04 02:14:33,928 - INFO - Loaded 3401 extended ingredients
+2025-08-04 02:14:33,929 - INFO - Loading unprocessed ingredients...
+2025-08-04 02:14:33,950 - INFO - Processing sample of 5 ingredients
+2025-08-04 02:14:33,952 - INFO - Processing batch 1/1
+2025-08-04 02:14:37,952 - INFO - Processing batch of 5 ingredients with AI
+2025-08-04 02:14:41,543 - INFO - Batch processed: 3 mappings created, 0 errors
+2025-08-04 02:14:41,599 - ERROR - Error saving mapping: new row for relation "ingredient_mappings" violates check constraint "ingredient_mappings_extraction_method_check"
+DETAIL:  Failing row contains (4, 6aa31a1c-f5f5-4a9d-ad14-3571c3e253f2, 1873, ai_suggested, 1.00, exact, vincristine, Exact match found in reference ingredients., null, f, null, null, null, 2025-08-04 02:14:33.897625, 2025-08-04 02:14:33.897625, ai_processor).
+
+2025-08-04 02:14:41,600 - INFO - Saved 2 mappings to database
+2025-08-04 02:14:41,600 - INFO - Progress: 100.0% - Total mappings created: 2
+2025-08-04 02:14:41,600 - INFO - 
+                Processing Complete!
+                Duration: 0:00:07.878196
+                Total mappings created: 2
+                Total errors: 1
+                Ingredients processed: 5
+                Success rate: 66.7%
+                
+2025-08-04 02:14:41,605 - INFO - Database stats: (0, 0, 0, 0, None)
+2025-08-04 02:14:41,605 - INFO - Database connection closed

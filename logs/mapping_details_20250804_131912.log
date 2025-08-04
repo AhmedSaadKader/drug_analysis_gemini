@@ -1,0 +1,59 @@
+2025-08-04 13:19:23,085 - INFO - ACCEPTED: vitamin c -> Vitamin C
+Confidence: 1.0
+Method: exact
+Notes: Exact match for Vitamin C.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:19:23,086 - INFO - ACCEPTED: sodium iodide -> Sodium iodide
+Confidence: 1.0
+Method: exact
+Notes: Exact match for sodium iodide.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:19:23,086 - INFO - ACCEPTED: sebacic acid -> Sebacic Acid
+Confidence: 1.0
+Method: exact
+Notes: Exact match for sebacic acid.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:19:23,086 - INFO - ACCEPTED: hypo-allergenic milk formula -> Adapted milk formula
+Confidence: 0.95
+Method: fuzzy
+Notes: Fuzzy match. 'Hypo-allergenic' describes a type of 'adapted milk formula'.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:19:23,087 - INFO - ACCEPTED: vitamin b6 1.2 mg -> Vitamin B6
+Confidence: 1.0
+Method: exact
+Notes: Dosage information removed; mapping to Vitamin B6.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:19:23,087 - INFO - ACCEPTED: sodium nitroprusside -> Sodium nitroprusside
+Confidence: 1.0
+Method: exact
+Notes: Exact match for sodium nitroprusside.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:19:23,088 - INFO - ACCEPTED: cardamom -> Cardamom
+Confidence: 1.0
+Method: exact
+Notes: Exact match for cardamom.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:19:23,088 - INFO - REJECTED: ferric pyrophsphate -> ferric pyrophsphate
+Confidence: 1.0
+Reason: 'ferric pyrophsphate' not found in extended ingredients database
+Notes: Exact match for ferric pyrophsphate.
+--------------------------------------------------
+2025-08-04 13:19:23,088 - INFO - ACCEPTED: lycopene -> Lycopene
+Confidence: 1.0
+Method: exact
+Notes: Exact match for lycopene.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:19:23,089 - INFO - ACCEPTED: eurica oil -> African palm oil
+Confidence: 0.85
+Method: typo_fix
+Notes: Typo corrected to african palm oil (eurica -> africa) Fuzzy matched to african palm oil.
+Issues: 
+--------------------------------------------------

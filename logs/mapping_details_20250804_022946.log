@@ -1,0 +1,47 @@
+2025-08-04 02:29:56,563 - INFO - REJECTED: clomiphene citrate -> clomiphene citrate
+Confidence: 1.0
+Reason: 'clomiphene citrate' not found in extended ingredients database
+Notes: Exact match found in the reference list.
+--------------------------------------------------
+2025-08-04 02:29:56,564 - INFO - NO MAPPING: lady moon 90 gm
+Issues: Dosage information present (90 gm). The ingredient name is not standard. Needs further investigation to determine the correct mapping.
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 02:29:56,564 - INFO - ACCEPTED: limaprost -> Limaprost
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in the reference list.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:29:56,565 - INFO - NO MAPPING: sodium saccharine
+Issues: Typo in the name. Should be Sodium Saccharin
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 02:29:56,565 - INFO - NO MAPPING: royal jelly-ginseng-vitamin a-w.g. oil
+Issues: Compound ingredient. Needs to be split into individual ingredients for proper mapping. w.g. oil is unclear and needs more information
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 02:29:56,565 - INFO - NO MAPPING: vitamins b1
+Issues: Needs clarification, which type of Vitamin B1 (e.g. Thiamine Hydrochloride, Thiamine Mononitrate).
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 02:29:56,565 - INFO - NO MAPPING: billbery
+Issues: Typo found, should be bilberry.
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 02:29:56,565 - INFO - NO MAPPING: zinc 2.5mg
+Issues: Dosage information (2.5mg) present. Specify the form of Zinc used (e.g. Zinc Oxide, Zinc Gluconate) for accurate mapping.
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 02:29:56,565 - INFO - ACCEPTED: skimmed milk -> Adapted milk formula
+Confidence: 0.8
+Method: fuzzy
+Notes: Skimmed milk is a component of adapted milk formula. Mapping needs more specific information.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:29:56,565 - INFO - ACCEPTED: ferric pyrophosphate -> Ferric Pyrophosphate
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in the reference list.
+Issues: 
+--------------------------------------------------

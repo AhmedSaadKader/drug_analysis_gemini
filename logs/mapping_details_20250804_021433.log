@@ -1,0 +1,18 @@
+2025-08-04 02:14:41,542 - INFO - Mapped: kojic acid liquirece ext arbutin -> Kojic Acid
+Confidence: 0.9
+Method: compound_split
+Notes: Detected as part of a compound ingredient. Needs further review for the complete ingredient.
+Issues: Likely a combination of ingredients. 'liquirece ext' is not a standard ingredient and requires clarification - may be 'licorice extract'.
+--------------------------------------------------
+2025-08-04 02:14:41,542 - INFO - Mapped: kojic acid liquirece ext arbutin -> Alpha-arbutin
+Confidence: 0.9
+Method: compound_split
+Notes: Detected as part of a compound ingredient.  Mapping to alpha-arbutin, assuming it's the intended form. Needs further review for the complete ingredient.
+Issues: Likely a combination of ingredients. 'liquirece ext' is not a standard ingredient and requires clarification - may be 'licorice extract'.
+--------------------------------------------------
+2025-08-04 02:14:41,543 - INFO - Mapped: vincristine -> Vincristine
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in reference ingredients.
+Issues: 
+--------------------------------------------------

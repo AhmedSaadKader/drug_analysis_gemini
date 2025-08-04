@@ -1,0 +1,34 @@
+2025-08-04 02:35:05,849 - INFO - ACCEPTED: von willebrand factor -> Von Willebrand Factor
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in biological databases.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:35:05,849 - INFO - ACCEPTED: trypsin -> Trypsin
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in biological databases.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:35:05,849 - INFO - ACCEPTED: eltrombopag olamine -> Eltrombopag olamine
+Confidence: 1.0
+Method: exact
+Notes: Exact match of ingredient.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:35:05,849 - INFO - REJECTED: wheat germoil -> wheat germoil
+Confidence: 0.95
+Reason: 'wheat germoil' not found in extended ingredients database
+Notes: Corrected space in wheat germ oil.
+--------------------------------------------------
+2025-08-04 02:35:05,850 - INFO - ACCEPTED: lactulose-peppermint -> Lactulose
+Confidence: 0.9
+Method: compound_split
+Notes: Split compound ingredient; lactulose is the primary active.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:35:05,850 - INFO - REJECTED: lactulose-peppermint -> peppermint
+Confidence: 0.9
+Reason: 'peppermint' not found in extended ingredients database
+Notes: Split compound ingredient; peppermint provides flavor/soothing.
+--------------------------------------------------

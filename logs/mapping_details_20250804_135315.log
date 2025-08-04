@@ -1,0 +1,732 @@
+2025-08-04 13:53:37,679 - INFO - REJECTED: glycerol 0.9% -> glycerol
+Confidence: 1.0
+Reason: 'glycerol' not found in extended ingredients database
+Notes: Dosage removed, exact match found.
+--------------------------------------------------
+2025-08-04 13:53:37,680 - INFO - ACCEPTED: neomycin -> Neomycin
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,680 - INFO - ACCEPTED: antiseptic solution (chlorhexidine) -> Chlorhexidine
+Confidence: 1.0
+Method: exact
+Notes: Ingredient identified within parentheses. Assuming 'antiseptic solution' is a carrier.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,681 - INFO - REJECTED: zinc oxide & allantoin -> zinc oxide
+Confidence: 1.0
+Reason: 'zinc oxide' not found in extended ingredients database
+Notes: Split compound ingredient. Exact match found.
+--------------------------------------------------
+2025-08-04 13:53:37,681 - INFO - ACCEPTED: zinc oxide & allantoin -> Allantoin
+Confidence: 1.0
+Method: exact
+Notes: Split compound ingredient. Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,681 - INFO - REJECTED: mg -> mg
+Confidence: 1.0
+Reason: 'mg' not found in extended ingredients database
+Notes: Exact match found. Represents milligram.
+--------------------------------------------------
+2025-08-04 13:53:37,681 - INFO - ACCEPTED: camphor-eucalyptus -> Camphor
+Confidence: 1.0
+Method: exact
+Notes: Split compound ingredient. Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,681 - INFO - REJECTED: camphor-eucalyptus -> eucalyptus
+Confidence: 1.0
+Reason: 'eucalyptus' not found in extended ingredients database
+Notes: Split compound ingredient. Exact match found based on ingredient name ending.
+--------------------------------------------------
+2025-08-04 13:53:37,681 - INFO - REJECTED: glyceryl monostearate -> glyceryl monostearate
+Confidence: 1.0
+Reason: 'glyceryl monostearate' not found in extended ingredients database
+Notes: Exact match found.
+--------------------------------------------------
+2025-08-04 13:53:37,682 - INFO - ACCEPTED: collagen150mg -> Acacia collagen
+Confidence: 0.9
+Method: fuzzy
+Notes: Dosage removed. Closest match found using fuzzy matching. Assuming acacia as type of collagen.
+Issues: Dosage information present in ingredient name.
+--------------------------------------------------
+2025-08-04 13:53:37,682 - INFO - ACCEPTED: panthenol aqua propylene glycol urea polyacrylamide paraffin laureth-7 hydrolysed elastin com -> Panthenol
+Confidence: 1.0
+Method: exact
+Notes: Split compound ingredient. Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,682 - INFO - REJECTED: panthenol aqua propylene glycol urea polyacrylamide paraffin laureth-7 hydrolysed elastin com -> aqua
+Confidence: 1.0
+Reason: 'aqua' not found in extended ingredients database
+Notes: Split compound ingredient. Exact match found, common name for water
+--------------------------------------------------
+2025-08-04 13:53:37,682 - INFO - REJECTED: panthenol aqua propylene glycol urea polyacrylamide paraffin laureth-7 hydrolysed elastin com -> propylene glycol
+Confidence: 1.0
+Reason: 'propylene glycol' not found in extended ingredients database
+Notes: Split compound ingredient. Exact match found.
+--------------------------------------------------
+2025-08-04 13:53:37,682 - INFO - REJECTED: panthenol aqua propylene glycol urea polyacrylamide paraffin laureth-7 hydrolysed elastin com -> urea
+Confidence: 1.0
+Reason: 'urea' not found in extended ingredients database
+Notes: Split compound ingredient. Exact match found.
+--------------------------------------------------
+2025-08-04 13:53:37,682 - INFO - ACCEPTED: panthenol aqua propylene glycol urea polyacrylamide paraffin laureth-7 hydrolysed elastin com -> Polyacrylamide
+Confidence: 1.0
+Method: exact
+Notes: Split compound ingredient. Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,682 - INFO - ACCEPTED: panthenol aqua propylene glycol urea polyacrylamide paraffin laureth-7 hydrolysed elastin com -> Paraffin
+Confidence: 1.0
+Method: exact
+Notes: Split compound ingredient. Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,683 - INFO - REJECTED: panthenol aqua propylene glycol urea polyacrylamide paraffin laureth-7 hydrolysed elastin com -> hydrolysed elastin
+Confidence: 0.9
+Reason: 'hydrolysed elastin' not found in extended ingredients database
+Notes: Split compound ingredient. Exact match found through fuzzy matching of 'elastin' and modification of 'hydrolysed'.
+--------------------------------------------------
+2025-08-04 13:53:37,683 - INFO - ACCEPTED: betamethasone - neomycin -> Betamethasone
+Confidence: 1.0
+Method: exact
+Notes: Split compound ingredient. Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,683 - INFO - ACCEPTED: betamethasone - neomycin -> Neomycin
+Confidence: 1.0
+Method: exact
+Notes: Split compound ingredient. Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,683 - INFO - ACCEPTED: glutathione. -> Glutathione
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,683 - INFO - ACCEPTED: vb3 -> Vitamin B3
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,683 - INFO - ACCEPTED: meprobamate -> Meprobamate
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,683 - INFO - ACCEPTED: letrozole -> Letrozole
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,684 - INFO - ACCEPTED: apricot -> Apricot
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,684 - INFO - REJECTED: boswellia serrata resin extract -> boswellia serrata resin extract
+Confidence: 1.0
+Reason: 'boswellia serrata resin extract' not found in extended ingredients database
+Notes: Exact match found.
+--------------------------------------------------
+2025-08-04 13:53:37,684 - INFO - NO MAPPING: liquoritin
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:53:37,684 - INFO - NO MAPPING: peppermintoil
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:53:37,684 - INFO - ACCEPTED: vit.b1 -> Vitamin B1
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,684 - INFO - NO MAPPING: pumpkin seed oils
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:53:37,684 - INFO - REJECTED: mg 75 -> mg
+Confidence: 1.0
+Reason: 'mg' not found in extended ingredients database
+Notes: Exact match found. Represents milligram.
+--------------------------------------------------
+2025-08-04 13:53:37,685 - INFO - ACCEPTED: clove oil and chamomile extract -> Clove oil
+Confidence: 0.9
+Method: fuzzy
+Notes: Split compound ingredient. Closest match found using fuzzy matching.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,685 - INFO - REJECTED: clove oil and chamomile extract -> chamomile
+Confidence: 1.0
+Reason: 'chamomile' not found in extended ingredients database
+Notes: Split compound ingredient. Exact match found based on ingredient name ending.
+--------------------------------------------------
+2025-08-04 13:53:37,685 - INFO - NO MAPPING: herbal extrt
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:53:37,685 - INFO - ACCEPTED: bee propolis-zinc-copper-vitamin b6-a-se -> Bee propolis
+Confidence: 0.9
+Method: fuzzy
+Notes: Split compound ingredient. Closest match found using fuzzy matching.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,685 - INFO - ACCEPTED: bee propolis-zinc-copper-vitamin b6-a-se -> Zinc
+Confidence: 1.0
+Method: exact
+Notes: Split compound ingredient. Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,685 - INFO - ACCEPTED: bee propolis-zinc-copper-vitamin b6-a-se -> Copper
+Confidence: 1.0
+Method: exact
+Notes: Split compound ingredient. Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,685 - INFO - ACCEPTED: bee propolis-zinc-copper-vitamin b6-a-se -> Vitamin B6
+Confidence: 1.0
+Method: exact
+Notes: Split compound ingredient. Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,686 - INFO - ACCEPTED: bee propolis-zinc-copper-vitamin b6-a-se -> Vitamin A
+Confidence: 1.0
+Method: exact
+Notes: Split compound ingredient. Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:53:37,686 - INFO - REJECTED: bee propolis-zinc-copper-vitamin b6-a-se -> se
+Confidence: 1.0
+Reason: 'se' not found in extended ingredients database
+Notes: Split compound ingredient. Exact match found. Assuming Selenium
+--------------------------------------------------
+2025-08-04 13:53:37,686 - INFO - ACCEPTED: peptide complex -> Peptide complex
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,370 - INFO - ACCEPTED: aloe barbadensis (aloe vera) leaf ext -> Aloe vera
+Confidence: 1.0
+Method: exact
+Notes: Exact match for aloe vera.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,370 - INFO - REJECTED: Milk Thistle Extract -> Milk Thistle Extract
+Confidence: 1.0
+Reason: 'Milk Thistle Extract' not found in extended ingredients database
+Notes: Exact match for Milk Thistle Extract.
+--------------------------------------------------
+2025-08-04 13:54:00,370 - INFO - ACCEPTED: methyl salicylate menthol camphor eucalyptus clove and glycerine -> Methyl Salicylate
+Confidence: 1.0
+Method: exact
+Notes: Exact match for methyl salicylate.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,370 - INFO - REJECTED: methyl salicylate menthol camphor eucalyptus clove and glycerine -> menthol
+Confidence: 1.0
+Reason: 'menthol' not found in extended ingredients database
+Notes: Exact match for menthol.
+--------------------------------------------------
+2025-08-04 13:54:00,370 - INFO - ACCEPTED: methyl salicylate menthol camphor eucalyptus clove and glycerine -> Camphor
+Confidence: 1.0
+Method: exact
+Notes: Exact match for camphor.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,370 - INFO - REJECTED: methyl salicylate menthol camphor eucalyptus clove and glycerine -> eucalyptus
+Confidence: 0.9
+Reason: 'eucalyptus' not found in extended ingredients database
+Notes: Fuzzy match for eucalyptus. Using the genus name as the ingredient itself.
+--------------------------------------------------
+2025-08-04 13:54:00,371 - INFO - REJECTED: methyl salicylate menthol camphor eucalyptus clove and glycerine -> clove
+Confidence: 1.0
+Reason: 'clove' not found in extended ingredients database
+Notes: Exact match for clove.
+--------------------------------------------------
+2025-08-04 13:54:00,371 - INFO - REJECTED: methyl salicylate menthol camphor eucalyptus clove and glycerine -> glycerine
+Confidence: 0.95
+Reason: 'glycerine' not found in extended ingredients database
+Notes: Fuzzy match for glycerine. Should be mapped to glycerol.
+--------------------------------------------------
+2025-08-04 13:54:00,371 - INFO - ACCEPTED: flutamide -> Flutamide
+Confidence: 1.0
+Method: exact
+Notes: Exact match for flutamide.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,371 - INFO - REJECTED: esmoprazole -> esmoprazole
+Confidence: 1.0
+Reason: 'esmoprazole' not found in extended ingredients database
+Notes: Exact match for esmoprazole.
+--------------------------------------------------
+2025-08-04 13:54:00,371 - INFO - ACCEPTED: ketamine -> Ketamine
+Confidence: 1.0
+Method: exact
+Notes: Exact match for ketamine.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,371 - INFO - ACCEPTED: paraffinum liquidum -> Paraffinum liquidum
+Confidence: 1.0
+Method: exact
+Notes: Exact match for paraffinum liquidum.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,371 - INFO - ACCEPTED: capsaicin -> Capsaicin
+Confidence: 1.0
+Method: exact
+Notes: Exact match for capsaicin.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,372 - INFO - REJECTED: bioflavonoids -> bioflavonoids
+Confidence: 1.0
+Reason: 'bioflavonoids' not found in extended ingredients database
+Notes: Exact match for bioflavonoids.
+--------------------------------------------------
+2025-08-04 13:54:00,372 - INFO - ACCEPTED: dichloroxylenol -> Dichloroxylenol
+Confidence: 1.0
+Method: exact
+Notes: Exact match for dichloroxylenol.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,372 - INFO - ACCEPTED: sodium sulfate -> Sodium sulfate
+Confidence: 1.0
+Method: exact
+Notes: Exact match for sodium sulfate.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,372 - INFO - REJECTED: acid colloidal hydrocolloid -> acid
+Confidence: 0.8
+Reason: 'acid' not found in extended ingredients database
+Notes: General term; requires further context.
+--------------------------------------------------
+2025-08-04 13:54:00,372 - INFO - REJECTED: acid colloidal hydrocolloid -> hydrocolloid
+Confidence: 0.9
+Reason: 'hydrocolloid' not found in extended ingredients database
+Notes: Hydrocolloid is a broad class of substances. Requires further context
+--------------------------------------------------
+2025-08-04 13:54:00,372 - INFO - ACCEPTED: lorlatinib -> Lorlatinib
+Confidence: 1.0
+Method: exact
+Notes: Exact match for lorlatinib.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,372 - INFO - REJECTED: euaclyptus -> eucalyptus
+Confidence: 0.95
+Reason: 'eucalyptus' not found in extended ingredients database
+Notes: Typo fix for eucalyptus.
+--------------------------------------------------
+2025-08-04 13:54:00,373 - INFO - ACCEPTED: glafenine -> Glafenine
+Confidence: 1.0
+Method: exact
+Notes: Exact match for glafenine.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,373 - INFO - REJECTED: dexamethasone sodium phosphate -> dexamethasone sodium phosphate
+Confidence: 1.0
+Reason: 'dexamethasone sodium phosphate' not found in extended ingredients database
+Notes: Exact match for dexamethasone sodium phosphate.
+--------------------------------------------------
+2025-08-04 13:54:00,373 - INFO - ACCEPTED: pollen grains-vitamins-royal jelly -> Pollen grains
+Confidence: 0.9
+Method: fuzzy
+Notes: Pollen grains is a valid ingredient description.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,373 - INFO - REJECTED: pollen grains-vitamins-royal jelly -> vitamins
+Confidence: 0.85
+Reason: 'vitamins' not found in extended ingredients database
+Notes: General term, needs more specific vitamin identification.
+--------------------------------------------------
+2025-08-04 13:54:00,373 - INFO - ACCEPTED: pollen grains-vitamins-royal jelly -> Royal Jelly
+Confidence: 1.0
+Method: exact
+Notes: Exact match for royal jelly.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,373 - INFO - ACCEPTED: parafinum -> Paraffinum liquidum
+Confidence: 0.8
+Method: fuzzy
+Notes: Typo of paraffinum liquidum. Assuming liquid form is implied
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,373 - INFO - REJECTED: beclomethasone dipropionate -> beclomethasone dipropionate
+Confidence: 1.0
+Reason: 'beclomethasone dipropionate' not found in extended ingredients database
+Notes: Exact match for beclomethasone dipropionate.
+--------------------------------------------------
+2025-08-04 13:54:00,373 - INFO - REJECTED: menthol-sodium floride -> menthol
+Confidence: 1.0
+Reason: 'menthol' not found in extended ingredients database
+Notes: Exact match for menthol.
+--------------------------------------------------
+2025-08-04 13:54:00,374 - INFO - ACCEPTED: menthol-sodium floride -> Sodium fluoride
+Confidence: 0.95
+Method: fuzzy
+Notes: Typo in 'floride'; corrected to 'fluoride'.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,374 - INFO - ACCEPTED: panthovera -> Panthenol
+Confidence: 0.9
+Method: fuzzy
+Notes: Typo/brand name variation of Panthenol.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,374 - INFO - REJECTED: eucalyptus globulus leaf oil -> eucalyptus globulus leaf oil
+Confidence: 1.0
+Reason: 'eucalyptus globulus leaf oil' not found in extended ingredients database
+Notes: Exact match for eucalyptus globulus leaf oil.
+--------------------------------------------------
+2025-08-04 13:54:00,374 - INFO - ACCEPTED: royal jelly-khellin-piperazine citrate -> Royal Jelly
+Confidence: 1.0
+Method: exact
+Notes: Exact match for royal jelly.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,374 - INFO - ACCEPTED: royal jelly-khellin-piperazine citrate -> Khellin
+Confidence: 1.0
+Method: exact
+Notes: Exact match for khellin.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,374 - INFO - REJECTED: royal jelly-khellin-piperazine citrate -> piperazine citrate
+Confidence: 1.0
+Reason: 'piperazine citrate' not found in extended ingredients database
+Notes: Exact match for piperazine citrate.
+--------------------------------------------------
+2025-08-04 13:54:00,374 - INFO - ACCEPTED: tricolsan .clorohexden gluconate. chamomile extract. tea tree oil .alovera -> Chamomile Extract
+Confidence: 1.0
+Method: exact
+Notes: Exact match for chamomile extract.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,374 - INFO - REJECTED: tricolsan .clorohexden gluconate. chamomile extract. tea tree oil .alovera -> tea tree oil
+Confidence: 1.0
+Reason: 'tea tree oil' not found in extended ingredients database
+Notes: Exact match for tea tree oil.
+--------------------------------------------------
+2025-08-04 13:54:00,374 - INFO - ACCEPTED: tricolsan .clorohexden gluconate. chamomile extract. tea tree oil .alovera -> Aloe vera
+Confidence: 0.9
+Method: fuzzy
+Notes: Misspelling of Aloe vera
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:00,374 - INFO - REJECTED: shea putter -> shea putter
+Confidence: 0.8
+Reason: 'shea putter' not found in extended ingredients database
+Notes: no similar ingredients found in the reference. Suggest mapping after investigation.
+--------------------------------------------------
+2025-08-04 13:54:17,526 - INFO - ACCEPTED: amantadine -> Amantadine
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:17,526 - INFO - ACCEPTED: clavulanic acid -> Clavulanic acid
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:17,526 - INFO - ACCEPTED: ferrous (ii)-glycine sulphate complex -> Glycine
+Confidence: 0.9
+Method: fuzzy
+Notes: Component of the complex, fuzzy match to glycine.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:17,526 - INFO - REJECTED: ferrous (ii)-glycine sulphate complex -> sulphate
+Confidence: 0.9
+Reason: 'sulphate' not found in extended ingredients database
+Notes: Component of the complex. Fuzzy match to sulphate.
+--------------------------------------------------
+2025-08-04 13:54:17,526 - INFO - REJECTED: doxylamine succinate -> doxylamine
+Confidence: 0.95
+Reason: 'doxylamine' not found in extended ingredients database
+Notes: Fuzzy match to doxylamine as part of doxylamine succinate.
+--------------------------------------------------
+2025-08-04 13:54:17,526 - INFO - REJECTED: doxylamine succinate -> succinate
+Confidence: 0.95
+Reason: 'succinate' not found in extended ingredients database
+Notes: Fuzzy match to succinate as part of doxylamine succinate.
+--------------------------------------------------
+2025-08-04 13:54:17,527 - INFO - ACCEPTED: zinc 5% -> Zinc
+Confidence: 1.0
+Method: exact
+Notes: Exact match found for zinc, removing percentage.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:17,527 - INFO - ACCEPTED: polyethylene -> Polyethylene
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:17,527 - INFO - ACCEPTED: octocrylene oxcybenzon titanium dioxide avobenzon -> Octocrylene
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:17,527 - INFO - ACCEPTED: octocrylene oxcybenzon titanium dioxide avobenzon -> Titanium dioxide
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:17,527 - INFO - NO MAPPING: isoprinosine
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:54:17,527 - INFO - NO MAPPING: mulivitamins
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:54:17,528 - INFO - NO MAPPING: rape oil
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:54:17,528 - INFO - NO MAPPING: polydocanol
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:54:17,528 - INFO - ACCEPTED: nilotinib -> Nilotinib
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:17,528 - INFO - NO MAPPING: p-aminobenzoic acid
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:54:17,528 - INFO - ACCEPTED: ertapenem -> Ertapenem
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:17,529 - INFO - ACCEPTED: lemon peel -> Lemon peel
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:17,529 - INFO - NO MAPPING: atropine methonitrate
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:54:17,529 - INFO - ACCEPTED: glucosamine 1000mg -> Glucosamine
+Confidence: 1.0
+Method: exact
+Notes: Exact match, removed dosage.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:17,529 - INFO - REJECTED: anise-peppermint -> anise
+Confidence: 0.95
+Reason: 'anise' not found in extended ingredients database
+Notes: Fuzzy match to anise as part of the compound.
+--------------------------------------------------
+2025-08-04 13:54:17,530 - INFO - ACCEPTED: polysorbate 80 -> Polysorbate 80
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:17,530 - INFO - NO MAPPING: jaborandi
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:54:17,530 - INFO - NO MAPPING: grapes seeds extract
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:54:17,530 - INFO - NO MAPPING: full creamy milk
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:54:17,530 - INFO - NO MAPPING: bis-ethylhexyloxyphenol methoxyphenyl triazine
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:54:17,531 - INFO - REJECTED: sodium bicarbonate -> sodium bicarbonate
+Confidence: 1.0
+Reason: 'sodium bicarbonate' not found in extended ingredients database
+Notes: Exact match found.
+--------------------------------------------------
+2025-08-04 13:54:17,531 - INFO - NO MAPPING: sodium hylournate
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:54:36,432 - INFO - ACCEPTED: royal jelly-ginseng extract -> Royal Jelly
+Confidence: 1.0
+Method: exact
+Notes: Exact match
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:36,432 - INFO - REJECTED: royal jelly-ginseng extract -> ginseng extract
+Confidence: 0.9
+Reason: 'ginseng extract' not found in extended ingredients database
+Notes: Fuzzy match. Ginseng extract is a common ingredient.
+--------------------------------------------------
+2025-08-04 13:54:36,432 - INFO - ACCEPTED: human plasma protein -> Human Plasma Protein
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:36,433 - INFO - REJECTED: arctium lappa root extract -> arctium lappa root extract
+Confidence: 1.0
+Reason: 'arctium lappa root extract' not found in extended ingredients database
+Notes: Exact match
+--------------------------------------------------
+2025-08-04 13:54:36,433 - INFO - ACCEPTED: nicergoline -> Nicergoline
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:36,433 - INFO - REJECTED: cefalexam -> cefalexam
+Confidence: 1.0
+Reason: 'cefalexam' not found in extended ingredients database
+Notes: Exact match.
+--------------------------------------------------
+2025-08-04 13:54:36,433 - INFO - REJECTED: thiopental sodium -> thiopental sodium
+Confidence: 1.0
+Reason: 'thiopental sodium' not found in extended ingredients database
+Notes: Exact match.
+--------------------------------------------------
+2025-08-04 13:54:36,433 - INFO - ACCEPTED: polycarbophil calcium -> Polycarbophil calcium
+Confidence: 1.0
+Method: exact
+Notes: Exact match
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:36,433 - INFO - ACCEPTED: flax seed oil -> Flax seed oil
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:36,433 - INFO - ACCEPTED: bee pollen-royal jelly -> Bee pollen
+Confidence: 0.9
+Method: fuzzy
+Notes: Fuzzy match. Bee pollen is a common ingredient.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:36,433 - INFO - ACCEPTED: bee pollen-royal jelly -> Royal Jelly
+Confidence: 1.0
+Method: exact
+Notes: Exact match
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:36,433 - INFO - ACCEPTED: bantothenic acid -> Pantothenic acid
+Confidence: 0.95
+Method: typo_fix
+Notes: Typo corrected. Pantothenic acid is also known as Vitamin B5.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:36,433 - INFO - REJECTED: bitter melon fruit extract -> bitter melon fruit extract
+Confidence: 1.0
+Reason: 'bitter melon fruit extract' not found in extended ingredients database
+Notes: Exact match
+--------------------------------------------------
+2025-08-04 13:54:36,434 - INFO - ACCEPTED: cyclopentasiloxane -> Cyclopentasiloxane
+Confidence: 1.0
+Method: exact
+Notes: Exact match
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:36,434 - INFO - REJECTED: pro-anthocyanidin -> proanthocyanidin
+Confidence: 0.95
+Reason: 'proanthocyanidin' not found in extended ingredients database
+Notes: Fuzzy match, hyphen removed for standardization. Proanthocyanidin is a common ingredient.
+--------------------------------------------------
+2025-08-04 13:54:36,434 - INFO - REJECTED: timonacic(thiazolidinecarboxylic acid) -> timonacic
+Confidence: 1.0
+Reason: 'timonacic' not found in extended ingredients database
+Notes: Exact match.
+--------------------------------------------------
+2025-08-04 13:54:36,434 - INFO - REJECTED: pdms (polysiloxane) -> polysiloxane
+Confidence: 1.0
+Reason: 'polysiloxane' not found in extended ingredients database
+Notes: Exact match
+--------------------------------------------------
+2025-08-04 13:54:36,434 - INFO - ACCEPTED: vitb12 10 mcg -> Vitamin B12
+Confidence: 0.9
+Method: fuzzy
+Notes: Dosage removed. Standardized to Vitamin B12.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:36,434 - INFO - ACCEPTED: estrogen -> Estrogen
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:36,434 - INFO - REJECTED: stevia rebaudiana-chromium -> stevia rebaudiana
+Confidence: 1.0
+Reason: 'stevia rebaudiana' not found in extended ingredients database
+Notes: Exact match.
+--------------------------------------------------
+2025-08-04 13:54:36,434 - INFO - ACCEPTED: stevia rebaudiana-chromium -> Chromium
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:36,434 - INFO - REJECTED: alcohol 70% -> alcohol
+Confidence: 0.9
+Reason: 'alcohol' not found in extended ingredients database
+Notes: Concentration removed. Standardized to alcohol.
+--------------------------------------------------
+2025-08-04 13:54:36,434 - INFO - ACCEPTED: tropicamide -> Tropicamide
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:36,434 - INFO - REJECTED: comfrey extract -> comfrey extract
+Confidence: 1.0
+Reason: 'comfrey extract' not found in extended ingredients database
+Notes: Exact match.
+--------------------------------------------------
+2025-08-04 13:54:36,434 - INFO - REJECTED: STEVIA EXTRACT -> stevia extract
+Confidence: 1.0
+Reason: 'stevia extract' not found in extended ingredients database
+Notes: Exact match.
+--------------------------------------------------
+2025-08-04 13:54:36,435 - INFO - ACCEPTED: sodium cyclamate-sodium saccharin -> Sodium cyclamate
+Confidence: 1.0
+Method: exact
+Notes: Exact match
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:36,435 - INFO - ACCEPTED: sodium cyclamate-sodium saccharin -> Sodium saccharin
+Confidence: 1.0
+Method: exact
+Notes: Exact match
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:36,435 - INFO - ACCEPTED: macadamia -> Macadamia
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:54:36,435 - INFO - ACCEPTED: zinc 5mg -> Zinc
+Confidence: 0.9
+Method: fuzzy
+Notes: Dosage removed. Standardized to Zinc.
+Issues: 
+--------------------------------------------------

@@ -1,0 +1,8 @@
+Database Backup Manifest
+=======================
+
+timestamp: 20250804_015700
+database: pharmacy_db
+size: 7186980
+duration: 0:00:01.646256
+compression_level: 9

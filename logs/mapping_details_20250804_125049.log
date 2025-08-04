@@ -1,0 +1,558 @@
+2025-08-04 12:51:06,320 - INFO - REJECTED: menthol - crystals - tea free oil -> menthol
+Confidence: 0.95
+Reason: 'menthol' not found in extended ingredients database
+Notes: Menthol is the primary active ingredient.  'crystals' and 'tea free oil' are descriptors.
+--------------------------------------------------
+2025-08-04 12:51:06,321 - INFO - REJECTED: amoxycillin -> amoxycillin
+Confidence: 1.0
+Reason: 'amoxycillin' not found in extended ingredients database
+Notes: Exact match.
+--------------------------------------------------
+2025-08-04 12:51:06,321 - INFO - NO MAPPING: antifoam m
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:06,322 - INFO - REJECTED: boswellia serrata extract 50mg -> boswellia serrata extract
+Confidence: 0.98
+Reason: 'boswellia serrata extract' not found in extended ingredients database
+Notes: Dosage removed. boswellia serrata extract is the active ingredient.
+--------------------------------------------------
+2025-08-04 12:51:06,323 - INFO - NO MAPPING: massage  formula
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:06,323 - INFO - ACCEPTED: vit c 60mg -> Acerola
+Confidence: 0.85
+Method: fuzzy
+Notes: Dosage removed. Vitamin C is often sourced from acerola.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:06,323 - INFO - REJECTED: folic acid 200mcg -> folic acid
+Confidence: 0.98
+Reason: 'folic acid' not found in extended ingredients database
+Notes: Dosage removed. Folic acid is the active ingredient.
+--------------------------------------------------
+2025-08-04 12:51:06,324 - INFO - REJECTED: silicone gel -> silicone gel
+Confidence: 1.0
+Reason: 'silicone gel' not found in extended ingredients database
+Notes: Exact match.
+--------------------------------------------------
+2025-08-04 12:51:06,324 - INFO - REJECTED: ceftriaxone -> ceftriaxone
+Confidence: 1.0
+Reason: 'ceftriaxone' not found in extended ingredients database
+Notes: Exact match.
+--------------------------------------------------
+2025-08-04 12:51:06,324 - INFO - ACCEPTED: dopamine -> Dopamine
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:06,324 - INFO - NO MAPPING: vaccine meningitis (group a
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:06,325 - INFO - ACCEPTED: colostrum -> Colostrum
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:06,325 - INFO - ACCEPTED: whey protein 70% -> Whey protein
+Confidence: 0.98
+Method: fuzzy
+Notes: Concentration removed. Whey protein is the ingredient.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:06,325 - INFO - NO MAPPING: chickpea-rice-carrot-starch
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:06,325 - INFO - ACCEPTED: pipecuronium bromide -> Pipecuronium bromide
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:06,325 - INFO - NO MAPPING: aspergillus oryzea enzymes
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:06,326 - INFO - REJECTED: vitis vinifera extract -> vitis vinifera extract
+Confidence: 1.0
+Reason: 'vitis vinifera extract' not found in extended ingredients database
+Notes: Exact match.
+--------------------------------------------------
+2025-08-04 12:51:06,326 - INFO - ACCEPTED: gtn (glyceryl trinitrate) -> Glyceryl trinitrate
+Confidence: 0.99
+Method: fuzzy
+Notes: Full name provided in parentheses.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:06,327 - INFO - NO MAPPING: lignocaine-panthenol
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:06,327 - INFO - NO MAPPING: malabar nut
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:06,328 - INFO - ACCEPTED: lidocaine 5 gm -> Lidocaine
+Confidence: 0.98
+Method: fuzzy
+Notes: Dosage removed. Lidocaine is the active ingredient. Lidocaine and lignocaine are often interchanged.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:06,328 - INFO - REJECTED: valerian extract -> valerian extract
+Confidence: 1.0
+Reason: 'valerian extract' not found in extended ingredients database
+Notes: Exact match.
+--------------------------------------------------
+2025-08-04 12:51:06,329 - INFO - NO MAPPING: hidrolized keratin panthenol vital hair & scalp complex poliquaternium 7
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:06,329 - INFO - NO MAPPING: multi-vitamins-selenium-biotin
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:06,330 - INFO - NO MAPPING: maize oil
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,638 - INFO - REJECTED: aluminium potassium sulphate -> aluminium potassium sulphate
+Confidence: 1.0
+Reason: 'aluminium potassium sulphate' not found in extended ingredients database
+Notes: Exact match.
+--------------------------------------------------
+2025-08-04 12:51:18,638 - INFO - NO MAPPING: colorestam 20 tab
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,639 - INFO - NO MAPPING: procarol ws
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,639 - INFO - NO MAPPING: cocamido propyl betaine
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,639 - INFO - NO MAPPING: capsacin
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,639 - INFO - ACCEPTED: agar-agar powder -> Agar agar
+Confidence: 0.95
+Method: fuzzy
+Notes: Removed 'powder' and corrected hyphen for fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:18,640 - INFO - NO MAPPING: deferoxamine
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,640 - INFO - ACCEPTED: sodium carbonate -> Sodium Carbonate
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:18,640 - INFO - NO MAPPING: sugammadex
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,640 - INFO - NO MAPPING: povidone k30
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,641 - INFO - ACCEPTED: hydrogen peroxide -> Hydrogen peroxide
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:18,641 - INFO - NO MAPPING: decyl glucoside
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,641 - INFO - NO MAPPING: cyclohexasiloxane
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,641 - INFO - ACCEPTED: citric acid -> Citric acid
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:18,641 - INFO - NO MAPPING: dhe(omega3)
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,642 - INFO - NO MAPPING: parafinum
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,642 - INFO - NO MAPPING: ipriflavone
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,642 - INFO - NO MAPPING: natural sweet potato
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,642 - INFO - NO MAPPING: green coffee
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,643 - INFO - NO MAPPING: white beeswax
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,643 - INFO - NO MAPPING: sabal extract
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,643 - INFO - NO MAPPING: polytar
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,643 - INFO - NO MAPPING: pegintron feronum alfa-za
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,644 - INFO - NO MAPPING: hydroxypropyl methylcellulose
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:18,644 - INFO - NO MAPPING: trivang-sida cordifolia-latakasthurl
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 12:51:40,302 - INFO - ACCEPTED: vit b12 25mcg -> Cyanocobalamin
+Confidence: 0.95
+Method: fuzzy
+Notes: vit b12 refers to Vitamin B12, commonly cyanocobalamin, dosage removed.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,303 - INFO - ACCEPTED: sindalfil -> Sildenafil
+Confidence: 0.98
+Method: typo_fix
+Notes: Typo correction: sindalfil corrected to sildenafil.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,303 - INFO - ACCEPTED: sorbitol -> Sorbitol
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,303 - INFO - ACCEPTED: tinidazole -> Tinidazole
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,304 - INFO - ACCEPTED: iron 8mg -> Iron
+Confidence: 0.95
+Method: fuzzy
+Notes: Dosage removed, mapped to base ingredient: iron.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,304 - INFO - ACCEPTED: tioconazole -> Tioconazole
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,304 - INFO - ACCEPTED: n-acetyl cysteine -> Acetylcysteine
+Confidence: 0.98
+Method: fuzzy
+Notes: Mapping to acetylcysteine, which is a common standardized form.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,305 - INFO - ACCEPTED: selenium-vitamin a-garlic -> Selenium
+Confidence: 0.9
+Method: compound_split
+Notes: Split to extract individual components.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,305 - INFO - REJECTED: selenium-vitamin a-garlic -> vit.- a
+Confidence: 0.9
+Reason: 'vit.- a' not found in extended ingredients database
+Notes: Split to extract individual components.
+--------------------------------------------------
+2025-08-04 12:51:40,305 - INFO - ACCEPTED: selenium-vitamin a-garlic -> Allium sativum
+Confidence: 0.9
+Method: compound_split
+Notes: Split to extract individual components. Mapped Garlic to Allium sativum
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,306 - INFO - REJECTED: folic acid as dfe -> folic acid
+Confidence: 0.95
+Reason: 'folic acid' not found in extended ingredients database
+Notes: mapped to folic acid, 'as dfe' is descriptive only.
+--------------------------------------------------
+2025-08-04 12:51:40,306 - INFO - ACCEPTED: panax ginseng root extract -> Panax ginseng
+Confidence: 0.95
+Method: fuzzy
+Notes: Mapped to panax ginseng, as extract is descriptive.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,307 - INFO - ACCEPTED: phthalylsulfathiazol -> Phthalylsulfathiazole
+Confidence: 0.99
+Method: typo_fix
+Notes: Corrected typo to phthalylsulfathiazole. Not found in reference list.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,307 - INFO - REJECTED: ivy leaf extract -> ivy leaf extract
+Confidence: 1.0
+Reason: 'ivy leaf extract' not found in extended ingredients database
+Notes: Exact match found in search results, assuming it is standardized.
+--------------------------------------------------
+2025-08-04 12:51:40,307 - INFO - REJECTED: peppermint flavour -> peppermint flavour
+Confidence: 1.0
+Reason: 'peppermint flavour' not found in extended ingredients database
+Notes: Exact match found in search results, assuming it is standardized.
+--------------------------------------------------
+2025-08-04 12:51:40,307 - INFO - REJECTED: ibandronic acid -> ibandronate
+Confidence: 0.95
+Reason: 'ibandronate' not found in extended ingredients database
+Notes: Ibandronic acid usually refers to ibandronate.
+--------------------------------------------------
+2025-08-04 12:51:40,308 - INFO - REJECTED: vit.- a -> vit.- a
+Confidence: 1.0
+Reason: 'vit.- a' not found in extended ingredients database
+Notes: Exact match found in search results, assuming it is standardized.
+--------------------------------------------------
+2025-08-04 12:51:40,308 - INFO - REJECTED: human normal immunoglobulins -> human normal immunoglobulins
+Confidence: 1.0
+Reason: 'human normal immunoglobulins' not found in extended ingredients database
+Notes: Exact match found in search results, assuming it is standardized.
+--------------------------------------------------
+2025-08-04 12:51:40,308 - INFO - ACCEPTED: sodium chloride anhydrous -> Sodium Chloride
+Confidence: 0.95
+Method: fuzzy
+Notes: Mapped to sodium chloride, 'anhydrous' is a descriptor.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,309 - INFO - REJECTED: hydrolyzed whey protein isolate) -> hydrolyzed whey protein isolate)
+Confidence: 1.0
+Reason: 'hydrolyzed whey protein isolate)' not found in extended ingredients database
+Notes: Exact match found in search results, assuming it is standardized.
+--------------------------------------------------
+2025-08-04 12:51:40,309 - INFO - ACCEPTED: tiotropium bromide -> Tiotropium bromide
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,309 - INFO - ACCEPTED: inositol -> Inositol
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,310 - INFO - ACCEPTED: b6) -> Pyridoxine
+Confidence: 0.95
+Method: fuzzy
+Notes: Vitamin B6 commonly refers to pyridoxine.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,310 - INFO - REJECTED: capric caprylic -> capric caprylic triglyceride
+Confidence: 0.9
+Reason: 'capric caprylic triglyceride' not found in extended ingredients database
+Notes: Capric and caprylic acids are usually combined into capric caprylic triglyceride.
+--------------------------------------------------
+2025-08-04 12:51:40,310 - INFO - ACCEPTED: codeine-phenyltoloxamine -> Codeine
+Confidence: 0.9
+Method: compound_split
+Notes: Split to extract individual components.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,311 - INFO - ACCEPTED: codeine-phenyltoloxamine -> Phenyltoloxamine
+Confidence: 0.9
+Method: compound_split
+Notes: Split to extract individual components.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,311 - INFO - ACCEPTED: vitamins (e -> Tocopherol
+Confidence: 0.95
+Method: fuzzy
+Notes: Vitamin E commonly refers to tocopherol.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:51:40,311 - INFO - ACCEPTED: polyquaternium-10 -> Polyquaternium-10
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,032 - INFO - ACCEPTED: dantrolene -> Dantrolene
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in external reference.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,033 - INFO - REJECTED: ivyleaves dry extract -> ivyleaves dry extract
+Confidence: 1.0
+Reason: 'ivyleaves dry extract' not found in extended ingredients database
+Notes: Exact match found in external reference.
+--------------------------------------------------
+2025-08-04 12:52:00,033 - INFO - ACCEPTED: oxytocin -> Oxytocin
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in external reference.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,033 - INFO - REJECTED: colostrums -> colostrums
+Confidence: 1.0
+Reason: 'colostrums' not found in extended ingredients database
+Notes: Exact match found in external reference.
+--------------------------------------------------
+2025-08-04 12:52:00,033 - INFO - ACCEPTED: Biotin -> Biotin
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in external reference.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,033 - INFO - REJECTED: mint leaves -> mint leaves
+Confidence: 1.0
+Reason: 'mint leaves' not found in extended ingredients database
+Notes: Exact match found in external reference.
+--------------------------------------------------
+2025-08-04 12:52:00,034 - INFO - ACCEPTED: l-cysteine -> L-cysteine
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in external reference.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,034 - INFO - ACCEPTED: mandelic acid -> Mandelic Acid
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in external reference.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,034 - INFO - ACCEPTED: iopamidol -> Iopamidol
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in external reference.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,034 - INFO - REJECTED: egg lecithin -> egg lecithin
+Confidence: 1.0
+Reason: 'egg lecithin' not found in extended ingredients database
+Notes: Exact match found in external reference.
+--------------------------------------------------
+2025-08-04 12:52:00,035 - INFO - REJECTED: measles virus vaccine -> measles virus vaccine
+Confidence: 1.0
+Reason: 'measles virus vaccine' not found in extended ingredients database
+Notes: Exact match found in external reference.
+--------------------------------------------------
+2025-08-04 12:52:00,035 - INFO - ACCEPTED: alogliptin -> Alogliptin
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in external reference.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,035 - INFO - ACCEPTED: melatonin-valerian root extract-vitamin b6 -> Melatonin
+Confidence: 0.9
+Method: compound_split
+Notes: Part of the compound melatonin-valerian root extract-vitamin b6
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,035 - INFO - REJECTED: melatonin-valerian root extract-vitamin b6 -> valerian root extract
+Confidence: 0.9
+Reason: 'valerian root extract' not found in extended ingredients database
+Notes: Part of the compound melatonin-valerian root extract-vitamin b6
+--------------------------------------------------
+2025-08-04 12:52:00,036 - INFO - ACCEPTED: melatonin-valerian root extract-vitamin b6 -> Vitamin B6
+Confidence: 0.9
+Method: compound_split
+Notes: Part of the compound melatonin-valerian root extract-vitamin b6
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,036 - INFO - ACCEPTED: quercitin -> Quercetin
+Confidence: 0.95
+Method: typo_fix
+Notes: Typo corrected from quercitin to quercetin.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,036 - INFO - REJECTED: propylene glycol in aqua -> propylene glycol
+Confidence: 0.9
+Reason: 'propylene glycol' not found in extended ingredients database
+Notes: propylene glycol in aqua refers to propylene glycol diluted in water, thus propylene glycol is suggested
+--------------------------------------------------
+2025-08-04 12:52:00,036 - INFO - ACCEPTED: iron  b complex -> Iron
+Confidence: 0.9
+Method: fuzzy
+Notes: Iron is suggested, additional 'b complex' implies a multivitamin.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,037 - INFO - ACCEPTED: iron  b complex -> Vitamin B complex
+Confidence: 0.9
+Method: fuzzy
+Notes: Iron is suggested, additional 'b complex' implies a multivitamin.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,037 - INFO - ACCEPTED: achillea -> Achillea
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in reference list.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,037 - INFO - REJECTED: rutoside -> rutoside
+Confidence: 1.0
+Reason: 'rutoside' not found in extended ingredients database
+Notes: Exact match found in external reference.
+--------------------------------------------------
+2025-08-04 12:52:00,037 - INFO - REJECTED: mint flavor -> mint flavor
+Confidence: 1.0
+Reason: 'mint flavor' not found in extended ingredients database
+Notes: Exact match found in external reference.
+--------------------------------------------------
+2025-08-04 12:52:00,037 - INFO - ACCEPTED: silver colloid -> Silver colloid
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in external reference.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,037 - INFO - ACCEPTED: ethyl salicylate -> Ethyl salicylate
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in external reference.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,037 - INFO - REJECTED: flavoxate hydrochloride -> flavoxate hydrochloride
+Confidence: 1.0
+Reason: 'flavoxate hydrochloride' not found in extended ingredients database
+Notes: Exact match found in external reference.
+--------------------------------------------------
+2025-08-04 12:52:00,038 - INFO - REJECTED: phmb -> phmb
+Confidence: 1.0
+Reason: 'phmb' not found in extended ingredients database
+Notes: Exact match found in external reference.
+--------------------------------------------------
+2025-08-04 12:52:00,038 - INFO - REJECTED: mg citrate 540mg -> mg citrate
+Confidence: 0.9
+Reason: 'mg citrate' not found in extended ingredients database
+Notes: dosage information removed.
+--------------------------------------------------
+2025-08-04 12:52:00,038 - INFO - ACCEPTED: potassium bicarbonat-citric a-tartaric a -> Potassium bicarbonate
+Confidence: 0.9
+Method: compound_split
+Notes: Part of the compound potassium bicarbonate-citric acid-tartaric acid.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,038 - INFO - ACCEPTED: potassium bicarbonat-citric a-tartaric a -> Citric acid
+Confidence: 0.9
+Method: compound_split
+Notes: Part of the compound potassium bicarbonate-citric acid-tartaric acid.
+Issues: 
+--------------------------------------------------
+2025-08-04 12:52:00,038 - INFO - ACCEPTED: potassium bicarbonat-citric a-tartaric a -> Tartaric acid
+Confidence: 0.9
+Method: compound_split
+Notes: Part of the compound potassium bicarbonate-citric acid-tartaric acid.
+Issues: 
+--------------------------------------------------

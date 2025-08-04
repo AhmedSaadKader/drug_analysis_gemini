@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(PGPASSWORD=ahmed89saad psql -h localhost -U postgres -d drug_database -c \"\\dt\")",
+      "Bash(PGPASSWORD=ahmed89saad psql -h localhost -U postgres -d drug_database -c \"\\d active_ingredients_extended\")",
+      "Bash(PGPASSWORD=ahmed89saad psql -h localhost -U postgres -d drug_database -c \"SELECT COUNT(*) FROM active_ingredients_extended;\")",
+      "Bash(PGPASSWORD=ahmed89saad psql -h localhost -U postgres -d drug_database -c \"SELECT COUNT(*) FROM drug_ingredients;\")"
     ],
     "deny": []
   }

@@ -1,0 +1,127 @@
+2025-08-04 13:16:29,029 - INFO - ACCEPTED: sodium glycerophosphate -> Sodium glycerophosphate
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:16:29,029 - INFO - ACCEPTED: hydrolyzed marine collagen -> Acacia collagen
+Confidence: 0.85
+Method: fuzzy
+Notes: Could not find exact match, mapping to most similar collagen type. Marine collagen isn't in the reference list, so mapping to acacia collagen as a general collagen source.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:16:29,030 - INFO - NO MAPPING: sheabutter
+Issues: Needs Research
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:16:29,031 - INFO - ACCEPTED: adenosine triphosphate disodium -> Adenosine triphosphate disodium
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:16:29,031 - INFO - ACCEPTED: dorzolamide -> Dorzolamide
+Confidence: 0.9
+Method: fuzzy
+Notes: Found possible ingredient
+Issues: 
+--------------------------------------------------
+2025-08-04 13:16:29,032 - INFO - REJECTED: urea -> urea
+Confidence: 1.0
+Reason: 'urea' not found in extended ingredients database
+Notes: Exact match found.
+--------------------------------------------------
+2025-08-04 13:16:29,032 - INFO - ACCEPTED: lorazepam -> Lorazepam
+Confidence: 0.9
+Method: fuzzy
+Notes: Found possible ingredient
+Issues: 
+--------------------------------------------------
+2025-08-04 13:16:29,033 - INFO - NO MAPPING: centella asciatica
+Issues: Needs Research
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:16:29,033 - INFO - ACCEPTED: nicotinamide -> Niacin
+Confidence: 0.9
+Method: fuzzy
+Notes: Mapping nicotinamide to niacin
+Issues: 
+--------------------------------------------------
+2025-08-04 13:16:29,034 - INFO - NO MAPPING: oak ext.
+Issues: Needs Research
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:16:29,034 - INFO - NO MAPPING: omega 3 ( epa
+Issues: Needs Research
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:16:29,034 - INFO - NO MAPPING: beta coretene-wheat germ oil-safflower
+Issues: Needs Research
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:16:29,035 - INFO - ACCEPTED: phospholipids -> Phospholipids
+Confidence: 0.9
+Method: fuzzy
+Notes: Could not find exact match but might be useful
+Issues: 
+--------------------------------------------------
+2025-08-04 13:16:29,035 - INFO - ACCEPTED: niacin -> Niacin
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 13:16:29,036 - INFO - REJECTED: licorice root extract 21.7mg -> licorice root extract 21.7mg
+Confidence: 0.9
+Reason: 'licorice root extract 21.7mg' not found in extended ingredients database
+Notes: Dosage to be removed, but matching for future references
+--------------------------------------------------
+2025-08-04 13:16:29,036 - INFO - ACCEPTED: amino acids high conc. -> Amino acids high conc.
+Confidence: 0.9
+Method: fuzzy
+Notes: Could not find exact match but might be useful
+Issues: 
+--------------------------------------------------
+2025-08-04 13:16:29,036 - INFO - NO MAPPING: phytosterols
+Issues: Needs Research
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:16:29,037 - INFO - REJECTED: brimonidine tartrate -> brimonidine tartrate
+Confidence: 0.9
+Reason: 'brimonidine tartrate' not found in extended ingredients database
+Notes: Could not find exact match but might be useful
+--------------------------------------------------
+2025-08-04 13:16:29,037 - INFO - NO MAPPING: zinc oxide - aloe vera extract - panthenol-chamomile -tea tree oil-olive oil -thyme oil - dimethicone -talc powder
+Issues: Needs Research
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:16:29,037 - INFO - ACCEPTED: iplant olive oil -> Iplant olive oil
+Confidence: 0.9
+Method: fuzzy
+Notes: Could not find exact match but might be useful
+Issues: 
+--------------------------------------------------
+2025-08-04 13:16:29,038 - INFO - NO MAPPING: Guava Leaves extract
+Issues: Needs Research
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:16:29,038 - INFO - ACCEPTED: benserazide -> Benserazide
+Confidence: 0.9
+Method: fuzzy
+Notes: Could not find exact match but might be useful
+Issues: 
+--------------------------------------------------
+2025-08-04 13:16:29,038 - INFO - ACCEPTED: multivitamin -> Multivitamin
+Confidence: 0.9
+Method: fuzzy
+Notes: Could not find exact match but might be useful
+Issues: 
+--------------------------------------------------
+2025-08-04 13:16:29,038 - INFO - NO MAPPING: diflucortolone
+Issues: Needs Research
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 13:16:29,038 - INFO - NO MAPPING: thioctic acid(alpha lipoic acid)
+Issues: Needs Research
+Reason: AI found no confident matches
+--------------------------------------------------

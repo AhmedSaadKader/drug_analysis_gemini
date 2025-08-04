@@ -1,0 +1,168 @@
+2025-08-04 02:20:49,104 - INFO - Mapped: ribavirin -> Ribavirin
+Confidence: 1.0
+Method: exact
+Notes: Exact match
+Issues: 
+--------------------------------------------------
+2025-08-04 02:20:49,104 - INFO - Mapped: n acetyl cystain -> Acetylcysteine
+Confidence: 0.95
+Method: typo_fix
+Notes: Typo fix: cystain -> cysteine, and 'n acetyl' is a common way to refer to acetylcysteine.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:20:49,104 - INFO - Mapped: natural herb vitamins -> Natural herb vitamins
+Confidence: 0.8
+Method: fuzzy
+Notes: No exact match. Vague ingredient description.
+Issues: Vague ingredient description
+--------------------------------------------------
+2025-08-04 02:20:49,105 - INFO - Mapped: alpha lipoic acid 600 -> ALA
+Confidence: 0.9
+Method: fuzzy
+Notes: Alpha lipoic acid often abbreviated as ALA.
+Issues: Dosage (600) removed.
+--------------------------------------------------
+2025-08-04 02:20:49,105 - INFO - Mapped: marine collagen -> Marine Collagen
+Confidence: 1.0
+Method: exact
+Notes: Exact match
+Issues: 
+--------------------------------------------------
+2025-08-04 02:20:49,105 - INFO - Mapped: pertuzumab -> Pertuzumab
+Confidence: 1.0
+Method: exact
+Notes: Exact match
+Issues: 
+--------------------------------------------------
+2025-08-04 02:20:49,105 - INFO - Mapped: vilazodone -> Vilazodone
+Confidence: 1.0
+Method: exact
+Notes: Exact match
+Issues: 
+--------------------------------------------------
+2025-08-04 02:20:49,106 - INFO - Mapped: nifuroxazide -> Nifuroxazide
+Confidence: 1.0
+Method: exact
+Notes: Exact match
+Issues: 
+--------------------------------------------------
+2025-08-04 02:20:49,106 - INFO - Mapped: sodium dehydrocholate -> Sodium dehydrocholate
+Confidence: 1.0
+Method: exact
+Notes: Exact match
+Issues: 
+--------------------------------------------------
+2025-08-04 02:20:49,106 - INFO - Mapped: timonacic acid -> Timonacic acid
+Confidence: 1.0
+Method: exact
+Notes: Exact match
+Issues: 
+--------------------------------------------------
+2025-08-04 02:20:49,106 - INFO - Mapped: ibuprofen -> Ibuprofen
+Confidence: 1.0
+Method: exact
+Notes: Exact match
+Issues: 
+--------------------------------------------------
+2025-08-04 02:20:49,106 - INFO - Mapped: vitamin b12 -> Vitamin B12
+Confidence: 1.0
+Method: exact
+Notes: Exact match
+Issues: 
+--------------------------------------------------
+2025-08-04 02:21:05,159 - INFO - Mapped: lactoperoxidase -> Lactoperoxidase
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:21:05,159 - INFO - Mapped: 2qr -> 2QR
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:21:05,159 - INFO - Mapped: netilmicin -> Netilmicin
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:21:05,159 - INFO - Mapped: selenomethionine -> Selenomethionine
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:21:16,931 - INFO - Mapped: melon -> Melon
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in reference list.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:21:16,931 - INFO - Mapped: l-threonine -> L-threonine
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in reference list.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:21:16,931 - INFO - Mapped: mosapride -> Mosapride
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:21:16,931 - INFO - Mapped: casein -> Casein
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:21:16,931 - INFO - Mapped: tamoxifen -> Tamoxifen
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:21:16,931 - INFO - Mapped: aloreed 20g ointment -> Aloreed ointment
+Confidence: 0.95
+Method: fuzzy
+Notes: Removed dosage. Fuzzy match found.
+Issues: Dosage information detected.
+--------------------------------------------------
+2025-08-04 02:21:29,862 - INFO - Mapped: eugenol -> Eugenol
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:21:29,862 - INFO - Mapped: nicotine -> Nicotine
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:21:29,862 - INFO - Mapped: glucagon -> Glucagon
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:21:29,862 - INFO - Mapped: melphalan -> Melphalan
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:21:29,862 - INFO - Mapped: selenium sulfide -> Selenium sulfide
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:21:29,863 - INFO - Mapped: carbamide peroxide -> Carbamide peroxide
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------

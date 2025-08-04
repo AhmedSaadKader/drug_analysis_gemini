@@ -1,0 +1,76 @@
+INGREDIENT QUALITY ANALYSIS REPORT
+Generated: 2025-08-04T01:52:20.357504
+Sample Size: 20
+Extended Ingredients Available: 3401
+
+=== SUMMARY ===
+Exact matches: 9 (45.0%)
+Fuzzy matches: 11 (55.0%)
+No matches: 0 (0.0%)
+
+=== QUALITY ISSUES ===
+Compound ingredients: 2
+Formatting issues: 2
+Missing ingredients: 0
+
+=== AI ANALYSIS HIGHLIGHTS ===
+
+Original: oils(silicone
+Issues: Typo/Formatting, Incomplete name
+Suggested: Silicone oil
+Confidence: 0.9
+Notes: Corrected typo and formatting. Assumed 'oils' refers to silicone oil.
+
+Original: ox-bile extract
+Issues: 
+Suggested: Ox bile extract
+Confidence: 0.95
+Notes: Standardized spacing. No further issues identified.
+
+Original: glycerol 0.9%
+Issues: Dosage information mixed with ingredient name
+Suggested: Glycerol
+Confidence: 0.9
+Notes: Removed dosage information. Found exact match in reference ingredients.
+
+Original: capilectinetm
+Issues: Proprietary name, Unknown Ingredient
+Suggested: Capilectine TM
+Confidence: 0.1
+Notes: Appears to be a proprietary name or trademarked ingredient. No known match.
+
+Original: glyceryl mon
+Issues: Incomplete name
+Suggested: Glyceryl mono...
+Confidence: 0.3
+Notes: Incomplete ingredient name. Needs further investigation. Could be glyceryl monooleate, monostearate, etc.
+
+Original: disodium cocoamphodiacetate
+Issues: 
+Suggested: Disodium cocoamphodiacetate
+Confidence: 1.0
+Notes: No issues identified. Name appears correct.
+
+Original: miglitol
+Issues: 
+Suggested: Miglitol
+Confidence: 1.0
+Notes: No issues identified. Name appears correct.
+
+Original: capecitabine
+Issues: 
+Suggested: Capecitabine
+Confidence: 1.0
+Notes: No issues identified. Name appears correct.
+
+Original: melatonin
+Issues: 
+Suggested: Melatonin
+Confidence: 1.0
+Notes: No issues identified. Name appears correct.
+
+Original: allium cepa
+Issues: 
+Suggested: Allium cepa
+Confidence: 1.0
+Notes: No issues identified. Correct binomial nomenclature for onion.

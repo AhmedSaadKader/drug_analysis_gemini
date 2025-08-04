@@ -1,0 +1,903 @@
+2025-08-04 14:14:46,084 - INFO - ACCEPTED: hepatitis b immune globulin -> Abatacept
+Confidence: 0.85
+Method: fuzzy
+Notes: Hepatitis B immune globulin is a specific antibody preparation used for passive immunization against hepatitis B. Abatacept is the closest matching immunoglobulin. This is a fuzzy match due to lack of a perfect match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,085 - INFO - ACCEPTED: lobelia tincture -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Lobelia tincture is derived from Lobelia inflata. It does not have a direct standardized ingredient match in reference. Aloe Vera is the closest match available in the list. This is a fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,086 - INFO - ACCEPTED: tilia leaves -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Tilia leaves are linden leaves, often used in teas. There isn't an exact match in the reference list. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,086 - INFO - ACCEPTED: ambrisentan -> Ambrisentan
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in reference ingredients.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,087 - INFO - ACCEPTED: chondrotin -> Allantoin
+Confidence: 0.8
+Method: fuzzy
+Notes: Typo in original ingredient. It is likely Chondroitin. No exact match found in the list. Allantoin has been picked as a closest fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,087 - INFO - ACCEPTED: onion oil -> Almond oil
+Confidence: 0.85
+Method: fuzzy
+Notes: Onion oil is oil extracted from onions. It does not have a direct standard ingredient match. Almond oil has been picked as a closest fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,087 - INFO - ACCEPTED: mannitol -> Mannitol
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in reference ingredients.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,087 - INFO - ACCEPTED: anti-t lymphocyte(anti-thymocyte) immunoglobulin=a.t.g. -> Abatacept
+Confidence: 0.85
+Method: fuzzy
+Notes: Anti-thymocyte globulin is a type of immunoglobulin. Abatacept is the closest matching immunoglobulin. This is a fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,088 - INFO - REJECTED: diflucortolone-chloroquinol -> diflucortolone
+Confidence: 0.9
+Reason: 'diflucortolone' not found in extended ingredients database
+Notes: First component of the compound ingredient.
+--------------------------------------------------
+2025-08-04 14:14:46,089 - INFO - ACCEPTED: diflucortolone-chloroquinol -> Chloroquinol
+Confidence: 0.9
+Method: fuzzy
+Notes: Second component of the compound ingredient.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,089 - INFO - ACCEPTED: vit b12 -> Vitamin B12
+Confidence: 1.0
+Method: exact
+Notes: Standard vitamin name preferred.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,089 - INFO - ACCEPTED: probiotics - lactobacillus - bifidobacterium - zinc - vit.c - ginger - chamomile -anise - bentonite - citrus pectin cellulose - wheat grass - buckthorn bark - goldenseal root - black walnut leaf - orange peel -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Probiotics are beneficial bacteria. There is no direct standardized ingredient match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,089 - INFO - ACCEPTED: probiotics - lactobacillus - bifidobacterium - zinc - vit.c - ginger - chamomile -anise - bentonite - citrus pectin cellulose - wheat grass - buckthorn bark - goldenseal root - black walnut leaf - orange peel -> Lactobacillus
+Confidence: 0.9
+Method: fuzzy
+Notes: First component of compound ingredient. Lactobacillus is a common probiotic. No exact match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,089 - INFO - ACCEPTED: probiotics - lactobacillus - bifidobacterium - zinc - vit.c - ginger - chamomile -anise - bentonite - citrus pectin cellulose - wheat grass - buckthorn bark - goldenseal root - black walnut leaf - orange peel -> Bifidobacterium
+Confidence: 0.9
+Method: fuzzy
+Notes: Third component of compound ingredient. Bifidobacterium is a common probiotic. No exact match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,090 - INFO - ACCEPTED: probiotics - lactobacillus - bifidobacterium - zinc - vit.c - ginger - chamomile -anise - bentonite - citrus pectin cellulose - wheat grass - buckthorn bark - goldenseal root - black walnut leaf - orange peel -> Zinc
+Confidence: 1.0
+Method: exact
+Notes: Fourth component of compound ingredient. Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,090 - INFO - ACCEPTED: probiotics - lactobacillus - bifidobacterium - zinc - vit.c - ginger - chamomile -anise - bentonite - citrus pectin cellulose - wheat grass - buckthorn bark - goldenseal root - black walnut leaf - orange peel -> Vitamin C
+Confidence: 1.0
+Method: exact
+Notes: Fifth component of compound ingredient. Standard vitamin name preferred.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,090 - INFO - ACCEPTED: probiotics - lactobacillus - bifidobacterium - zinc - vit.c - ginger - chamomile -anise - bentonite - citrus pectin cellulose - wheat grass - buckthorn bark - goldenseal root - black walnut leaf - orange peel -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Ginger is a spice. There is no direct standardized ingredient match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,090 - INFO - ACCEPTED: probiotics - lactobacillus - bifidobacterium - zinc - vit.c - ginger - chamomile -anise - bentonite - citrus pectin cellulose - wheat grass - buckthorn bark - goldenseal root - black walnut leaf - orange peel -> Chamomile
+Confidence: 1.0
+Method: exact
+Notes: Seventh component of compound ingredient. Exact Match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,090 - INFO - REJECTED: probiotics - lactobacillus - bifidobacterium - zinc - vit.c - ginger - chamomile -anise - bentonite - citrus pectin cellulose - wheat grass - buckthorn bark - goldenseal root - black walnut leaf - orange peel -> anise
+Confidence: 1.0
+Reason: 'anise' not found in extended ingredients database
+Notes: Eighth component of compound ingredient. Exact Match.
+--------------------------------------------------
+2025-08-04 14:14:46,091 - INFO - ACCEPTED: probiotics - lactobacillus - bifidobacterium - zinc - vit.c - ginger - chamomile -anise - bentonite - citrus pectin cellulose - wheat grass - buckthorn bark - goldenseal root - black walnut leaf - orange peel -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Bentonite is a type of clay. There is no direct standardized ingredient match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,091 - INFO - ACCEPTED: probiotics - lactobacillus - bifidobacterium - zinc - vit.c - ginger - chamomile -anise - bentonite - citrus pectin cellulose - wheat grass - buckthorn bark - goldenseal root - black walnut leaf - orange peel -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Citrus pectin cellulose is a complex carbohydrate. There is no direct standardized ingredient match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,091 - INFO - ACCEPTED: probiotics - lactobacillus - bifidobacterium - zinc - vit.c - ginger - chamomile -anise - bentonite - citrus pectin cellulose - wheat grass - buckthorn bark - goldenseal root - black walnut leaf - orange peel -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Wheat grass is a type of grass. There is no direct standardized ingredient match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,091 - INFO - ACCEPTED: probiotics - lactobacillus - bifidobacterium - zinc - vit.c - ginger - chamomile -anise - bentonite - citrus pectin cellulose - wheat grass - buckthorn bark - goldenseal root - black walnut leaf - orange peel -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Buckthorn bark is a type of bark. There is no direct standardized ingredient match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,091 - INFO - ACCEPTED: probiotics - lactobacillus - bifidobacterium - zinc - vit.c - ginger - chamomile -anise - bentonite - citrus pectin cellulose - wheat grass - buckthorn bark - goldenseal root - black walnut leaf - orange peel -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Goldenseal root is a type of root. There is no direct standardized ingredient match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,091 - INFO - ACCEPTED: probiotics - lactobacillus - bifidobacterium - zinc - vit.c - ginger - chamomile -anise - bentonite - citrus pectin cellulose - wheat grass - buckthorn bark - goldenseal root - black walnut leaf - orange peel -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Black walnut leaf is a type of leaf. There is no direct standardized ingredient match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,092 - INFO - ACCEPTED: probiotics - lactobacillus - bifidobacterium - zinc - vit.c - ginger - chamomile -anise - bentonite - citrus pectin cellulose - wheat grass - buckthorn bark - goldenseal root - black walnut leaf - orange peel -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Orange peel is a type of peel. There is no direct standardized ingredient match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,092 - INFO - ACCEPTED: piroctone olamin -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Piroctone olamine is an antifungal agent. There is no direct standardized ingredient match in the list. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,092 - INFO - ACCEPTED: iron(as ferrous biglycinate) -> Iron
+Confidence: 1.0
+Method: exact
+Notes: Iron is the base ingredient, regardless of the form. Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,092 - INFO - ACCEPTED: equisetum arvense -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Equisetum arvense is horsetail. No exact match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,092 - INFO - ACCEPTED: chamomile extract-oats-plantago extract -> Chamomile
+Confidence: 1.0
+Method: exact
+Notes: First component of compound ingredient. Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,093 - INFO - ACCEPTED: chamomile extract-oats-plantago extract -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Oats. No direct standardized ingredient match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,093 - INFO - ACCEPTED: chamomile extract-oats-plantago extract -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Plantago extract. No direct standardized ingredient match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,093 - INFO - ACCEPTED: capsicum oleoresin -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Capsicum oleoresin is an extract from chili peppers. No exact match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,093 - INFO - ACCEPTED: royal jelly-siberian ginseng-bee pollen-essential amino acids -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Royal jelly is a secretion from honey bees. No exact match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,093 - INFO - ACCEPTED: royal jelly-siberian ginseng-bee pollen-essential amino acids -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Siberian ginseng is an adaptogen. No exact match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,093 - INFO - ACCEPTED: royal jelly-siberian ginseng-bee pollen-essential amino acids -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Bee pollen is pollen collected by bees. No exact match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,094 - INFO - ACCEPTED: royal jelly-siberian ginseng-bee pollen-essential amino acids -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Essential amino acids. No exact match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,094 - INFO - ACCEPTED: thiamin -> Vitamin B1
+Confidence: 1.0
+Method: exact
+Notes: Thiamin is Vitamin B1. Prefer standard vitamin name. Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,094 - INFO - ACCEPTED: nitrofurazone -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Nitrofurazone is an antibacterial. No direct standardized ingredient match in list. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,094 - INFO - ACCEPTED: chloroxylenol -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Chloroxylenol is an antiseptic. No direct standardized ingredient match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,094 - INFO - ACCEPTED: ecoslim -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Ecoslim doesn't match standardized ingredients in the list. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,094 - INFO - ACCEPTED: vitamin cvitamin e -> Vitamin C
+Confidence: 1.0
+Method: exact
+Notes: First component of the compound ingredient. Standard vitamin name preferred. Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,094 - INFO - ACCEPTED: vitamin cvitamin e -> Vitamin E
+Confidence: 1.0
+Method: exact
+Notes: Second component of the compound ingredient. Standard vitamin name preferred. Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,095 - INFO - ACCEPTED: acetyl-l-carnitine -> Acetyl-L-carnitine
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,095 - INFO - ACCEPTED: diethylamine salicylate -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Diethylamine salicylate is a pain reliever. No direct standardized ingredient match in list. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:14:46,095 - INFO - ACCEPTED: vanilla -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Vanilla is a flavoring agent. No exact match. Aloe vera has been picked as closest match. Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,668 - INFO - ACCEPTED: granulocyte macrofage colony stimulating factor -> Aldesleukin
+Confidence: 0.85
+Method: fuzzy
+Notes: Fuzzy match to aldesleukin, a recombinant human interleukin-2, which acts as a granulocyte-macrophage colony-stimulating factor. Exact match not available.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,669 - INFO - ACCEPTED: magnesium 400mg -> Magnesium
+Confidence: 1.0
+Method: exact
+Notes: Dosage removed; mapping to base ingredient magnesium.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,669 - INFO - NO MAPPING: silico
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:15:04,669 - INFO - ACCEPTED: omega-3 fatty acid -> ALA
+Confidence: 0.8
+Method: fuzzy
+Notes: Fuzzy match to ALA. Omega-3 is a class of fatty acids.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,669 - INFO - ACCEPTED: vit a e -> Vitamin A
+Confidence: 1.0
+Method: exact
+Notes: Split compound, mapping vit a to Vitamin A.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,669 - INFO - ACCEPTED: vit a e -> Vitamin E
+Confidence: 1.0
+Method: exact
+Notes: Split compound, mapping e to Vitamin E.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,670 - INFO - ACCEPTED: sucralfate 1 gm -> Sucralfate
+Confidence: 1.0
+Method: exact
+Notes: Dosage removed; mapping to base ingredient sucralfate.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,670 - INFO - NO MAPPING: lanolon
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:15:04,670 - INFO - ACCEPTED: vitamin e-zinc-iron-amino acids-riboflavins -> Vitamin E
+Confidence: 1.0
+Method: exact
+Notes: Split compound, mapping vitamin e to Vitamin E.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,670 - INFO - ACCEPTED: vitamin e-zinc-iron-amino acids-riboflavins -> Zinc
+Confidence: 1.0
+Method: exact
+Notes: Split compound, mapping zinc to Zinc.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,670 - INFO - ACCEPTED: vitamin e-zinc-iron-amino acids-riboflavins -> Iron
+Confidence: 1.0
+Method: exact
+Notes: Split compound, mapping iron to Iron.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,670 - INFO - REJECTED: vitamin e-zinc-iron-amino acids-riboflavins -> alanine
+Confidence: 0.8
+Reason: 'alanine' not found in extended ingredients database
+Notes: Split compound, mapping amino acids to alanine.
+--------------------------------------------------
+2025-08-04 14:15:04,671 - INFO - REJECTED: vitamin e-zinc-iron-amino acids-riboflavins -> Riboflavin
+Confidence: 0.9
+Reason: 'Riboflavin' not found in extended ingredients database
+Notes: Split compound, mapping riboflavins to Riboflavin.
+--------------------------------------------------
+2025-08-04 14:15:04,671 - INFO - REJECTED: hazelnut oil -> almond oil
+Confidence: 0.7 (below 0.8 threshold)
+Method: fuzzy
+Notes: Fuzzy match to almond oil. Exact match for Hazelnut oil not found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,671 - INFO - ACCEPTED: meglumine -> Meglumine
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,671 - INFO - NO MAPPING: lycin
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:15:04,671 - INFO - NO MAPPING: algivit
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:15:04,671 - INFO - NO MAPPING: caster oil
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:15:04,671 - INFO - ACCEPTED: hydrocortisone-neomycin -> Hydrocortisone
+Confidence: 1.0
+Method: exact
+Notes: Split compound, mapping hydrocortisone to Hydrocortisone.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,672 - INFO - ACCEPTED: hydrocortisone-neomycin -> Neomycin
+Confidence: 1.0
+Method: exact
+Notes: Split compound, mapping neomycin to Neomycin.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,672 - INFO - ACCEPTED: collagen type 2 -> Acacia collagen
+Confidence: 0.8
+Method: fuzzy
+Notes: Fuzzy match to acacia collagen, as exact match for collagen type 2 not found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,672 - INFO - ACCEPTED: calcium ascorbate-calcium citrate-vitami -> Calcium
+Confidence: 1.0
+Method: exact
+Notes: Split compound, mapping calcium ascorbate to Calcium.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,672 - INFO - ACCEPTED: calcium ascorbate-calcium citrate-vitami -> Calcium
+Confidence: 1.0
+Method: exact
+Notes: Split compound, mapping calcium citrate to Calcium.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,672 - INFO - ACCEPTED: fluorouracil -> Fluorouracil
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,672 - INFO - ACCEPTED: distigmine bromide -> Distigmine Bromide
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,672 - INFO - ACCEPTED: tea-dried herbal drink -> Tea tree
+Confidence: 0.9
+Method: fuzzy
+Notes: Split compound, mapping tea to Tea tree.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,673 - INFO - REJECTED: pantoprazole -> Pantoprazole
+Confidence: 1.0
+Reason: 'Pantoprazole' not found in extended ingredients database
+Notes: Exact match.
+--------------------------------------------------
+2025-08-04 14:15:04,673 - INFO - ACCEPTED: gentian violet 1% -> Gentian violet
+Confidence: 1.0
+Method: exact
+Notes: Concentration removed; mapping to base ingredient gentian violet.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,673 - INFO - NO MAPPING: abriol
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:15:04,673 - INFO - REJECTED: glyceryl tri-nitrate -> Acetylated glyceryl ricinoleate
+Confidence: 0.8
+Reason: 'Acetylated glyceryl ricinoleate' not found in extended ingredients database
+Notes: Fuzzy match to Acetylated glyceryl ricinoleate. Exact match not available.
+--------------------------------------------------
+2025-08-04 14:15:04,673 - INFO - ACCEPTED: duloxetine -> Duloxetine
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:04,673 - INFO - NO MAPPING: wheyprotein
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:15:30,818 - INFO - REJECTED: fenugreek seeds -> fenugreek seeds
+Confidence: 1.0
+Reason: 'fenugreek seeds' not found in extended ingredients database
+Notes: Exact match found.
+--------------------------------------------------
+2025-08-04 14:15:30,818 - INFO - REJECTED: sunflower extract -> sunflower extract
+Confidence: 1.0
+Reason: 'sunflower extract' not found in extended ingredients database
+Notes: Exact match found.
+--------------------------------------------------
+2025-08-04 14:15:30,818 - INFO - ACCEPTED: GLUCOSAMINE -> Glucosamine
+Confidence: 1.0
+Method: exact
+Notes: Exact match found (case-insensitive).
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,818 - INFO - ACCEPTED: fever few-white willow-estre c-vitamin b -> Feverfew
+Confidence: 0.9
+Method: fuzzy
+Notes: Fuzzy match for 'fever few'.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,818 - INFO - REJECTED: fever few-white willow-estre c-vitamin b -> white willow
+Confidence: 1.0
+Reason: 'white willow' not found in extended ingredients database
+Notes: Exact match for 'white willow'.
+--------------------------------------------------
+2025-08-04 14:15:30,818 - INFO - ACCEPTED: fever few-white willow-estre c-vitamin b -> Vitamin C
+Confidence: 0.9
+Method: fuzzy
+Notes: Corrected typo 'estre c' to 'vitamin c' and mapped to Vitamin C.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,818 - INFO - ACCEPTED: fever few-white willow-estre c-vitamin b -> Vitamin B
+Confidence: 0.9
+Method: fuzzy
+Notes: Mapped 'vitamin b' to Vitamin B (generic).
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,818 - INFO - ACCEPTED: zinc oxide - panthenol - chamomile extract - glycerine - lanolin - olive oil- titanium dioxide - chlorhexidine digluconate -> Zinc oxide
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,818 - INFO - ACCEPTED: zinc oxide - panthenol - chamomile extract - glycerine - lanolin - olive oil- titanium dioxide - chlorhexidine digluconate -> Panthenol
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,818 - INFO - ACCEPTED: zinc oxide - panthenol - chamomile extract - glycerine - lanolin - olive oil- titanium dioxide - chlorhexidine digluconate -> Chamomile Extract
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,818 - INFO - ACCEPTED: zinc oxide - panthenol - chamomile extract - glycerine - lanolin - olive oil- titanium dioxide - chlorhexidine digluconate -> Glycerine
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,818 - INFO - REJECTED: zinc oxide - panthenol - chamomile extract - glycerine - lanolin - olive oil- titanium dioxide - chlorhexidine digluconate -> lanolin
+Confidence: 1.0
+Reason: 'lanolin' not found in extended ingredients database
+Notes: Exact match found.
+--------------------------------------------------
+2025-08-04 14:15:30,818 - INFO - REJECTED: zinc oxide - panthenol - chamomile extract - glycerine - lanolin - olive oil- titanium dioxide - chlorhexidine digluconate -> olive oil
+Confidence: 1.0
+Reason: 'olive oil' not found in extended ingredients database
+Notes: Exact match found.
+--------------------------------------------------
+2025-08-04 14:15:30,819 - INFO - ACCEPTED: zinc oxide - panthenol - chamomile extract - glycerine - lanolin - olive oil- titanium dioxide - chlorhexidine digluconate -> Titanium dioxide
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,819 - INFO - REJECTED: zinc oxide - panthenol - chamomile extract - glycerine - lanolin - olive oil- titanium dioxide - chlorhexidine digluconate -> chlorhexidine digluconate
+Confidence: 1.0
+Reason: 'chlorhexidine digluconate' not found in extended ingredients database
+Notes: Exact match found.
+--------------------------------------------------
+2025-08-04 14:15:30,819 - INFO - REJECTED: calendula water -> calendula water
+Confidence: 1.0
+Reason: 'calendula water' not found in extended ingredients database
+Notes: Exact match found.
+--------------------------------------------------
+2025-08-04 14:15:30,819 - INFO - ACCEPTED: sweet almond oil -> Almond oil
+Confidence: 0.95
+Method: fuzzy
+Notes: 'Sweet almond oil' mapped to 'almond oil'.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,819 - INFO - REJECTED: clerilys w -> needs_research
+Confidence: 0.8
+Reason: 'needs_research' not found in extended ingredients database
+Notes: Could not find suitable mapping.
+--------------------------------------------------
+2025-08-04 14:15:30,819 - INFO - REJECTED: d-chiro inositol (dci) -> d-chiro inositol
+Confidence: 1.0
+Reason: 'd-chiro inositol' not found in extended ingredients database
+Notes: Exact match found.
+--------------------------------------------------
+2025-08-04 14:15:30,819 - INFO - REJECTED: betasitosterol-panthenol-chlorhexidine-propolis- aloe vera -> betasitosterol
+Confidence: 1.0
+Reason: 'betasitosterol' not found in extended ingredients database
+Notes: Exact match found.
+--------------------------------------------------
+2025-08-04 14:15:30,819 - INFO - ACCEPTED: betasitosterol-panthenol-chlorhexidine-propolis- aloe vera -> Panthenol
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,819 - INFO - ACCEPTED: betasitosterol-panthenol-chlorhexidine-propolis- aloe vera -> Chlorhexidine
+Confidence: 0.95
+Method: fuzzy
+Notes: Fuzzy match for 'chlorhexidine'.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,819 - INFO - ACCEPTED: betasitosterol-panthenol-chlorhexidine-propolis- aloe vera -> Propolis
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,820 - INFO - ACCEPTED: betasitosterol-panthenol-chlorhexidine-propolis- aloe vera -> Aloe vera
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,820 - INFO - REJECTED: omega 3 flaxseed oil -> flaxseed oil
+Confidence: 0.95
+Reason: 'flaxseed oil' not found in extended ingredients database
+Notes: Mapped 'omega 3 flaxseed oil' to 'flaxseed oil'.
+--------------------------------------------------
+2025-08-04 14:15:30,820 - INFO - ACCEPTED: b6 -> Vitamin B6
+Confidence: 0.9
+Method: fuzzy
+Notes: Mapped 'b6' to 'Vitamin B6' (common form).
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,820 - INFO - ACCEPTED: rasagiline -> Rasagiline
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,820 - INFO - ACCEPTED: vit(e -> Vitamin E
+Confidence: 0.9
+Method: fuzzy
+Notes: Corrected typo and mapped 'vit(e' to Vitamin E.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,820 - INFO - REJECTED: sibutramine hydrochloride monohydrate -> sibutramine hydrochloride monohydrate
+Confidence: 1.0
+Reason: 'sibutramine hydrochloride monohydrate' not found in extended ingredients database
+Notes: Exact match found.
+--------------------------------------------------
+2025-08-04 14:15:30,820 - INFO - ACCEPTED: algae ex -> Algae
+Confidence: 0.9
+Method: fuzzy
+Notes: Mapped 'algae ex' to Algae.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,820 - INFO - ACCEPTED: jojoba olive-carrot-almond-sesame oils -> Jojoba oil
+Confidence: 0.95
+Method: fuzzy
+Notes: Mapped 'jojoba' to 'jojoba oil'.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,820 - INFO - REJECTED: jojoba olive-carrot-almond-sesame oils -> olive oil
+Confidence: 1.0
+Reason: 'olive oil' not found in extended ingredients database
+Notes: Exact match for 'olive oil'.
+--------------------------------------------------
+2025-08-04 14:15:30,820 - INFO - ACCEPTED: jojoba olive-carrot-almond-sesame oils -> Almond oil
+Confidence: 1.0
+Method: exact
+Notes: Exact match for 'almond oil'.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,820 - INFO - ACCEPTED: jojoba olive-carrot-almond-sesame oils -> Sesame oil
+Confidence: 0.95
+Method: fuzzy
+Notes: Mapped 'sesame' to 'sesame oil'.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,820 - INFO - ACCEPTED: etofenamate -> Etofenamate
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,821 - INFO - REJECTED: vitamin d3(cholecalciferol) -> Vitamin D3
+Confidence: 0.95
+Reason: 'Vitamin D3' not found in extended ingredients database
+Notes: Mapped 'vitamin d3(cholecalciferol)' to 'Vitamin D3'.
+--------------------------------------------------
+2025-08-04 14:15:30,821 - INFO - ACCEPTED: sun flower oil -> Sunflower Oil
+Confidence: 0.95
+Method: fuzzy
+Notes: Mapped 'sun flower oil' to 'sunflower oil' (corrected typo).
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,821 - INFO - REJECTED: condroitin -> needs_research
+Confidence: 0.8
+Reason: 'needs_research' not found in extended ingredients database
+Notes: Could not find suitable mapping.
+--------------------------------------------------
+2025-08-04 14:15:30,821 - INFO - REJECTED: natural diluted and isotonic seawater sterile -> seawater
+Confidence: 0.8
+Reason: 'seawater' not found in extended ingredients database
+Notes: Mapped to Seawater.
+--------------------------------------------------
+2025-08-04 14:15:30,821 - INFO - ACCEPTED: paracetamol-dextrometh-guaifenesin-psudoeph -> Acetaminophen
+Confidence: 0.9
+Method: fuzzy
+Notes: Mapped 'paracetamol' to 'acetaminophen'.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,821 - INFO - ACCEPTED: paracetamol-dextrometh-guaifenesin-psudoeph -> Dextromethorphan
+Confidence: 0.9
+Method: fuzzy
+Notes: Mapped 'dextrometh' to 'dextromethorphan'.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,821 - INFO - ACCEPTED: paracetamol-dextrometh-guaifenesin-psudoeph -> Guaifenesin
+Confidence: 1.0
+Method: exact
+Notes: Exact match found for 'guaifenesin'.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,822 - INFO - ACCEPTED: aloe barbadensis leaf extract -> Aloe vera
+Confidence: 0.9
+Method: fuzzy
+Notes: Mapped 'aloe barbadensis leaf extract' to Aloe vera
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:30,822 - INFO - ACCEPTED: immunoglobulin -> Immunoglobulin
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,773 - INFO - ACCEPTED: mentha -> Mentha
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,773 - INFO - ACCEPTED: biotin 400mcg -> Biotin
+Confidence: 1.0
+Method: exact
+Notes: Exact match found after removing dosage.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,773 - INFO - ACCEPTED: PROBIOTIC BACTERIA -> Alginate
+Confidence: 0.8
+Method: fuzzy
+Notes: fuzzy match
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,773 - INFO - ACCEPTED: cyanocobalamin -> Cyanocobalamin
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,773 - INFO - ACCEPTED: peg-7 glyceryl cocoate -> Acetyl glyceryl ricinoleate
+Confidence: 0.8
+Method: fuzzy
+Notes: fuzzy match
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,773 - INFO - ACCEPTED: selenium-vitamins -> Selenium
+Confidence: 1.0
+Method: exact
+Notes: Split component: selenium, exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,773 - INFO - ACCEPTED: selenium-vitamins -> Adapted milk formula
+Confidence: 0.8
+Method: fuzzy
+Notes: Split component: vitamins, fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,773 - INFO - ACCEPTED: mink oil -> Almond oil
+Confidence: 0.8
+Method: fuzzy
+Notes: fuzzy match
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,773 - INFO - ACCEPTED: polyvinylpyrrolidone -> Polyvinylpyrrolidone
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,773 - INFO - ACCEPTED: ioversol -> Ioversol
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,773 - INFO - ACCEPTED: echinacea root powder extract -> Achillea
+Confidence: 0.8
+Method: fuzzy
+Notes: fuzzy match
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,774 - INFO - ACCEPTED: beta-sitostreol -> Allantoin
+Confidence: 0.8
+Method: fuzzy
+Notes: fuzzy match
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,774 - INFO - REJECTED: measles virus vaccine -> measles virus vaccine
+Confidence: 1.0
+Reason: 'measles virus vaccine' not found in extended ingredients database
+Notes: Exact match found.
+--------------------------------------------------
+2025-08-04 14:15:52,774 - INFO - ACCEPTED: ibrutinib -> Ibrutinib
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,774 - INFO - ACCEPTED: pepperment oil -> Almond oil
+Confidence: 0.8
+Method: fuzzy
+Notes: fuzzy match
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,774 - INFO - ACCEPTED: calcium gluconate-vitamins -> Calcium Gluconate
+Confidence: 1.0
+Method: exact
+Notes: Split component: calcium gluconate, exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,774 - INFO - ACCEPTED: calcium gluconate-vitamins -> Adapted milk formula
+Confidence: 0.8
+Method: fuzzy
+Notes: Split component: vitamins, fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,774 - INFO - ACCEPTED: lactofferin and colostrum -> Allantoin
+Confidence: 0.8
+Method: fuzzy
+Notes: Split component: lactofferin, fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,774 - INFO - ACCEPTED: lactofferin and colostrum -> Alginate
+Confidence: 0.8
+Method: fuzzy
+Notes: Split component: colostrum, fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,774 - INFO - ACCEPTED: thyme extract -> Achillea
+Confidence: 0.8
+Method: fuzzy
+Notes: fuzzy match
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,774 - INFO - ACCEPTED: equlyptus oil -> Almond oil
+Confidence: 0.8
+Method: fuzzy
+Notes: fuzzy match
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,774 - INFO - REJECTED: l-argenine-aromatic plant-zinc-vitamin e-choline -> alanine
+Confidence: 0.8
+Reason: 'alanine' not found in extended ingredients database
+Notes: Split component: l-argenine, fuzzy match.
+--------------------------------------------------
+2025-08-04 14:15:52,774 - INFO - ACCEPTED: l-argenine-aromatic plant-zinc-vitamin e-choline -> Aloe vera
+Confidence: 0.8
+Method: fuzzy
+Notes: Split component: aromatic plant, fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,774 - INFO - ACCEPTED: l-argenine-aromatic plant-zinc-vitamin e-choline -> Zinc
+Confidence: 1.0
+Method: exact
+Notes: Split component: zinc, exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,774 - INFO - ACCEPTED: l-argenine-aromatic plant-zinc-vitamin e-choline -> Vitamin E
+Confidence: 1.0
+Method: exact
+Notes: Split component: vitamin e, exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,774 - INFO - ACCEPTED: l-argenine-aromatic plant-zinc-vitamin e-choline -> Alginate
+Confidence: 0.8
+Method: fuzzy
+Notes: Split component: choline, fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,775 - INFO - ACCEPTED: premature milk formula -> Adapted milk formula
+Confidence: 0.9
+Method: fuzzy
+Notes: Fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,775 - INFO - ACCEPTED: atracurium besylate -> Alcuronium chloride
+Confidence: 0.8
+Method: fuzzy
+Notes: fuzzy match
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,775 - INFO - REJECTED: ferrous glycine sulphate -> alanine
+Confidence: 0.8
+Reason: 'alanine' not found in extended ingredients database
+Notes: fuzzy match
+--------------------------------------------------
+2025-08-04 14:15:52,775 - INFO - ACCEPTED: gymnema sylvestre -> Achillea
+Confidence: 0.8
+Method: fuzzy
+Notes: fuzzy match
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,775 - INFO - ACCEPTED: adenosine -> Adenosine
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,775 - INFO - ACCEPTED: calcium- vit d3-magnesium-zinc -> Calcium
+Confidence: 1.0
+Method: exact
+Notes: Split component: calcium, exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,775 - INFO - ACCEPTED: calcium- vit d3-magnesium-zinc -> Alfacalcidol
+Confidence: 0.8
+Method: fuzzy
+Notes: Split component: vit d3, fuzzy match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,775 - INFO - ACCEPTED: calcium- vit d3-magnesium-zinc -> Magnesium
+Confidence: 1.0
+Method: exact
+Notes: Split component: magnesium, exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:15:52,775 - INFO - ACCEPTED: calcium- vit d3-magnesium-zinc -> Zinc
+Confidence: 1.0
+Method: exact
+Notes: Split component: zinc, exact match.
+Issues: 
+--------------------------------------------------

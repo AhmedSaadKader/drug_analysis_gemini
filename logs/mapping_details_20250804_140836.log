@@ -1,0 +1,91 @@
+2025-08-04 14:08:51,445 - INFO - ACCEPTED: vitamin c&e -> Vitamin C
+Confidence: 1.0
+Method: exact
+Notes: Standard vitamin name.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:08:51,445 - INFO - ACCEPTED: vitamin c&e -> Vitamin E
+Confidence: 1.0
+Method: exact
+Notes: Standard vitamin name.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:08:51,445 - INFO - ACCEPTED: nystatin 100.000 iu/1ml -> Nystatin
+Confidence: 1.0
+Method: exact
+Notes: Dosage form removed, mapped to active ingredient.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:08:51,445 - INFO - ACCEPTED: vit b6 5mg -> Vitamin B6
+Confidence: 1.0
+Method: exact
+Notes: Dosage form removed, mapped to active ingredient.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:08:51,455 - INFO - REJECTED: diloxanide furoate-metrenidazole -> NO MAPPING
+Confidence: 1.0
+Reason: 'NO MAPPING' not found in extended ingredients database
+Notes: Needs Research.
+--------------------------------------------------
+2025-08-04 14:08:51,456 - INFO - REJECTED: diloxanide furoate-metrenidazole -> NO MAPPING
+Confidence: 1.0
+Reason: 'NO MAPPING' not found in extended ingredients database
+Notes: Needs Research.
+--------------------------------------------------
+2025-08-04 14:08:51,456 - INFO - REJECTED: glucosamine hcl 500 -> NO MAPPING
+Confidence: 1.0
+Reason: 'NO MAPPING' not found in extended ingredients database
+Notes: Needs Research.
+--------------------------------------------------
+2025-08-04 14:08:51,456 - INFO - REJECTED: calendula officinalis -> NO MAPPING
+Confidence: 1.0
+Reason: 'NO MAPPING' not found in extended ingredients database
+Notes: Needs Research.
+--------------------------------------------------
+2025-08-04 14:08:51,456 - INFO - REJECTED: repaglinide -> NO MAPPING
+Confidence: 1.0
+Reason: 'NO MAPPING' not found in extended ingredients database
+Notes: Needs Research.
+--------------------------------------------------
+2025-08-04 14:08:51,457 - INFO - REJECTED: peg 12 dimethicone -> NO MAPPING
+Confidence: 1.0
+Reason: 'NO MAPPING' not found in extended ingredients database
+Notes: Needs Research.
+--------------------------------------------------
+2025-08-04 14:08:51,457 - INFO - REJECTED: capisome -> NO MAPPING
+Confidence: 1.0
+Reason: 'NO MAPPING' not found in extended ingredients database
+Notes: Needs Research.
+--------------------------------------------------
+2025-08-04 14:08:51,457 - INFO - REJECTED: altheae radicis extract 250mg/ 10 ml -> NO MAPPING
+Confidence: 1.0
+Reason: 'NO MAPPING' not found in extended ingredients database
+Notes: Needs Research.
+--------------------------------------------------
+2025-08-04 14:08:51,457 - INFO - ACCEPTED: MENTOL CRYSTALS -> Menthol crystals
+Confidence: 1.0
+Method: exact
+Notes: Exact match.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:08:51,457 - INFO - REJECTED: vitamin d3 2000iu -> Vitamin D3
+Confidence: 1.0
+Reason: 'Vitamin D3' not found in extended ingredients database
+Notes: Dosage removed. Standard vitamin name.
+--------------------------------------------------
+2025-08-04 14:08:51,457 - INFO - ACCEPTED: keratolytic agents(salicylic acid -> Salicylic Acid
+Confidence: 1.0
+Method: exact
+Notes: Mapped to Salicylic acid component.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:08:51,457 - INFO - REJECTED: tribenoside -> NO MAPPING
+Confidence: 1.0
+Reason: 'NO MAPPING' not found in extended ingredients database
+Notes: Needs Research.
+--------------------------------------------------
+2025-08-04 14:08:51,457 - INFO - REJECTED: dhea (dehydroepiandrosterone) -> NO MAPPING
+Confidence: 1.0
+Reason: 'NO MAPPING' not found in extended ingredients database
+Notes: Needs Research.
+--------------------------------------------------

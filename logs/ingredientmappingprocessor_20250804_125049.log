@@ -1,0 +1,39 @@
+2025-08-04 12:50:49,271 - INFO - Logging to file: logs\ingredientmappingprocessor_20250804_125049.log
+2025-08-04 12:50:49,286 - INFO - Extra logger initialized: mapping_details
+2025-08-04 12:50:49,286 - INFO - Logger initialized: IngredientMappingProcessor
+2025-08-04 12:50:49,287 - INFO - Ingredient Mapping Processor initialized with batch_size=25
+2025-08-04 12:50:49,287 - INFO - Starting ingredient mapping process
+2025-08-04 12:50:49,385 - INFO - Loading extended ingredients...
+2025-08-04 12:50:49,480 - INFO - Loaded 3401 extended ingredients
+2025-08-04 12:50:49,481 - INFO - Loading unprocessed ingredients...
+2025-08-04 12:50:49,523 - INFO - Processing sample of 100 ingredients
+2025-08-04 12:50:49,524 - INFO - Processing batch 1/4
+2025-08-04 12:50:53,525 - INFO - Processing batch of 25 ingredients with AI
+2025-08-04 12:51:06,330 - INFO - Batch processed: 7 mappings created, 0 errors
+2025-08-04 12:51:06,463 - INFO - Saved 7 mappings to database
+2025-08-04 12:51:06,464 - INFO - Progress: 25.0% - Total mappings created: 7
+2025-08-04 12:51:06,464 - INFO - Processing batch 2/4
+2025-08-04 12:51:10,465 - INFO - Processing batch of 25 ingredients with AI
+2025-08-04 12:51:18,644 - INFO - Batch processed: 4 mappings created, 0 errors
+2025-08-04 12:51:18,657 - INFO - Saved 4 mappings to database
+2025-08-04 12:51:18,657 - INFO - Progress: 50.0% - Total mappings created: 11
+2025-08-04 12:51:18,658 - INFO - Processing batch 3/4
+2025-08-04 12:51:22,659 - INFO - Processing batch of 25 ingredients with AI
+2025-08-04 12:51:40,311 - INFO - Batch processed: 19 mappings created, 0 errors
+2025-08-04 12:51:40,347 - INFO - Saved 19 mappings to database
+2025-08-04 12:51:40,347 - INFO - Progress: 75.0% - Total mappings created: 30
+2025-08-04 12:51:40,348 - INFO - Processing batch 4/4
+2025-08-04 12:51:44,349 - INFO - Processing batch of 25 ingredients with AI
+2025-08-04 12:52:00,038 - INFO - Batch processed: 18 mappings created, 0 errors
+2025-08-04 12:52:00,062 - INFO - Saved 18 mappings to database
+2025-08-04 12:52:00,063 - INFO - Progress: 100.0% - Total mappings created: 48
+2025-08-04 12:52:00,063 - INFO - 
+                Processing Complete!
+                Duration: 0:01:10.776047
+                Total mappings created: 48
+                Total errors: 0
+                Ingredients processed: 100
+                Success rate: 100.0%
+                
+2025-08-04 12:52:00,077 - INFO - Database stats: (139, 0, 98, 7, Decimal('0.958'))
+2025-08-04 12:52:00,077 - INFO - Database connection closed

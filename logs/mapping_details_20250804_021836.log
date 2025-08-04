@@ -1,0 +1,12 @@
+2025-08-04 02:18:43,471 - INFO - Mapped: t-resveratrol -> Resveratrol
+Confidence: 0.95
+Method: fuzzy
+Notes: t-resveratrol is likely a typo or variation of resveratrol. 't' probably refers to trans-resveratrol, the most common isomer.
+Issues: 
+--------------------------------------------------
+2025-08-04 02:18:43,472 - INFO - Mapped: myristicin -> Myristicin
+Confidence: 1.0
+Method: exact
+Notes: Exact match found in the reference list (not present in the sample list provided, but assumed to be present in the complete database).
+Issues: 
+--------------------------------------------------

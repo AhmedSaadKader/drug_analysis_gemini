@@ -1,0 +1,111 @@
+2025-08-04 14:45:38,989 - INFO - ACCEPTED: alphalipoic acid 600 mg -> ALA
+Confidence: 0.9
+Method: fuzzy
+Notes: Alpha-lipoic acid is commonly referred to as ALA.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:45:38,989 - INFO - NO MAPPING: collogen(marine)
+Issues: CREATE_NEW_INGREDIENT: collogen(marine) - Marine-derived collagen
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:45:38,990 - INFO - NO MAPPING: propolis ext
+Issues: CREATE_NEW_INGREDIENT: propolis ext - Propolis extract, an extract derived from propolis.
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:45:38,992 - INFO - NO MAPPING: spiramycin 0.75 miu-metronidazole 125
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:45:38,992 - INFO - NO MAPPING: spiramycin 0.75 miu-metronidazole 125
+Issues: CREATE_NEW_INGREDIENT: spiramycin - An antibiotic., CREATE_NEW_INGREDIENT: metronidazole - An antibiotic and antiprotozoal medication.
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:45:38,992 - INFO - ACCEPTED: iron bisglycinate 27mg -> Acetate
+Confidence: 0.87
+Method: fuzzy
+Notes: Iron bisglycinate is a complex of iron and glycinate. Similar substance.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:45:38,992 - INFO - ACCEPTED: apalutamide -> Apalutamide
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:45:38,992 - INFO - NO MAPPING: sod. chloride
+Issues: POSSIBLE_MAPPING: sodium chloride
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:45:38,992 - INFO - NO MAPPING: lactoferrin 100 mg
+Issues: CREATE_NEW_INGREDIENT: lactoferrin - A protein found in milk and other bodily fluids.
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:45:38,993 - INFO - NO MAPPING: hylouronic acid
+Issues: POSSIBLE_MAPPING: hyaluronic acid
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:45:38,993 - INFO - ACCEPTED: azelaic acid micronised -> Acetic acid
+Confidence: 0.85
+Method: fuzzy
+Notes: Azelaic acid is a dicarboxylic acid.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:45:38,993 - INFO - ACCEPTED: fondaparinux sodium -> Fondaparinux sodium
+Confidence: 1.0
+Method: exact
+Notes: Exact match found.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:45:38,993 - INFO - REJECTED: naproxen sodium -> naproxen sodium
+Confidence: 1.0
+Reason: 'naproxen sodium' not found in extended ingredients database
+Notes: Exact match found.
+--------------------------------------------------
+2025-08-04 14:45:38,993 - INFO - NO MAPPING: resvitrol
+Issues: POSSIBLE_MAPPING: resveratrol
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:45:38,993 - INFO - NO MAPPING: multivitamins for kids
+Issues: CREATE_NEW_INGREDIENT: multivitamins for kids - A combination of vitamins formulated for children.
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:45:38,994 - INFO - NO MAPPING: hempseed oil
+Issues: CREATE_NEW_INGREDIENT: hempseed oil - Oil derived from hemp seeds.
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:45:38,994 - INFO - NO MAPPING: bioten
+Issues: CREATE_NEW_INGREDIENT: bioten - Unclear exact mapping, potentially a brand name.
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:45:38,994 - INFO - NO MAPPING: green coffee extract
+Issues: CREATE_NEW_INGREDIENT: green coffee extract - Extract from unroasted coffee beans.
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:45:38,994 - INFO - NO MAPPING: paracetamol-diphenhydramine
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:45:38,994 - INFO - ACCEPTED: paracetamol-diphenhydramine -> Acetaminophen
+Confidence: 0.95
+Method: fuzzy
+Notes: Paracetamol is another name for acetaminophen.
+Issues: 
+--------------------------------------------------
+2025-08-04 14:45:38,994 - INFO - NO MAPPING: paracetamol-diphenhydramine
+Issues: CREATE_NEW_INGREDIENT: diphenhydramine - An antihistamine.
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:45:38,994 - INFO - NO MAPPING: boswellic acid
+Issues: CREATE_NEW_INGREDIENT: boswellic acid - Acids derived from Boswellia plants.
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:45:38,995 - INFO - NO MAPPING: polidocanol=lauromacrogol
+Issues: 
+Reason: AI found no confident matches
+--------------------------------------------------
+2025-08-04 14:45:38,995 - INFO - ACCEPTED: polidocanol=lauromacrogol -> Polidocanol
+Confidence: 1.0
+Method: exact
+Notes: polidocanol is the same as lauromacrogol.
+Issues: 
+--------------------------------------------------

@@ -1,0 +1,45 @@
+2025-08-04 02:11:49,340 - INFO - Logging to file: logs\ingredientmappingprocessor_20250804_021149.log
+2025-08-04 02:11:49,343 - INFO - Extra logger initialized: mapping_details
+2025-08-04 02:11:49,344 - INFO - Logger initialized: IngredientMappingProcessor
+2025-08-04 02:11:49,344 - INFO - Ingredient Mapping Processor initialized with batch_size=25
+2025-08-04 02:11:49,345 - INFO - Starting ingredient mapping process
+2025-08-04 02:11:49,559 - INFO - Loading extended ingredients...
+2025-08-04 02:11:49,591 - INFO - Loaded 3401 extended ingredients
+2025-08-04 02:11:49,592 - INFO - Loading unprocessed ingredients...
+2025-08-04 02:11:49,611 - INFO - Processing sample of 10 ingredients
+2025-08-04 02:11:49,612 - INFO - Processing batch 1/1
+2025-08-04 02:11:53,613 - INFO - Processing batch of 10 ingredients with AI
+2025-08-04 02:12:02,731 - INFO - Batch processed: 10 mappings created, 0 errors
+2025-08-04 02:12:02,745 - ERROR - Error saving mapping: new row for relation "ingredient_mappings" violates check constraint "ingredient_mappings_extraction_method_check"
+DETAIL:  Failing row contains (1, 97465a4c-06c9-4d40-bf8f-125d7825c026, 4460, ai_suggested, 0.90, compound_split, silicones (dimethicone - cyclopentasiloxane) - onion extract - s..., Ingredient identified as a compound mixture. Includes dimethicon..., null, f, null, null, null, 2025-08-04 02:11:49.560537, 2025-08-04 02:11:49.560537, ai_processor).
+
+2025-08-04 02:12:02,747 - ERROR - Error saving mapping: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 02:12:02,748 - ERROR - Error saving mapping: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 02:12:02,748 - ERROR - Error saving mapping: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 02:12:02,749 - ERROR - Error saving mapping: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 02:12:02,750 - ERROR - Error saving mapping: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 02:12:02,750 - ERROR - Error saving mapping: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 02:12:02,751 - ERROR - Error saving mapping: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 02:12:02,752 - ERROR - Error saving mapping: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 02:12:02,753 - ERROR - Error saving mapping: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 02:12:02,754 - INFO - Saved 0 mappings to database
+2025-08-04 02:12:02,754 - INFO - Progress: 100.0% - Total mappings created: 0
+2025-08-04 02:12:02,755 - INFO - 
+                Processing Complete!
+                Duration: 0:00:13.409962
+                Total mappings created: 0
+                Total errors: 10
+                Ingredients processed: 10
+                Success rate: 0.0%
+                
+2025-08-04 02:12:02,770 - INFO - Database stats: (0, 0, 0, 0, None)
+2025-08-04 02:12:02,771 - INFO - Database connection closed
