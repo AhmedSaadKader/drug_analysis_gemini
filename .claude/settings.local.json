@@ -5,7 +5,11 @@
       "Bash(PGPASSWORD=ahmed89saad psql -h localhost -U postgres -d drug_database -c \"\\dt\")",
       "Bash(PGPASSWORD=ahmed89saad psql -h localhost -U postgres -d drug_database -c \"\\d active_ingredients_extended\")",
       "Bash(PGPASSWORD=ahmed89saad psql -h localhost -U postgres -d drug_database -c \"SELECT COUNT(*) FROM active_ingredients_extended;\")",
-      "Bash(PGPASSWORD=ahmed89saad psql -h localhost -U postgres -d drug_database -c \"SELECT COUNT(*) FROM drug_ingredients;\")"
+      "Bash(PGPASSWORD=ahmed89saad psql -h localhost -U postgres -d drug_database -c \"SELECT COUNT(*) FROM drug_ingredients;\")",
+      "Bash(PGPASSWORD=ahmed89saad psql -h localhost -U postgres -d pharmacy_db -c \"\nINSERT INTO ingredient_mappings (raw_ingredient_id, extended_ingredient_id, mapping_type, confidence, extraction_method, original_text, ai_notes, verified, verified_by, created_by) VALUES\n(''d4323453-e961-46aa-ad48-413a077a3ac8'', 2787, ''claude_interactive'', 1.00, ''claude_manual'', ''l-arginine'', ''Claude Interactive Mapping: Exact match found'', true, ''claude'', ''claude_terminal''),\n(''a8795759-6843-4295-9d4a-c98ac2477efc'', 2061, ''claude_interactive'', 1.00, ''claude_manual'', ''green tea'', ''Claude Interactive Mapping: Exact match found'', true, ''claude'', ''claude_terminal''),\n(''8351eaa8-40a2-43e7-b04b-fea5856f24f5'', 5290, ''claude_interactive'', 1.00, ''claude_manual'', ''fexofenadine'', ''Claude Interactive Mapping: Exact match found'', true, ''claude'', ''claude_terminal''),\n(''4d0019fc-1459-4038-99d3-210da0adfcaa'', 4869, ''claude_interactive'', 1.00, ''claude_manual'', ''paracetamol'', ''Claude Interactive Mapping: Exact match found'', true, ''claude'', ''claude_terminal''),\n(''4fae14c7-8a48-43f0-8ee0-03ffa09911c5'', 6135, ''claude_interactive'', 1.00, ''claude_manual'', ''rosemary oil'', ''Claude Interactive Mapping: Exact match found'', true, ''claude'', ''claude_terminal'');\n\")",
+      "Bash(PGPASSWORD=ahmed89saad psql:*)",
+      "Bash(python:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": []
   }

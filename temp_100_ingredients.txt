@@ -1,0 +1,104 @@
+            ingredient_id             |                                   name                                   
+--------------------------------------+--------------------------------------------------------------------------
+ 08353fc6-32c7-4a28-b372-a27d215fa304 | b12 1000 mcg
+ 562d9c2c-4a3e-4690-8eea-5334efa87693 | paracetamol - pseudoephedrinehcl - chloropheniramine maleate - cafffeine
+ b17fdfbc-71e8-4fa9-baee-4534585a6b67 | boron 0.6 mg
+ b94a884c-3522-45c9-8596-383deabd24ae | rosehip ext.
+ 97e4edcc-e3b2-4435-b870-f3d135557f42 | hydrated silica
+ 30b78587-ac9a-48f1-ba44-62b0e8d2efd6 | zidovudine
+ b0343d5f-152e-4f24-b944-a6e135a5c51d | vitamin (b12
+ 6194b5a1-d5ee-47c5-8b95-43fd40dc11d7 | fluocortolone
+ cbda4d84-68b7-4015-b526-f0bff933f5b2 | vita a
+ d3775263-bdd5-4203-bd42-f48925f1b5de | natural eggshell membrane
+ a512500d-99c3-4f5c-817e-a444064b0db7 | sodium lauryl ether sulphate
+ 0f2fb7b2-6a83-4b0a-932c-76ccbc853e43 | lactofrin
+ 19521b9b-3853-45e9-86d1-43d891cdc969 | lignocaine-panthenol
+ e5ccab7b-da4f-43e9-8717-518825d443bc | myoinositol
+ 1d841c06-61a3-48e9-b2fc-81f87daac046 | dimethylpolysiloxan
+ cd5e6917-1f39-4cd8-85b0-e1100d32d4d6 | thyme extract powder
+ 948f874f-3cc5-46b8-8cd9-09825bee6899 | butylated hydroxy toluene
+ 79da6c9e-6cef-4cdd-8c71-486f90e81ef1 | ruxolitinib
+ c0d21c30-c703-41c8-b3ad-19821a3f825d | menthol crystals rosemary caffeine
+ 8d2c5bf2-aa8c-402c-bb0c-b41a50b053e7 | isosorbide dinitrate
+ 7eaf6a73-c468-4ec7-a69e-83affa556014 | natural vit.c(liposomal)
+ ec4048e5-050e-4a2e-b730-6f1346520819 | dipotussium chlorazepate
+ 16464646-0515-42b3-b17b-5e6e9fd26d43 | d-tubocurarine
+ 7e9da56f-826f-44b1-894d-f1b4c2eb3029 | brolucizumab
+ 3c20521f-7053-4485-80f0-142c271ef269 | high concentration  bovine colostrum
+ 2f3264cc-e124-4b88-b518-a7ee6d616bb0 | coconut extract
+ 4f5b7a1e-a339-408a-a94a-83789a8eda71 | epoetin beta 3000 i.u
+ 1af937c9-dce9-435b-a08d-b2596101bcaf | yarrow extract
+ 6c1ec5a9-5038-4ea5-b609-37bdbc9ef19a | pomegranate peel
+ f5735fba-8a40-49ef-927d-3a7ece167937 | jaborandi
+ eca4be30-a407-4f25-9ccc-60a03db360a7 | dasatinib
+ 878e12d6-9314-4f96-9b69-fd7e1920d063 | turpentine oil
+ 3808fa3b-ec2c-48de-b7d8-1bbd4b2efe1a | vinburnine
+ 75e25294-3754-44be-ad41-4fecc3216c6d | anti d (rho) immunoglobulins
+ 4781f174-a627-42c9-bdbf-1daaf6adbd82 | oil(oliv
+ 1448e53b-58e8-4d65-8946-57d933e74634 | milk powder
+ b3c27e3d-0b3f-4ecc-b21b-c919e6f883ed | capilectine
+ 44f88988-e398-491b-9a85-5bd17a99db98 | vaccine cholera
+ 1608ef62-6dbf-4e88-8e33-3fdceaa592cb | natural diluted and isotonic seawater sterile
+ ceff096f-62ff-47a5-b5df-46ad16fb04be | rosewater
+ 43ba8949-431b-4ddc-bf29-18dc5d88d223 | v.b1.300mg- vb6.150mg-vb7.35mcg-vb12.250mcg-folic acid 500mcg
+ 1011e13a-fb97-4b1a-96e8-e9c95d13947a | parrafin oil
+ 0d5db26f-772b-4ece-9f1a-ba1a1fe6ecdd | glibenclamide(glyburide)
+ a8326d9f-aa01-4aab-bb64-be733a021ff5 | vitamin b12 6 mcg
+ 159cb81d-68c5-4a39-b55b-4ff2753fbbfc | anise oil
+ 35ab90f0-e83c-43b1-ac09-82c03e1e43ac | propafenone
+ f1caff66-d40c-449f-9ff0-4289b99e8029 | minerals and multivitamins
+ c4656412-f885-4ac4-819e-b0d35839df31 | vitamins-elements
+ ebe76c8a-3f33-4c66-ad4a-c2bf5cad7267 | multi vit
+ 1c3f4213-77c4-4f93-ad1e-6a88a4155d12 | metopimazine
+ bdff23c1-f50a-48a4-b2a7-fa9569eff078 | astragalus extract
+ c5882fd4-91e6-42c4-bdf7-ac6a4d7bc5e5 | natriance brightener
+ 8bccbd53-2d43-479b-89d5-d9540913a72b | ph adjuster
+ a6784656-a5f1-4c78-aefc-acd91b4de751 | loperamide
+ 42b82f86-e33a-4328-a3ea-54dd01e7da9c | grape extract
+ 6e3d0d27-865e-45fa-8cc4-d13b14dc519f | green coffee bean extract ( 50% chlorogenic acid
+ 7311eb2e-409a-447c-9123-145e92f625ae | atropine sulphate
+ 9a48fc75-0e47-4020-a6c4-3676c025d73f | dalteparin sodium
+ 1431cf12-0b4d-4e0a-8365-4e2f1521e2b1 | flourine
+ a070114a-81f0-4513-89fc-b76160a5dc23 | l-carnatin
+ cdf2c1c9-3480-4375-9ca7-90e485be9415 | sulphadimidine
+ 688c407e-9658-44a5-b2e4-5208afa12ed9 | Tricalcium Phosphate
+ a356928c-cf47-47be-91f2-c36bcbc5c446 | liposomal lactoferrin
+ 182eaad1-7dd1-4950-949f-dbe0217e1a69 | p.o.
+ 039d7686-1a13-485f-8d2b-a5a22df8bc5c | follitropin (recombinant fsh)
+ 548572ed-4d9a-461e-9e60-f3b3de5f70c4 | pumpkin seeds powder
+ 6f319251-b92a-4b09-9672-008a01e4ba49 | isotonic buffered solution
+ cbe4ae86-f1e9-4a5f-bcde-f43ea132d3e9 | meningitidis groups (a
+ aab3fdc5-3a47-47d9-8335-e4b3956d762e | zingiber officinale
+ 06d65514-7bbd-499f-ab83-66b572486668 | vit b 12 400 mcg
+ c0f1e1e9-4d27-446d-8732-0bdf925bcd44 | cojik acid
+ e1698786-e52f-41fe-ae04-1db54dbe2534 | INSULIN ISOPHANE PROTAMINE HUMAN
+ 597e5c19-e335-412c-898c-bf52c5170413 | sodium sacchrain
+ e8290aa5-9913-438c-a718-c1e22a6a9abf | iodin
+ 1f4ecf67-a4e8-4fed-a3c1-7fdad675f07c | deferasirox
+ c6ece38a-8bba-43bc-a8b2-b5f09d178257 | achillea-ambrosia-ammi visnaga
+ 69793c0c-b540-4aa5-904c-676a86c90447 | to copheryl acetate
+ 4ebeaa3f-6bd8-4a4a-80a5-34ecadca015c | spurulina maxima
+ 57b5ada0-6f9a-4073-839a-89dd4d3a0330 | anise extract
+ 2fa974e3-4971-4fc5-8b29-18dc62fec638 | marine collagen 10g
+ 8c24833d-cb36-42cd-9c4e-fd6e2cdcca6e | clobetasone
+ aefb1eaa-2cf1-4e8c-ad9c-0a37eb173c42 | reboxetine
+ 0790f67b-2914-4b0a-b4fb-ce9b607178a1 | colocynth
+ 80de6387-2e29-4fe6-9d53-cf398d73497e | gogoba oil
+ a4094d2c-3bdd-4c6d-a3a3-20cac27d503b | calendulaoil
+ fc3a69b3-b6e5-4bc4-9aa1-30fac191fe0a | folic acid 400 mg
+ 715793ce-7f7a-4635-b9da-b2dd48d32356 | cetrimonium bromide
+ 550591b0-ba07-4545-bd58-4a6715823030 | calcium 600mg (elemental)
+ 6d1b3451-ef25-4adb-93f0-0cbe4ed81874 | chlorambucil
+ b94c0559-8986-41a0-9adc-04a8c7deee0a | jojoba
+ be5db2c3-6205-4955-8057-6e0f5d7e3796 | LACTOFERRIN 200 MG
+ 802e1152-0b51-433d-97eb-bfd32b194039 | magnesium hydrogen aspartate
+ fc1fe99d-6ceb-49bf-876f-846940de17b8 | acetylcystiene
+ 5aa3df74-ced1-4f7e-8d45-e31ecb71090e | pancreatin
+ fb2f7e73-0268-41ad-8ac2-8eb5fd81370e | ALO VERA EXTRACT
+ 888280cc-05e4-4139-8ea8-67d10c47646f | palmitic acid
+ 284ef732-7d95-4eb7-b37f-380a9baee514 | histidin
+ 3cfaef60-edf8-48a4-8a00-85b7d8ffbcd7 | green coffee extract
+ 443cf4c7-6e18-46ce-b40f-d258c348d49d | mecobalamin
+ c6f8606f-fb44-49c6-933a-70a180f9354c | vitamin c 40 mg
+(100 rows)
+

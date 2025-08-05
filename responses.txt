@@ -1,0 +1,39 @@
+INGREDIENT 1: 'c'
+Action: NO_MAPPING
+Details: Single letter is not a valid pharmaceutical ingredient
+
+INGREDIENT 2: 'e)'
+Action: NO_MAPPING
+Details: Formatting artifact, not a valid ingredient
+
+INGREDIENT 3: 'e'
+Action: NO_MAPPING
+Details: Single letter is not a valid pharmaceutical ingredient
+
+INGREDIENT 4: 'vitamins(a'
+Action: NO_MAPPING
+Details: Incomplete/malformed entry, appears to be formatting error
+
+INGREDIENT 5: ''
+Action: NO_MAPPING
+Details: Empty string is not a valid ingredient
+
+INGREDIENT 6: 'cefuroxime'
+Action: CREATE_NEW
+Details: Cefuroxime - Second-generation cephalosporin antibiotic effective against both gram-positive and gram-negative bacteria
+
+INGREDIENT 7: 'multivitamins-minerals'
+Action: COMPOUND_SPLIT
+Details: This is a combination product containing multiple vitamins and minerals - should be split into individual components
+
+INGREDIENT 8: 'cephradine'
+Action: CREATE_NEW
+Details: Cephradine - First-generation cephalosporin antibiotic used to treat various bacterial infections
+
+INGREDIENT 9: 'silymarin'
+Action: MAP_TO_EXISTING
+Details: Silymarin
+
+INGREDIENT 10: 'chloramphenicol'
+Action: MAP_TO_EXISTING
+Details: Chloramphenicol

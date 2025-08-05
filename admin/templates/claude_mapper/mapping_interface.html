@@ -207,6 +207,47 @@
         padding: 40px;
         color: #666;
     }
+    
+    .search-box {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        border-left: 4px solid #007bff;
+    }
+    
+    .search-loading {
+        text-align: center;
+        padding: 20px;
+        color: #666;
+    }
+    
+    .manual-search-item {
+        background: #fff3cd;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-left: 4px solid #ffc107;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .manual-search-item:hover {
+        background: #fff8e1;
+        transform: translateX(5px);
+    }
+    
+    .manual-search-item.selected {
+        background: #d1ecf1;
+        border-left-color: #17a2b8;
+    }
+    
+    .search-stats {
+        background: #e9ecef;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        font-size: 0.9em;
+    }
 </style>
 {% endblock %}
 
@@ -250,35 +291,61 @@
                     </div>
                     
                     <div class="similar-ingredients">
-                        <h4>🔍 Database Search Results</h4>
-                        {% if ingredient_data.similar %}
-                            <p class="text-muted mb-3">
-                                Found {{ ingredient_data.similar|length }} similar ingredients in database:
-                            </p>
-                            
-                            <div id="similar-list">
-                                {% for similar in ingredient_data.similar %}
-                                <div class="similar-item" onclick="selectSimilar({{ similar.id }}, '{{ similar.name }}')">
-                                    <div class="similar-name">{{ similar.name }}</div>
-                                    {% if similar.description %}
-                                    <div class="similar-description">{{ similar.description }}</div>
-                                    {% endif %}
-                                    <small class="text-muted">ID: {{ similar.id }}</small>
+                        <h4>🔍 Database Search</h4>
+                        
+                        <!-- Manual Search -->
+                        <div class="search-box mb-3">
+                            <div class="input-group">
+                                <input type="text" id="manual-search" class="form-control" 
+                                       placeholder="Search database manually..." 
+                                       value="{{ ingredient_data.current.name }}">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-primary" type="button" onclick="performManualSearch()">
+                                        🔍 Search
+                                    </button>
                                 </div>
-                                {% endfor %}
                             </div>
-                        {% else %}
-                            <div class="no-similar">
-                                <div class="mb-3">
-                                    <i class="fa fa-search fa-3x text-muted"></i>
-                                </div>
-                                <h5>No Similar Ingredients Found</h5>
-                                <p class="text-muted">
-                                    No matching ingredients found in the database.<br>
-                                    Consider creating a new standardized ingredient.
+                            <small class="form-text text-muted">Search by ingredient name, description, or partial match</small>
+                        </div>
+                        
+                        <!-- Search Results -->
+                        <div id="search-results">
+                            <h5>Auto-detected Similar Ingredients:</h5>
+                            {% if ingredient_data.similar %}
+                                <p class="text-muted mb-3">
+                                    Found {{ ingredient_data.similar|length }} similar ingredients in database:
                                 </p>
-                            </div>
-                        {% endif %}
+                                
+                                <div id="similar-list">
+                                    {% for similar in ingredient_data.similar %}
+                                    <div class="similar-item" onclick="selectSimilar({{ similar.id }}, '{{ similar.name }}')">
+                                        <div class="similar-name">{{ similar.name }}</div>
+                                        {% if similar.description %}
+                                        <div class="similar-description">{{ similar.description }}</div>
+                                        {% endif %}
+                                        <small class="text-muted">ID: {{ similar.id }}</small>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                <div class="no-similar">
+                                    <div class="mb-3">
+                                        <i class="fa fa-search fa-3x text-muted"></i>
+                                    </div>
+                                    <h5>No Auto-detected Matches</h5>
+                                    <p class="text-muted">
+                                        No automatic matches found.<br>
+                                        Try manual search above to explore the database.
+                                    </p>
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <!-- Manual Search Results -->
+                        <div id="manual-search-results" style="display: none;">
+                            <h5>Manual Search Results:</h5>
+                            <div id="manual-results-list"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -287,9 +354,94 @@
             <div class="col-md-6">
                 <div class="claude-analysis">
                     <div class="claude-header">
-                        <h3>🧠 Claude Analysis Required</h3>
-                        <p class="mb-0">Select the appropriate mapping action for this ingredient</p>
+                        <h3>🧠 Claude AI Recommendation</h3>
+                        <p class="mb-0">AI-powered pharmaceutical ingredient analysis</p>
                     </div>
+                    
+                    <!-- Claude's Suggestion -->
+                    {% if ingredient_data.claude_suggestion %}
+                    <div class="alert alert-{% if ingredient_data.claude_suggestion.action == 'MAP_TO_EXISTING' %}info{% elif ingredient_data.claude_suggestion.action == 'CREATE_NEW' %}success{% elif ingredient_data.claude_suggestion.action == 'COMPOUND_SPLIT' %}warning{% else %}secondary{% endif %} mb-4">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <h5 class="alert-heading mb-2">
+                                    {% if ingredient_data.claude_suggestion.action == 'MAP_TO_EXISTING' %}
+                                        🎯 Recommended: Map to Existing
+                                    {% elif ingredient_data.claude_suggestion.action == 'CREATE_NEW' %}
+                                        ✨ Recommended: Create New Ingredient
+                                    {% elif ingredient_data.claude_suggestion.action == 'COMPOUND_SPLIT' %}
+                                        🔀 Recommended: Split Compound
+                                    {% else %}
+                                        ❌ Recommended: No Mapping
+                                    {% endif %}
+                                </h5>
+                                <p class="mb-2"><strong>Reasoning:</strong> {{ ingredient_data.claude_suggestion.reasoning }}</p>
+                                
+                                {% if ingredient_data.claude_suggestion.target_ingredient %}
+                                    <p class="mb-0">
+                                        <strong>Suggested Target:</strong> 
+                                        <span class="badge badge-primary">{{ ingredient_data.claude_suggestion.target_ingredient.name }}</span>
+                                    </p>
+                                {% endif %}
+                                
+                                {% if ingredient_data.claude_suggestion.suggested_name %}
+                                    <p class="mb-1">
+                                        <strong>Suggested Name:</strong> 
+                                        <span class="badge badge-success">{{ ingredient_data.claude_suggestion.suggested_name }}</span>
+                                    </p>
+                                    <p class="mb-0">
+                                        <strong>Suggested Description:</strong> {{ ingredient_data.claude_suggestion.suggested_description }}
+                                    </p>
+                                {% endif %}
+                                
+                                {% if ingredient_data.claude_suggestion.components %}
+                                    <p class="mb-1"><strong>Detected Components:</strong></p>
+                                    <ul class="mb-0">
+                                        {% for component in ingredient_data.claude_suggestion.components %}
+                                        <li><strong>{{ component.standardized }}</strong> - {{ component.description }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </div>
+                            <div class="text-right">
+                                <span class="badge badge-{% if ingredient_data.claude_suggestion.confidence >= 0.9 %}success{% elif ingredient_data.claude_suggestion.confidence >= 0.7 %}warning{% else %}danger{% endif %} badge-lg">
+                                    {{ "{:.0f}%".format(ingredient_data.claude_suggestion.confidence * 100) }} Confidence
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <!-- Quick Actions for High Confidence -->
+                        {% if ingredient_data.claude_suggestion.confidence >= 0.9 %}
+                        <div class="mt-3 pt-3 border-top">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="text-success">⚡ High Confidence - Quick Actions</h6>
+                                    <p class="small text-muted mb-2">This mapping has high confidence. You can approve it quickly or review details first.</p>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    <button type="button" class="btn btn-success btn-sm mr-2" onclick="quickApprove()">
+                                        ✅ Quick Approve
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary btn-sm" onclick="showReviewMode()">
+                                        👁️ Review Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        {% else %}
+                        <div class="mt-3 pt-3 border-top">
+                            <div class="alert alert-warning mb-0">
+                                <h6 class="alert-heading">⚠️ Manual Review Required</h6>
+                                <p class="mb-0 small">This mapping has {{ "{:.0f}%".format(ingredient_data.claude_suggestion.confidence * 100) }} confidence and requires manual review below.</p>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                    
+                    <!-- Detailed Review Section (initially hidden for high confidence) -->
+                    <div id="detailed-review" style="{% if ingredient_data.claude_suggestion and ingredient_data.claude_suggestion.confidence >= 0.9 %}display: none;{% endif %}">
+                        <h4>📋 Detailed Review & Actions</h4>
+                        <p class="text-muted">Review and modify the mapping decision as needed</p>
                     
                     <form id="mapping-form" method="POST" action="{{ url_for('claudemappingview.process_mapping') }}">
                         <input type="hidden" name="ingredient_id" value="{{ ingredient_data.current.id }}">
@@ -326,11 +478,12 @@
                             <div id="create-new-fields" style="display: none;">
                                 <div class="form-group">
                                     <label>Standardized Name:</label>
-                                    <input type="text" name="new_name" class="form-control" placeholder="e.g., Acetaminophen">
+                                    <input type="text" name="new_name" class="form-control" placeholder="e.g., Acetaminophen" 
+                                           value="{% if ingredient_data.claude_suggestion.suggested_name %}{{ ingredient_data.claude_suggestion.suggested_name }}{% endif %}">
                                 </div>
                                 <div class="form-group">
                                     <label>Description:</label>
-                                    <textarea name="new_description" class="form-control" rows="3" placeholder="Brief pharmaceutical description..."></textarea>
+                                    <textarea name="new_description" class="form-control" rows="3" placeholder="Brief pharmaceutical description...">{% if ingredient_data.claude_suggestion.suggested_description %}{{ ingredient_data.claude_suggestion.suggested_description }}{% endif %}</textarea>
                                 </div>
                                 <div class="form-group">
                                     <label>Common Uses:</label>
@@ -399,11 +552,15 @@
                             <button type="submit" class="btn btn-claude btn-lg">
                                 ✅ Process Mapping
                             </button>
-                            <a href="{{ url_for('claudemappingview.index') }}" class="btn btn-outline-secondary btn-lg ml-3">
+                            <button type="button" class="btn btn-warning btn-lg ml-2" onclick="skipIngredient()">
+                                ⏭️ Skip This Ingredient
+                            </button>
+                            <a href="{{ url_for('claudemappingview.index') }}" class="btn btn-outline-secondary btn-lg ml-2">
                                 ⏸️ Pause Session
                             </a>
                         </div>
                     </form>
+                    </div> <!-- End detailed-review -->
                 </div>
             </div>
         </div>
@@ -411,6 +568,63 @@
 </div>
 
 <script>
+// Auto-apply Claude's suggestion when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    {% if ingredient_data.claude_suggestion %}
+    const suggestion = {{ ingredient_data.claude_suggestion | tojson }};
+    
+    // Auto-select recommended action
+    const recommendedAction = suggestion.action;
+    const radioButton = document.getElementById(recommendedAction.toLowerCase().replace('_', '-'));
+    
+    if (radioButton) {
+        radioButton.checked = true;
+        radioButton.dispatchEvent(new Event('change'));
+        
+        // Auto-fill confidence
+        document.getElementById('confidence-slider').value = suggestion.confidence;
+        updateConfidence();
+        
+        // Auto-select target ingredient if MAP_TO_EXISTING
+        if (recommendedAction === 'MAP_TO_EXISTING' && suggestion.target_ingredient) {
+            const targetId = suggestion.target_ingredient.id;
+            const targetName = suggestion.target_ingredient.name;
+            
+            // Find and select the similar ingredient
+            const similarItems = document.querySelectorAll('.similar-item');
+            similarItems.forEach(item => {
+                const itemText = item.textContent;
+                if (itemText.includes('ID: ' + targetId)) {
+                    item.click();
+                }
+            });
+        }
+        
+        // Pre-fill compound components if COMPOUND_SPLIT
+        if (recommendedAction === 'COMPOUND_SPLIT' && suggestion.components) {
+            // Clear existing components and add suggested ones
+            const componentsList = document.getElementById('components-list');
+            componentsList.innerHTML = '';
+            
+            suggestion.components.forEach(comp => {
+                const componentDiv = document.createElement('div');
+                componentDiv.className = 'component-item';
+                componentDiv.innerHTML = `
+                    <input type="text" class="form-control mb-2" placeholder="Component name" 
+                           name="component_name[]" value="${comp.standardized}">
+                    <textarea class="form-control" placeholder="Component description" 
+                              name="component_desc[]" rows="2">${comp.description}</textarea>
+                    <button type="button" class="btn btn-outline-danger btn-sm mt-2" onclick="removeComponent(this)">
+                        Remove
+                    </button>
+                `;
+                componentsList.appendChild(componentDiv);
+            });
+        }
+    }
+    {% endif %}
+});
+
 // Handle action selection
 document.querySelectorAll('input[name="action"]').forEach(radio => {
     radio.addEventListener('change', function() {
@@ -436,10 +650,89 @@ document.querySelectorAll('input[name="action"]').forEach(radio => {
     });
 });
 
-// Handle similar ingredient selection
+// Manual search functionality
+function performManualSearch() {
+    const searchTerm = document.getElementById('manual-search').value.trim();
+    
+    if (!searchTerm) {
+        alert('Please enter a search term');
+        return;
+    }
+    
+    const resultsDiv = document.getElementById('manual-search-results');
+    const resultsList = document.getElementById('manual-results-list');
+    
+    // Show loading
+    resultsDiv.style.display = 'block';
+    resultsList.innerHTML = '<div class="search-loading"><i class="fa fa-spinner fa-spin"></i> Searching database...</div>';
+    
+    // Perform search
+    fetch(`{{ url_for('claudemappingview.api_similar_ingredients') }}?q=${encodeURIComponent(searchTerm)}&limit=20`)
+        .then(response => response.json())
+        .then(data => {
+            displayManualSearchResults(data, searchTerm);
+        })
+        .catch(error => {
+            console.error('Search error:', error);
+            resultsList.innerHTML = '<div class="alert alert-danger">Search failed. Please try again.</div>';
+        });
+}
+
+function displayManualSearchResults(results, searchTerm) {
+    const resultsList = document.getElementById('manual-results-list');
+    
+    if (results.length === 0) {
+        resultsList.innerHTML = `
+            <div class="search-stats">No results found for "${searchTerm}"</div>
+            <div class="alert alert-info">
+                <h6>No matches found</h6>
+                <p class="mb-0">Try different search terms or consider creating a new ingredient.</p>
+            </div>
+        `;
+        return;
+    }
+    
+    let html = `<div class="search-stats">Found ${results.length} results for "${searchTerm}"</div>`;
+    
+    results.forEach(item => {
+        html += `
+            <div class="manual-search-item" onclick="selectManualSearchResult(${item.id}, '${item.name.replace(/'/g, "\\'")}')">
+                <div class="similar-name">${item.name}</div>
+                ${item.description ? `<div class="similar-description">${item.description}</div>` : ''}
+                <small class="text-muted">ID: ${item.id}</small>
+            </div>
+        `;
+    });
+    
+    resultsList.innerHTML = html;
+}
+
+function selectManualSearchResult(id, name) {
+    // Remove previous selections from both auto and manual results
+    document.querySelectorAll('.similar-item, .manual-search-item').forEach(item => {
+        item.classList.remove('selected');
+    });
+    
+    // Select current item
+    event.target.closest('.manual-search-item').classList.add('selected');
+    
+    // Update form
+    document.getElementById('target-id').value = id;
+    document.getElementById('selected-target').innerHTML = `
+        <strong>Selected:</strong> ${name} <small>(ID: ${id})</small>
+        <div class="mt-1"><small class="text-info">Selected from manual search</small></div>
+    `;
+    document.getElementById('selected-target').className = 'alert alert-success';
+    
+    // Auto-select map to existing
+    document.getElementById('map-existing').checked = true;
+    document.getElementById('map-existing').dispatchEvent(new Event('change'));
+}
+
+// Handle similar ingredient selection (original function)
 function selectSimilar(id, name) {
-    // Remove previous selections
-    document.querySelectorAll('.similar-item').forEach(item => {
+    // Remove previous selections from both auto and manual results
+    document.querySelectorAll('.similar-item, .manual-search-item').forEach(item => {
         item.classList.remove('selected');
     });
     
@@ -450,6 +743,7 @@ function selectSimilar(id, name) {
     document.getElementById('target-id').value = id;
     document.getElementById('selected-target').innerHTML = `
         <strong>Selected:</strong> ${name} <small>(ID: ${id})</small>
+        <div class="mt-1"><small class="text-info">Auto-detected match</small></div>
     `;
     document.getElementById('selected-target').className = 'alert alert-success';
     
@@ -457,6 +751,140 @@ function selectSimilar(id, name) {
     document.getElementById('map-existing').checked = true;
     document.getElementById('map-existing').dispatchEvent(new Event('change'));
 }
+
+// Quick Approval Functions
+function quickApprove() {
+    const suggestion = {{ ingredient_data.claude_suggestion | tojson }};
+    
+    if (!suggestion) {
+        alert('No suggestion available for quick approval');
+        return;
+    }
+    
+    // Show confirmation dialog
+    const confirmMessage = `Quick approve this ${suggestion.confidence * 100}% confidence mapping?\n\n` +
+        `Original: {{ ingredient_data.current.name }}\n` +
+        `Action: ${suggestion.action}\n` +
+        (suggestion.target_ingredient ? `Target: ${suggestion.target_ingredient.name}\n` : '') +
+        (suggestion.suggested_name ? `New Name: ${suggestion.suggested_name}\n` : '') +
+        `Reasoning: ${suggestion.reasoning}`;
+    
+    if (confirm(confirmMessage)) {
+        // Create form data based on suggestion
+        const formData = new FormData();
+        formData.append('ingredient_id', '{{ ingredient_data.current.id }}');
+        formData.append('action', suggestion.action);
+        formData.append('confidence', suggestion.confidence);
+        formData.append('notes', 'Quick approved - high confidence AI suggestion');
+        
+        // Add action-specific data
+        if (suggestion.action === 'MAP_TO_EXISTING' && suggestion.target_ingredient) {
+            formData.append('target_id', suggestion.target_ingredient.id);
+        } else if (suggestion.action === 'CREATE_NEW') {
+            formData.append('new_name', suggestion.suggested_name || '{{ ingredient_data.current.name }}');
+            formData.append('new_description', suggestion.suggested_description || '');
+            formData.append('new_uses', '');
+        } else if (suggestion.action === 'COMPOUND_SPLIT' && suggestion.components) {
+            suggestion.components.forEach(comp => {
+                formData.append('component_name[]', comp.standardized);
+                formData.append('component_desc[]', comp.description);
+            });
+        }
+        
+        // Submit form
+        submitQuickApproval(formData);
+    }
+}
+
+function submitQuickApproval(formData) {
+    // Show loading state
+    const quickBtn = document.querySelector('button[onclick="quickApprove()"]');
+    const originalText = quickBtn.innerHTML;
+    quickBtn.innerHTML = '⏳ Processing...';
+    quickBtn.disabled = true;
+    
+    fetch('{{ url_for("claudemappingview.process_mapping") }}', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (response.redirected) {
+            window.location.href = response.url;
+        } else {
+            return response.text();
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Error processing quick approval. Please try manual review.');
+        quickBtn.innerHTML = originalText;
+        quickBtn.disabled = false;
+    });
+}
+
+function showReviewMode() {
+    // Show detailed review section
+    document.getElementById('detailed-review').style.display = 'block';
+    
+    // Scroll to detailed review
+    document.getElementById('detailed-review').scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+    });
+    
+    // Update button text
+    const reviewBtn = document.querySelector('button[onclick="showReviewMode()"]');
+    reviewBtn.innerHTML = '✅ Review Mode Active';
+    reviewBtn.disabled = true;
+    reviewBtn.classList.remove('btn-outline-primary');
+    reviewBtn.classList.add('btn-primary');
+}
+
+// Skip ingredient function
+function skipIngredient() {
+    if (confirm('Skip this ingredient without mapping it?\n\nThis ingredient will remain unmapped and can be processed in a future session.')) {
+        // Create form data for skip action
+        const formData = new FormData();
+        formData.append('ingredient_id', '{{ ingredient_data.current.id }}');
+        formData.append('action', 'SKIP');
+        formData.append('confidence', '0.0');
+        formData.append('notes', 'Skipped by user - no mapping action taken');
+        
+        // Show loading state
+        const skipBtn = document.querySelector('button[onclick="skipIngredient()"]');
+        const originalText = skipBtn.innerHTML;
+        skipBtn.innerHTML = '⏳ Skipping...';
+        skipBtn.disabled = true;
+        
+        // Submit skip request
+        fetch('{{ url_for("claudemappingview.process_mapping") }}', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (response.redirected) {
+                window.location.href = response.url;
+            } else {
+                return response.text();
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Error skipping ingredient. Please try again.');
+            skipBtn.innerHTML = originalText;
+            skipBtn.disabled = false;
+        });
+    }
+}
+
+// Enter key support for search
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('manual-search').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            performManualSearch();
+        }
+    });
+});
 
 // Update confidence display
 function updateConfidence() {
@@ -524,6 +952,14 @@ document.getElementById('mapping-form').addEventListener('submit', function(e) {
             return;
         }
     }
+    
+    // Show processing message
+    const submitBtn = document.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '⏳ Processing...';
+    submitBtn.disabled = true;
+    
+    // Allow form to submit normally (will redirect to next ingredient)
 });
 </script>
 {% endblock %}

@@ -1,0 +1,4 @@
+2025-08-04 22:40:06,729 - INFO - Logging to file: logs\claudeinteractivemapper_20250804_224006.log
+2025-08-04 22:40:06,730 - INFO - Logger initialized: ClaudeInteractiveMapper
+2025-08-04 22:40:53,903 - ERROR - Error processing : current transaction is aborted, commands ignored until end of transaction block
+

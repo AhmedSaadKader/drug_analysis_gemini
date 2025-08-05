@@ -1,0 +1,40 @@
+INGREDIENT 1: 'cephradine'
+Action: CREATE_NEW
+Details: Cephradine - First-generation cephalosporin antibiotic used to treat various bacterial infections
+
+INGREDIENT 2: 'cefuroxime'
+Action: CREATE_NEW
+Details: Cefuroxime - Second-generation cephalosporin antibiotic effective against both gram-positive and gram-negative bacteria
+
+INGREDIENT 3: 'multivitamins-minerals'
+Action: COMPOUND_SPLIT
+Details: This is a combination product containing multiple vitamins and minerals - should be split into individual components
+Confidence: 0.8
+
+INGREDIENT 4: 'anise'
+Action: MAP_TO_EXISTING
+Details: Anise Extract
+
+INGREDIENT 5: 'vildagliptin'
+Action: MAP_TO_EXISTING
+Details: Vildagliptin
+
+INGREDIENT 6: 'b3'
+Action: MAP_TO_EXISTING
+Details: Vitamin B3
+
+INGREDIENT 7: 'liquorice extract'
+Action: CREATE_NEW
+Details: Liquorice extract - Herbal extract from Glycyrrhiza glabra root with anti-inflammatory and expectorant properties
+
+INGREDIENT 8: 'mometasone furoate'
+Action: CREATE_NEW
+Details: Mometasone furoate - Topical corticosteroid used to treat inflammatory skin conditions and nasal allergies
+
+INGREDIENT 9: 'carbamazepine'
+Action: MAP_TO_EXISTING
+Details: Carbamazepine
+
+INGREDIENT 10: 'ethinyl estradiol'
+Action: CREATE_NEW
+Details: Ethinyl estradiol - Synthetic estrogen hormone used in oral contraceptives and hormone replacement therapy

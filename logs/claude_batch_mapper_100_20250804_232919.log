@@ -1,0 +1,222 @@
+2025-08-04 23:29:20,060 - INFO - Starting Claude Batch Mapping Process - 100 Items
+2025-08-04 23:29:20,076 - INFO - Retrieved 100 ingredients to process
+2025-08-04 23:29:20,077 - INFO - Processing: red ginseng (ID: 1cafc952-a264-4760-8d73-2cce07763583)
+2025-08-04 23:29:20,077 - INFO - No specific mapping rule for: red ginseng
+2025-08-04 23:29:20,077 - INFO - Processing: whey protein isolate (ID: d10198f4-1ebc-4879-93fc-2fa7aaf6a02e)
+2025-08-04 23:29:20,077 - INFO - No specific mapping rule for: whey protein isolate
+2025-08-04 23:29:20,078 - INFO - Processing: vitb12 50mcg (ID: 596242e8-693d-42aa-ab05-153d39d9ea9e)
+2025-08-04 23:29:20,078 - INFO - No specific mapping rule for: vitb12 50mcg
+2025-08-04 23:29:20,079 - INFO - Processing: hyaluronic acid 5 mg (ID: 3adc26ac-20c1-462e-93e9-10c20affb01d)
+2025-08-04 23:29:20,079 - INFO - No specific mapping rule for: hyaluronic acid 5 mg
+2025-08-04 23:29:20,079 - INFO - Processing: coenzyme a (ID: 5dd52171-bf9a-46a0-be59-803432416477)
+2025-08-04 23:29:20,079 - INFO - No specific mapping rule for: coenzyme a
+2025-08-04 23:29:20,079 - INFO - Processing: black seed ext (ID: f0379a12-21e0-4d10-bab3-ee4c27d34185)
+2025-08-04 23:29:20,079 - INFO - No specific mapping rule for: black seed ext
+2025-08-04 23:29:20,080 - INFO - Processing: chocolate flavor (ID: 5febdc12-d2f1-45f0-9b86-87fa5be6abfb)
+2025-08-04 23:29:20,080 - INFO - No specific mapping rule for: chocolate flavor
+2025-08-04 23:29:20,080 - INFO - Processing: viramin c 1000 mg (ID: ca6707d8-1652-4d60-9497-df609dbd03fb)
+2025-08-04 23:29:20,080 - INFO - No specific mapping rule for: viramin c 1000 mg
+2025-08-04 23:29:20,080 - INFO - Processing: levocetirizine (ID: 736b0841-dcb0-4591-826f-e2ca6c5959f9)
+2025-08-04 23:29:20,080 - INFO - No specific mapping rule for: levocetirizine
+2025-08-04 23:29:20,080 - INFO - Processing: cytarabine 1 g (ID: 24855079-25a6-4879-ae37-8c058d0517d6)
+2025-08-04 23:29:20,080 - INFO - No specific mapping rule for: cytarabine 1 g
+2025-08-04 23:29:20,081 - INFO - Progress: 10/100 ingredients processed
+2025-08-04 23:29:20,081 - INFO - Processing: collage (ID: fd2c17d1-bcef-4818-968d-6ac236c02e83)
+2025-08-04 23:29:20,081 - INFO - No specific mapping rule for: collage
+2025-08-04 23:29:20,081 - INFO - Processing: large-leaf geiger tree (ID: 878334e6-d4d8-4a44-8139-91cb91af942c)
+2025-08-04 23:29:20,081 - INFO - No specific mapping rule for: large-leaf geiger tree
+2025-08-04 23:29:20,081 - INFO - Processing: fluvastatin (ID: 7bc1c499-bb03-4046-8e9d-800789121d54)
+2025-08-04 23:29:20,081 - INFO - No specific mapping rule for: fluvastatin
+2025-08-04 23:29:20,081 - INFO - Processing: natural vit.c (ID: 4092de6e-bc20-4b0f-9c4c-47adc17aa959)
+2025-08-04 23:29:20,082 - INFO - No specific mapping rule for: natural vit.c
+2025-08-04 23:29:20,082 - INFO - Processing: benzophenone-4 (ID: 7f4357d8-c5f9-4cfe-bf92-e9110758683e)
+2025-08-04 23:29:20,082 - INFO - No specific mapping rule for: benzophenone-4
+2025-08-04 23:29:20,082 - INFO - Processing: citrate (ID: aa1e58bc-54d2-4304-9a11-4a1bbddfac48)
+2025-08-04 23:29:20,082 - INFO - No specific mapping rule for: citrate
+2025-08-04 23:29:20,082 - INFO - Processing: ampicillin-cloxacillin (ID: 84926ab4-be42-452b-ba26-74d062851753)
+2025-08-04 23:29:20,082 - INFO - No specific mapping rule for: ampicillin-cloxacillin
+2025-08-04 23:29:20,082 - INFO - Processing: cinacalcet (ID: d12dcf57-9760-4c4a-b4c1-26469137cbbc)
+2025-08-04 23:29:20,083 - INFO - No specific mapping rule for: cinacalcet
+2025-08-04 23:29:20,083 - INFO - Processing: tacrolimus (ID: b3b3c736-9f0a-4577-89e6-809ddd4a7305)
+2025-08-04 23:29:20,083 - INFO - No specific mapping rule for: tacrolimus
+2025-08-04 23:29:20,083 - INFO - Processing: natural cream (ID: 827ea788-2703-444c-90dc-6353c73fd636)
+2025-08-04 23:29:20,083 - INFO - No specific mapping rule for: natural cream
+2025-08-04 23:29:20,083 - INFO - Progress: 20/100 ingredients processed
+2025-08-04 23:29:20,083 - INFO - Processing: omeprazole-tinidazole-doxycycilline (ID: 9d816060-b98a-4829-936b-fafa7c4ed431)
+2025-08-04 23:29:20,084 - INFO - No specific mapping rule for: omeprazole-tinidazole-doxycycilline
+2025-08-04 23:29:20,084 - INFO - Processing: k2 (ID: 7158613e-dc07-4c4a-86f4-61c9e8c7001e)
+2025-08-04 23:29:20,084 - INFO - No specific mapping rule for: k2
+2025-08-04 23:29:20,084 - INFO - Processing: dabigatran etexilate (ID: 472bf3d0-d0c2-48cd-a4f3-28281df6ba1c)
+2025-08-04 23:29:20,084 - INFO - No specific mapping rule for: dabigatran etexilate
+2025-08-04 23:29:20,084 - INFO - Processing: gatifloxacine (ID: 460b800d-4605-4728-80f1-7964b386531a)
+2025-08-04 23:29:20,084 - INFO - No specific mapping rule for: gatifloxacine
+2025-08-04 23:29:20,085 - INFO - Processing: malt juice conc. (ID: 3b612184-3b49-4be2-913a-791d9b1127a7)
+2025-08-04 23:29:20,085 - INFO - No specific mapping rule for: malt juice conc.
+2025-08-04 23:29:20,085 - INFO - Processing: antiseptic dental wash (ID: 62475f38-4a26-4aaa-9a98-aa2c910abf36)
+2025-08-04 23:29:20,085 - INFO - No specific mapping rule for: antiseptic dental wash
+2025-08-04 23:29:20,085 - INFO - Processing: liquorice extr. (ID: c9a67617-2054-4205-8a63-e1ffc34d1c2c)
+2025-08-04 23:29:20,085 - INFO - No specific mapping rule for: liquorice extr.
+2025-08-04 23:29:20,085 - INFO - Processing: isopropyl alcohol (ID: a23e95ef-9121-44ac-980e-6b7e4e5fe13a)
+2025-08-04 23:29:20,086 - INFO - No specific mapping rule for: isopropyl alcohol
+2025-08-04 23:29:20,086 - INFO - Processing: sodium lauryl sulfate (ID: d2c75407-9216-4fff-9775-28f9a971e2dd)
+2025-08-04 23:29:20,086 - INFO - No specific mapping rule for: sodium lauryl sulfate
+2025-08-04 23:29:20,086 - INFO - Processing: benzoyl broxide (ID: 365eb98a-740c-4c25-b41b-c8881a4adf1c)
+2025-08-04 23:29:20,087 - INFO - No specific mapping rule for: benzoyl broxide
+2025-08-04 23:29:20,087 - INFO - Progress: 30/100 ingredients processed
+2025-08-04 23:29:20,087 - INFO - Processing: colloidal silver (ID: 0a6d95b3-9ceb-48d9-a050-166dbe744c76)
+2025-08-04 23:29:20,087 - INFO - No specific mapping rule for: colloidal silver
+2025-08-04 23:29:20,087 - INFO - Processing: choline (ID: fe82caee-e885-4367-8cb1-ad607188b8ce)
+2025-08-04 23:29:20,087 - INFO - No specific mapping rule for: choline
+2025-08-04 23:29:20,087 - INFO - Processing: chlorobutanol (ID: 1a0f6296-1e34-4ee7-81f7-0e8cfd95125f)
+2025-08-04 23:29:20,088 - INFO - No specific mapping rule for: chlorobutanol
+2025-08-04 23:29:20,088 - INFO - Processing: riboflavin 1.3 mg (ID: 6cef00ac-b702-4448-a684-0e993e50e2a3)
+2025-08-04 23:29:20,088 - INFO - No specific mapping rule for: riboflavin 1.3 mg
+2025-08-04 23:29:20,088 - INFO - Processing: cucumis sativus (ID: c838d981-832a-486f-88e7-028dbfb0532f)
+2025-08-04 23:29:20,088 - INFO - No specific mapping rule for: cucumis sativus
+2025-08-04 23:29:20,088 - INFO - Processing: cratageus (hawthorn) extract (ID: 94fc3773-1cb0-4676-8419-14bc9f150926)
+2025-08-04 23:29:20,089 - INFO - No specific mapping rule for: cratageus (hawthorn) extract
+2025-08-04 23:29:20,089 - INFO - Processing: chlorzoxazone (ID: ae1defcc-b4c8-4a7c-8f81-18c775174b34)
+2025-08-04 23:29:20,089 - INFO - No specific mapping rule for: chlorzoxazone
+2025-08-04 23:29:20,089 - INFO - Processing: rubella (ID: 39f21c35-e772-424b-9563-b884c74759ba)
+2025-08-04 23:29:20,089 - INFO - No specific mapping rule for: rubella
+2025-08-04 23:29:20,089 - INFO - Processing: hydrolyzed corn starch (ID: 20b61846-da66-49ce-aaed-3c3d49533e86)
+2025-08-04 23:29:20,089 - INFO - No specific mapping rule for: hydrolyzed corn starch
+2025-08-04 23:29:20,089 - INFO - Processing: fludarabine (ID: 25345c06-ed10-47dd-987f-0b4b5dc80c0f)
+2025-08-04 23:29:20,089 - INFO - No specific mapping rule for: fludarabine
+2025-08-04 23:29:20,090 - INFO - Progress: 40/100 ingredients processed
+2025-08-04 23:29:20,090 - INFO - Processing: fatty acid (ID: ebc9e389-a05e-4201-863b-7856ac49e462)
+2025-08-04 23:29:20,090 - INFO - No specific mapping rule for: fatty acid
+2025-08-04 23:29:20,090 - INFO - Processing: fenticonazole (ID: 9369c73f-9af7-4696-b4ea-acdba3850373)
+2025-08-04 23:29:20,090 - INFO - No specific mapping rule for: fenticonazole
+2025-08-04 23:29:20,090 - INFO - Processing: calcuim carbonate-vitamins (ID: b1a8a1d1-8014-4fbb-8f8e-a7b45d8329b3)
+2025-08-04 23:29:20,090 - INFO - No specific mapping rule for: calcuim carbonate-vitamins
+2025-08-04 23:29:20,090 - INFO - Processing: empagliflozine (ID: bc12ba25-2472-4b25-9a93-abe9c7a82318)
+2025-08-04 23:29:20,091 - INFO - No specific mapping rule for: empagliflozine
+2025-08-04 23:29:20,091 - INFO - Processing: phytosterol (ID: e7e14e60-82e2-4b74-93b5-8f9e0858d62f)
+2025-08-04 23:29:20,091 - INFO - No specific mapping rule for: phytosterol
+2025-08-04 23:29:20,091 - INFO - Processing: vasopressin (ID: 955544b7-9025-4ddf-9a41-a7160498cda2)
+2025-08-04 23:29:20,091 - INFO - No specific mapping rule for: vasopressin
+2025-08-04 23:29:20,091 - INFO - Processing: siliphos (ID: c5ea5f60-3c9c-4417-8a5b-28a8383351d5)
+2025-08-04 23:29:20,091 - INFO - No specific mapping rule for: siliphos
+2025-08-04 23:29:20,091 - INFO - Processing: condroitin sulfate (ID: ada533fd-ad1b-42bc-ac78-f8e4322bade5)
+2025-08-04 23:29:20,091 - INFO - No specific mapping rule for: condroitin sulfate
+2025-08-04 23:29:20,092 - INFO - Processing: hyaluronic acid 2% (ID: 04e21f46-a295-4abe-867e-0dffe3204e0d)
+2025-08-04 23:29:20,092 - INFO - No specific mapping rule for: hyaluronic acid 2%
+2025-08-04 23:29:20,092 - INFO - Processing: dr.ey.t (ID: 973cbd31-171f-47e4-ad9c-eb583c3d6b99)
+2025-08-04 23:29:20,092 - INFO - No specific mapping rule for: dr.ey.t
+2025-08-04 23:29:20,092 - INFO - Progress: 50/100 ingredients processed
+2025-08-04 23:29:20,092 - INFO - Processing: sodium camosulphonate (ID: f47c4db0-9db3-4ff0-b24f-aae744119838)
+2025-08-04 23:29:20,092 - INFO - No specific mapping rule for: sodium camosulphonate
+2025-08-04 23:29:20,092 - INFO - Processing: malva sylvestris ext. (ID: a95b5511-5474-4ad6-9f15-344b425459ae)
+2025-08-04 23:29:20,093 - INFO - No specific mapping rule for: malva sylvestris ext.
+2025-08-04 23:29:20,093 - INFO - Processing: ipratropium bromide (ID: 23615429-ab0c-49fc-9470-b57c69386f38)
+2025-08-04 23:29:20,093 - INFO - No specific mapping rule for: ipratropium bromide
+2025-08-04 23:29:20,093 - INFO - Processing: B1 (ID: 3bb27eb5-0084-4a6d-9e63-ce4521cb1b3f)
+2025-08-04 23:29:20,093 - INFO - No specific mapping rule for: B1
+2025-08-04 23:29:20,093 - INFO - Processing: cyclopentasiloxan (ID: 720729ba-15bc-4a45-89a4-eb94b9a4ee8f)
+2025-08-04 23:29:20,093 - INFO - No specific mapping rule for: cyclopentasiloxan
+2025-08-04 23:29:20,093 - INFO - Processing: anti tetanic vaccine (ID: 626e0719-12bf-48a2-a78a-bda87064b5d5)
+2025-08-04 23:29:20,093 - INFO - No specific mapping rule for: anti tetanic vaccine
+2025-08-04 23:29:20,093 - INFO - Processing: cetrimide-lidocaine (ID: b8d523cd-69bb-4268-99f8-c9d95b7193e9)
+2025-08-04 23:29:20,094 - INFO - No specific mapping rule for: cetrimide-lidocaine
+2025-08-04 23:29:20,094 - INFO - Processing: conezyme a (ID: 17b21f5d-74a7-4671-8a12-2c39eade7a9d)
+2025-08-04 23:29:20,094 - INFO - No specific mapping rule for: conezyme a
+2025-08-04 23:29:20,094 - INFO - Processing: 26 nutrients 13 vitamin a (ID: 4aa4ca25-a1d3-4d0e-a3c6-574d97244a28)
+2025-08-04 23:29:20,094 - INFO - No specific mapping rule for: 26 nutrients 13 vitamin a
+2025-08-04 23:29:20,094 - INFO - Processing: herbal extract-methyl salicylate (ID: e2b28a07-82da-4aa9-b7ff-c775c486c22c)
+2025-08-04 23:29:20,094 - INFO - No specific mapping rule for: herbal extract-methyl salicylate
+2025-08-04 23:29:20,094 - INFO - Progress: 60/100 ingredients processed
+2025-08-04 23:29:20,094 - INFO - Processing: vit. b12 (ID: ea7181df-ff30-49ea-b907-a2a4b7bf777c)
+2025-08-04 23:29:20,095 - INFO - No specific mapping rule for: vit. b12
+2025-08-04 23:29:20,095 - INFO - Processing: sugar test strips (ID: adf61098-110d-491f-b667-6c28b80e933b)
+2025-08-04 23:29:20,095 - INFO - No specific mapping rule for: sugar test strips
+2025-08-04 23:29:20,095 - INFO - Processing: nicotinamid (niacin) (ID: 08c7a022-0af1-4d0d-a5d3-1cb007b70403)
+2025-08-04 23:29:20,095 - INFO - No specific mapping rule for: nicotinamid (niacin)
+2025-08-04 23:29:20,095 - INFO - Processing: green magma organic powder (ID: 93b2b2b0-2e40-4c67-8404-e79725d48daa)
+2025-08-04 23:29:20,095 - INFO - No specific mapping rule for: green magma organic powder
+2025-08-04 23:29:20,095 - INFO - Processing: chamomile-liquorice-fennel-thyme-pepperm (ID: 66a5e79c-39f8-4420-acf9-bc26ac541bb4)
+2025-08-04 23:29:20,096 - INFO - No specific mapping rule for: chamomile-liquorice-fennel-thyme-pepperm
+2025-08-04 23:29:20,096 - INFO - Processing: clove flower (ID: c9dc27d9-46b9-4d2b-a65e-e0ff6ee89b0d)
+2025-08-04 23:29:20,096 - INFO - No specific mapping rule for: clove flower
+2025-08-04 23:29:20,096 - INFO - Processing: calcium-vitamin d3-vitamin c (ID: 75d17b67-8cb7-4e2b-ba26-a3bd78cf61c8)
+2025-08-04 23:29:20,096 - INFO - No specific mapping rule for: calcium-vitamin d3-vitamin c
+2025-08-04 23:29:20,096 - INFO - Processing: vaccine rabies (ID: 148accdc-21d3-4268-ae62-56ee73a735e8)
+2025-08-04 23:29:20,096 - INFO - No specific mapping rule for: vaccine rabies
+2025-08-04 23:29:20,096 - INFO - Processing: apricot kernel oil (ID: 64c875cb-5775-4d36-a570-2380ee302cc0)
+2025-08-04 23:29:20,096 - INFO - No specific mapping rule for: apricot kernel oil
+2025-08-04 23:29:20,097 - INFO - Processing: chlorohexedine (ID: 0c8e95e0-3de0-4c6f-b38e-403f2af5fd2a)
+2025-08-04 23:29:20,097 - INFO - No specific mapping rule for: chlorohexedine
+2025-08-04 23:29:20,097 - INFO - Progress: 70/100 ingredients processed
+2025-08-04 23:29:20,097 - INFO - Processing: croscarmellose (ID: f12ea350-88f0-4438-ab9e-2e5ced05bbe5)
+2025-08-04 23:29:20,097 - INFO - No specific mapping rule for: croscarmellose
+2025-08-04 23:29:20,097 - INFO - Processing: calcipotriol (ID: 85cee4e0-468b-454d-ada8-00c1d00e7f0c)
+2025-08-04 23:29:20,097 - INFO - No specific mapping rule for: calcipotriol
+2025-08-04 23:29:20,097 - INFO - Processing: arachis (ID: 497b08da-07aa-4f3b-9495-0b111e5290ca)
+2025-08-04 23:29:20,097 - INFO - No specific mapping rule for: arachis
+2025-08-04 23:29:20,098 - INFO - Processing: chamomile extrace (ID: f7a88e33-b76f-4c7f-b21a-3d60bf596e7f)
+2025-08-04 23:29:20,098 - INFO - No specific mapping rule for: chamomile extrace
+2025-08-04 23:29:20,098 - INFO - Processing: ipodate sodium (ID: efccbd6a-1438-4883-bf6c-0a52fba1387d)
+2025-08-04 23:29:20,098 - INFO - No specific mapping rule for: ipodate sodium
+2025-08-04 23:29:20,098 - INFO - Processing: herbal extracts from chamomile (ID: 07f5af0c-8aa2-46c0-b34b-4775f2070427)
+2025-08-04 23:29:20,098 - INFO - No specific mapping rule for: herbal extracts from chamomile
+2025-08-04 23:29:20,098 - INFO - Processing: digestive enzymes (ID: a1cc80df-1c19-475f-81be-711458dc90df)
+2025-08-04 23:29:20,099 - INFO - No specific mapping rule for: digestive enzymes
+2025-08-04 23:29:20,099 - INFO - Processing: cetalkonium (ID: f31c91bc-904b-4d7d-9ad7-a1b2bf38e3b2)
+2025-08-04 23:29:20,099 - INFO - No specific mapping rule for: cetalkonium
+2025-08-04 23:29:20,099 - INFO - Processing: vaccine meningitis (ID: 31cfb0f5-6335-4b91-88df-509abe9eccd3)
+2025-08-04 23:29:20,099 - INFO - No specific mapping rule for: vaccine meningitis
+2025-08-04 23:29:20,099 - INFO - Processing: isoleucine (ID: ce91a56c-d872-4094-9290-0e75897b0a7a)
+2025-08-04 23:29:20,099 - INFO - No specific mapping rule for: isoleucine
+2025-08-04 23:29:20,100 - INFO - Progress: 80/100 ingredients processed
+2025-08-04 23:29:20,100 - INFO - Processing: l-threonin (ID: 6ebb4738-4752-4133-a45d-3717b5fc4409)
+2025-08-04 23:29:20,100 - INFO - No specific mapping rule for: l-threonin
+2025-08-04 23:29:20,100 - INFO - Processing: chlorohexidine-thymol-chlorocresol-menth (ID: 65cd4991-a007-45b2-bb33-90d6069e7edc)
+2025-08-04 23:29:20,100 - INFO - No specific mapping rule for: chlorohexidine-thymol-chlorocresol-menth
+2025-08-04 23:29:20,100 - INFO - Processing: bha (salicylic acid) (ID: 20e96275-aca3-43de-9425-db5a69582981)
+2025-08-04 23:29:20,100 - INFO - No specific mapping rule for: bha (salicylic acid)
+2025-08-04 23:29:20,100 - INFO - Processing: certoparin sodium 3000 i.u (ID: 555bbba2-61f0-4b20-9adc-a0aaae552cd8)
+2025-08-04 23:29:20,101 - INFO - No specific mapping rule for: certoparin sodium 3000 i.u
+2025-08-04 23:29:20,101 - INFO - Processing: markyrene (ID: 74fae576-f2db-4e81-a2a6-19be4269b716)
+2025-08-04 23:29:20,101 - INFO - No specific mapping rule for: markyrene
+2025-08-04 23:29:20,101 - INFO - Processing: tannic-fusidic-econazole-triamcinolone (ID: 16ae3f47-c0a9-4a1d-a0ea-dc3bb17ecfef)
+2025-08-04 23:29:20,101 - INFO - No specific mapping rule for: tannic-fusidic-econazole-triamcinolone
+2025-08-04 23:29:20,101 - INFO - Processing: hydro-active colloid formulation (ID: 4d0575b0-fad8-4a71-93fc-3d5783117851)
+2025-08-04 23:29:20,102 - INFO - No specific mapping rule for: hydro-active colloid formulation
+2025-08-04 23:29:20,102 - INFO - Processing: rebamipide (ID: 838a5591-9829-4065-9a33-5a2d1cdc364c)
+2025-08-04 23:29:20,102 - INFO - No specific mapping rule for: rebamipide
+2025-08-04 23:29:20,102 - INFO - Processing: acefylline (ID: 486e25f7-0a6a-4fe8-ad83-377264c8d190)
+2025-08-04 23:29:20,102 - INFO - No specific mapping rule for: acefylline
+2025-08-04 23:29:20,102 - INFO - Processing: tigecycline (ID: 68e2c0be-c4f7-4fcd-a8f8-1e2c2fd44d51)
+2025-08-04 23:29:20,103 - INFO - No specific mapping rule for: tigecycline
+2025-08-04 23:29:20,103 - INFO - Progress: 90/100 ingredients processed
+2025-08-04 23:29:20,103 - INFO - Processing: paricalcitol (ID: a7446be9-9d62-47c0-b0b4-793d17853b2a)
+2025-08-04 23:29:20,103 - INFO - No specific mapping rule for: paricalcitol
+2025-08-04 23:29:20,103 - INFO - Processing: rutin 150 mg (ID: d8b5002f-141e-45a9-a930-68b74d488817)
+2025-08-04 23:29:20,103 - INFO - No specific mapping rule for: rutin 150 mg
+2025-08-04 23:29:20,104 - INFO - Processing: chondriotin sulfate (ID: 95492e45-0cbf-41a6-944d-0ec40365bc21)
+2025-08-04 23:29:20,104 - INFO - No specific mapping rule for: chondriotin sulfate
+2025-08-04 23:29:20,104 - INFO - Processing: amla extract (ID: 32d72e51-984c-4c52-bafa-1cbb8a604c5b)
+2025-08-04 23:29:20,104 - INFO - No specific mapping rule for: amla extract
+2025-08-04 23:29:20,104 - INFO - Processing: helianthus annuus oil (ID: 7da14f21-d152-4210-b6af-e9ee7655dc8e)
+2025-08-04 23:29:20,104 - INFO - No specific mapping rule for: helianthus annuus oil
+2025-08-04 23:29:20,104 - INFO - Processing: tea treeoil (ID: c7cb2c9e-a905-4c46-aedb-cff5c745bad2)
+2025-08-04 23:29:20,104 - INFO - No specific mapping rule for: tea treeoil
+2025-08-04 23:29:20,105 - INFO - Processing: grindelia extract (ID: 173af683-91f5-4336-afd3-8fbd3f9a02f1)
+2025-08-04 23:29:20,105 - INFO - No specific mapping rule for: grindelia extract
+2025-08-04 23:29:20,105 - INFO - Processing: lactoferrin 100 mg (ID: 782d3416-78fc-4893-aeab-9e1def90da74)
+2025-08-04 23:29:20,105 - INFO - No specific mapping rule for: lactoferrin 100 mg
+2025-08-04 23:29:20,105 - INFO - Processing: aha 3% (ID: 3298804a-48ee-471d-91e3-079003d83b3b)
+2025-08-04 23:29:20,105 - INFO - No specific mapping rule for: aha 3%
+2025-08-04 23:29:20,105 - INFO - Processing: apple stem cells (ID: 43cd6959-8e8b-46b3-a49d-a489b56eef05)
+2025-08-04 23:29:20,106 - INFO - No specific mapping rule for: apple stem cells
+2025-08-04 23:29:20,106 - INFO - Progress: 100/100 ingredients processed
+2025-08-04 23:29:20,106 - INFO - === MAPPING SUMMARY ===
+2025-08-04 23:29:20,106 - INFO - Total ingredients processed: 100
+2025-08-04 23:29:20,106 - INFO - Total mappings created: 0
+2025-08-04 23:29:20,106 - INFO - Exact matches: 0
+2025-08-04 23:29:20,106 - INFO - Fuzzy matches: 0
+2025-08-04 23:29:20,106 - INFO - New ingredients created: 0
+2025-08-04 23:29:20,106 - INFO - Compounds split: 0
+2025-08-04 23:29:20,107 - INFO - No mappings: 100
+2025-08-04 23:29:20,107 - INFO - Success rate: 0.0%
+2025-08-04 23:29:20,107 - INFO - Log file saved: logs/claude_batch_mapper_100_20250804_232919.log

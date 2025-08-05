@@ -1,0 +1,102 @@
+2025-08-04 23:21:18,919 - INFO - Starting Claude Batch Mapping Process
+2025-08-04 23:21:18,920 - INFO - Processing: vitamins(c (ID: a4b3b8e8-4214-4f9e-84a9-db526dcdd683)
+2025-08-04 23:21:18,928 - ERROR - Error creating mapping: new row for relation "ingredient_mappings" violates check constraint "ingredient_mappings_mapping_type_check"
+DETAIL:  Failing row contains (622, a4b3b8e8-4214-4f9e-84a9-db526dcdd683, 6095, exact_match, 0.95, claude_batch, null, Vitamin C mapping - exact pharmaceutical match, null, t, claude, null, null, 2025-08-04 23:21:18.920386, 2025-08-04 23:21:18.920386, claude_batch_mapper).
+
+2025-08-04 23:21:18,929 - INFO - Processing: bee propalis (ID: 52ed285b-7fca-42b0-93a3-70b69ec246cb)
+2025-08-04 23:21:18,932 - INFO - Created new ingredient: Bee Propolis (ID: 6155)
+2025-08-04 23:21:18,933 - ERROR - Error creating mapping: new row for relation "ingredient_mappings" violates check constraint "ingredient_mappings_mapping_type_check"
+DETAIL:  Failing row contains (623, 52ed285b-7fca-42b0-93a3-70b69ec246cb, 6155, claude_created, 1.00, claude_batch, null, Standardized name for bee propolis - common natural ingredient, null, t, claude, null, null, 2025-08-04 23:21:18.933198, 2025-08-04 23:21:18.933198, claude_batch_mapper).
+
+2025-08-04 23:21:18,934 - INFO - Processing: argireline (ID: 6fca5d69-29ff-48bc-a9ed-ded2fc2dba24)
+2025-08-04 23:21:18,935 - ERROR - Error creating ingredient Argireline: duplicate key value violates unique constraint "active_ingredients_extended_ingredient_name_key"
+DETAIL:  Key (ingredient_name)=(Argireline) already exists.
+
+2025-08-04 23:21:18,935 - INFO - Processing: melisse (ID: e36194e7-7d38-406b-ac77-9a599de25b83)
+2025-08-04 23:21:18,936 - INFO - Created new ingredient: Melissa (Lemon Balm) (ID: 6157)
+2025-08-04 23:21:18,937 - ERROR - Error creating mapping: new row for relation "ingredient_mappings" violates check constraint "ingredient_mappings_mapping_type_check"
+DETAIL:  Failing row contains (624, e36194e7-7d38-406b-ac77-9a599de25b83, 6157, claude_created, 1.00, claude_batch, null, Melissa/Melisse is lemon balm in French - herbal ingredient, null, t, claude, null, null, 2025-08-04 23:21:18.936585, 2025-08-04 23:21:18.936585, claude_batch_mapper).
+
+2025-08-04 23:21:18,937 - INFO - Processing: clozapine (ID: 274540aa-1cc8-4fc0-af02-a100da2c6d21)
+2025-08-04 23:21:18,937 - ERROR - Error creating ingredient Clozapine: duplicate key value violates unique constraint "active_ingredients_extended_ingredient_name_key"
+DETAIL:  Key (ingredient_name)=(Clozapine) already exists.
+
+2025-08-04 23:21:18,938 - INFO - Processing: trandolapril (ID: f3c26ee2-c1d2-46ed-aa20-3dc76a25640a)
+2025-08-04 23:21:18,938 - ERROR - Error creating ingredient Trandolapril: duplicate key value violates unique constraint "active_ingredients_extended_ingredient_name_key"
+DETAIL:  Key (ingredient_name)=(Trandolapril) already exists.
+
+2025-08-04 23:21:18,938 - INFO - Processing: dill (ID: 1b715d16-6984-4794-bc70-41216940d459)
+2025-08-04 23:21:18,939 - INFO - Created new ingredient: Dill (Anethum graveolens) (ID: 6160)
+2025-08-04 23:21:18,940 - ERROR - Error creating mapping: new row for relation "ingredient_mappings" violates check constraint "ingredient_mappings_mapping_type_check"
+DETAIL:  Failing row contains (625, 1b715d16-6984-4794-bc70-41216940d459, 6160, claude_created, 1.00, claude_batch, null, Common herbal ingredient with medicinal properties, null, t, claude, null, null, 2025-08-04 23:21:18.939702, 2025-08-04 23:21:18.939702, claude_batch_mapper).
+
+2025-08-04 23:21:18,940 - INFO - Processing: vaccine pertussis-vacc tetanus toxoid (ID: 27415af7-304b-407f-a1ed-3b13dc02b5c5)
+2025-08-04 23:21:18,941 - ERROR - Error creating ingredient Pertussis Vaccine: duplicate key value violates unique constraint "active_ingredients_extended_ingredient_name_key"
+DETAIL:  Key (ingredient_name)=(Pertussis Vaccine) already exists.
+
+2025-08-04 23:21:18,941 - INFO - Created new ingredient: Tetanus Toxoid (ID: 6162)
+2025-08-04 23:21:18,942 - ERROR - Error creating mapping: new row for relation "ingredient_mappings" violates check constraint "ingredient_mappings_mapping_type_check"
+DETAIL:  Failing row contains (626, 27415af7-304b-407f-a1ed-3b13dc02b5c5, 6162, compound_primary, 1.00, claude_batch, null, Combination vaccine components - should be split, null, t, claude, null, null, 2025-08-04 23:21:18.942187, 2025-08-04 23:21:18.942187, claude_batch_mapper).
+
+2025-08-04 23:21:18,942 - INFO - Processing: b1(100mg) (ID: 7b422bab-7e15-45ba-a988-ab1986da1ea2)
+2025-08-04 23:21:18,950 - INFO - Created new ingredient: Thiamine (ID: 6163)
+2025-08-04 23:21:18,951 - ERROR - Error creating mapping: new row for relation "ingredient_mappings" violates check constraint "ingredient_mappings_mapping_type_check"
+DETAIL:  Failing row contains (627, 7b422bab-7e15-45ba-a988-ab1986da1ea2, 6163, claude_created, 0.95, claude_batch, null, B1 is thiamine (vitamin B1) - dosage notation ignored, null, t, claude, null, null, 2025-08-04 23:21:18.950595, 2025-08-04 23:21:18.950595, claude_batch_mapper).
+
+2025-08-04 23:21:18,951 - INFO - Processing: cyclopent (ID: 848e162f-73e8-4f6a-8643-d221661ac5ed)
+2025-08-04 23:21:18,952 - ERROR - Error creating ingredient Cyclopentolate: duplicate key value violates unique constraint "active_ingredients_extended_ingredient_name_key"
+DETAIL:  Key (ingredient_name)=(Cyclopentolate) already exists.
+
+2025-08-04 23:21:18,952 - INFO - Processing: sodium hyalornate (ID: 2246c458-66b2-46a5-870f-939731bedf09)
+2025-08-04 23:21:18,953 - ERROR - Error creating ingredient Sodium Hyaluronate: duplicate key value violates unique constraint "active_ingredients_extended_ingredient_name_key"
+DETAIL:  Key (ingredient_name)=(Sodium Hyaluronate) already exists.
+
+2025-08-04 23:21:18,953 - INFO - Processing: SUN FLOWER OIL (ID: c36d69b0-d761-4359-a318-14b541e55669)
+2025-08-04 23:21:18,953 - INFO - No specific mapping decision for: SUN FLOWER OIL
+2025-08-04 23:21:18,953 - INFO - Processing: glucosamine sulphate (ID: 174260df-78c0-4f7b-ba79-3567dde7dbce)
+2025-08-04 23:21:18,954 - INFO - Created new ingredient: Glucosamine Sulfate (ID: 6166)
+2025-08-04 23:21:18,955 - ERROR - Error creating mapping: new row for relation "ingredient_mappings" violates check constraint "ingredient_mappings_mapping_type_check"
+DETAIL:  Failing row contains (628, 174260df-78c0-4f7b-ba79-3567dde7dbce, 6166, claude_created, 1.00, claude_batch, null, Common joint health supplement - standardized spelling, null, t, claude, null, null, 2025-08-04 23:21:18.954609, 2025-08-04 23:21:18.954609, claude_batch_mapper).
+
+2025-08-04 23:21:18,955 - INFO - Processing: irgazan(triclosan) (ID: 18364c5a-9be6-4824-8304-c5303193cd09)
+2025-08-04 23:21:18,956 - ERROR - Error creating mapping: new row for relation "ingredient_mappings" violates check constraint "ingredient_mappings_mapping_type_check"
+DETAIL:  Failing row contains (629, 18364c5a-9be6-4824-8304-c5303193cd09, 4360, exact_match, 1.00, claude_batch, null, Irgazan is a brand name for triclosan - antimicrobial agent, null, t, claude, null, null, 2025-08-04 23:21:18.955483, 2025-08-04 23:21:18.955483, claude_batch_mapper).
+
+2025-08-04 23:21:18,956 - INFO - Processing: licorice root extract (ID: 5cb9f410-08af-4f54-ae03-f318c6753ec4)
+2025-08-04 23:21:18,957 - INFO - Created new ingredient: Licorice Root Extract (ID: 6167)
+2025-08-04 23:21:18,958 - ERROR - Error creating mapping: new row for relation "ingredient_mappings" violates check constraint "ingredient_mappings_mapping_type_check"
+DETAIL:  Failing row contains (630, 5cb9f410-08af-4f54-ae03-f318c6753ec4, 6167, claude_created, 1.00, claude_batch, null, Common herbal extract in pharmaceuticals and cosmetics, null, t, claude, null, null, 2025-08-04 23:21:18.957656, 2025-08-04 23:21:18.957656, claude_batch_mapper).
+
+2025-08-04 23:21:18,958 - INFO - Processing: dietary fibers (ID: 3aec32cc-6080-49d3-9f56-141f095d43b8)
+2025-08-04 23:21:18,959 - INFO - Created new ingredient: Dietary Fiber (ID: 6168)
+2025-08-04 23:21:18,960 - ERROR - Error creating mapping: new row for relation "ingredient_mappings" violates check constraint "ingredient_mappings_mapping_type_check"
+DETAIL:  Failing row contains (631, 3aec32cc-6080-49d3-9f56-141f095d43b8, 6168, claude_created, 1.00, claude_batch, null, General category of nutritional supplement ingredient, null, t, claude, null, null, 2025-08-04 23:21:18.959702, 2025-08-04 23:21:18.959702, claude_batch_mapper).
+
+2025-08-04 23:21:18,960 - INFO - Processing: glyceryl cocoate (ID: 1ed27486-7016-46dd-9703-4904b5521144)
+2025-08-04 23:21:18,961 - INFO - Created new ingredient: Glyceryl Cocoate (ID: 6169)
+2025-08-04 23:21:18,962 - ERROR - Error creating mapping: new row for relation "ingredient_mappings" violates check constraint "ingredient_mappings_mapping_type_check"
+DETAIL:  Failing row contains (632, 1ed27486-7016-46dd-9703-4904b5521144, 6169, claude_created, 1.00, claude_batch, null, Common cosmetic and pharmaceutical excipient, null, t, claude, null, null, 2025-08-04 23:21:18.961898, 2025-08-04 23:21:18.961898, claude_batch_mapper).
+
+2025-08-04 23:21:18,962 - INFO - Processing: hydroxyurea(hydroxycarbamide) (ID: 57f92483-da09-41f9-98b4-69d0fc62dc8c)
+2025-08-04 23:21:18,963 - ERROR - Error creating ingredient Hydroxyurea: duplicate key value violates unique constraint "active_ingredients_extended_ingredient_name_key"
+DETAIL:  Key (ingredient_name)=(Hydroxyurea) already exists.
+
+2025-08-04 23:21:18,963 - INFO - Processing: fennel-caraway-peppermint-cardamon (ID: 1f164729-713f-4317-a9aa-91c80b2de603)
+2025-08-04 23:21:18,964 - INFO - Created new ingredient: Fennel Extract (ID: 6171)
+2025-08-04 23:21:18,964 - INFO - Created new ingredient: Caraway Extract (ID: 6172)
+2025-08-04 23:21:18,965 - INFO - Created new ingredient: Peppermint Extract (ID: 6173)
+2025-08-04 23:21:18,966 - INFO - Created new ingredient: Cardamom Extract (ID: 6174)
+2025-08-04 23:21:18,967 - ERROR - Error creating mapping: new row for relation "ingredient_mappings" violates check constraint "ingredient_mappings_mapping_type_check"
+DETAIL:  Failing row contains (633, 1f164729-713f-4317-a9aa-91c80b2de603, 6171, compound_primary, 1.00, claude_batch, null, Multi-herb combination - should be split into individual compone..., null, t, claude, null, null, 2025-08-04 23:21:18.966926, 2025-08-04 23:21:18.966926, claude_batch_mapper).
+
+2025-08-04 23:21:18,967 - INFO - Processing: vitamin d3 active form (ID: d4fe7a42-6799-45a0-bc49-ee2ddcd2cd6e)
+2025-08-04 23:21:18,968 - INFO - Created new ingredient: Calcitriol (Active Vitamin D3) (ID: 6175)
+2025-08-04 23:21:18,969 - ERROR - Error creating mapping: new row for relation "ingredient_mappings" violates check constraint "ingredient_mappings_mapping_type_check"
+DETAIL:  Failing row contains (634, d4fe7a42-6799-45a0-bc49-ee2ddcd2cd6e, 6175, claude_created, 1.00, claude_batch, null, Active form of vitamin D3 is calcitriol - important hormone, null, t, claude, null, null, 2025-08-04 23:21:18.969063, 2025-08-04 23:21:18.969063, claude_batch_mapper).
+
+2025-08-04 23:21:18,969 - INFO - === MAPPING SUMMARY ===
+2025-08-04 23:21:18,970 - INFO - Total mappings created: 0
+2025-08-04 23:21:18,970 - INFO - New ingredients created: 14
+2025-08-04 23:21:18,970 - INFO - Compounds split: 2
+2025-08-04 23:21:18,970 - INFO - No mappings: 1
+2025-08-04 23:21:18,970 - INFO - Log file saved: logs/claude_batch_mapper_20250804_232118.log

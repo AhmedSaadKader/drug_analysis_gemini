@@ -1,0 +1,173 @@
+2025-08-04 23:40:10,261 - INFO - Connected to database successfully
+2025-08-04 23:40:10,293 - INFO - Loaded 3461 existing ingredients
+2025-08-04 23:40:10,294 - INFO - Starting intelligent mapping of 100 ingredients
+2025-08-04 23:40:10,301 - INFO - Mapping already exists for: red ginseng
+2025-08-04 23:40:10,302 - INFO - Mapping already exists for: whey protein isolate
+2025-08-04 23:40:10,409 - INFO - Found existing ingredient: Vitamin B12 (ID: 4786)
+2025-08-04 23:40:10,425 - INFO - Saved mapping: vitb12 50mcg -> Vitamin B12 (confidence: 0.8)
+2025-08-04 23:40:10,512 - INFO - Created new ingredient: Hyaluronic Acid 5 MG (ID: 6177)
+2025-08-04 23:40:10,514 - INFO - Saved mapping: hyaluronic acid 5 mg -> Hyaluronic Acid 5 MG (confidence: 0.8)
+2025-08-04 23:40:10,520 - INFO - Saved mapping: coenzyme a -> Coenzyme A (confidence: 1.0)
+2025-08-04 23:40:10,613 - INFO - Created new ingredient: Black Seed Ext (ID: 6178)
+2025-08-04 23:40:10,616 - INFO - Saved mapping: black seed ext -> Black Seed Ext (confidence: 0.8)
+2025-08-04 23:40:10,618 - INFO - Saved mapping: chocolate flavor -> Chocolate flavor (confidence: 1.0)
+2025-08-04 23:40:10,715 - INFO - Found existing ingredient: Vitamin C (ID: 6095)
+2025-08-04 23:40:10,718 - INFO - Saved mapping: viramin c 1000 mg -> Vitamin C (confidence: 0.8)
+2025-08-04 23:40:10,720 - INFO - Saved mapping: levocetirizine -> Levocetirizine (confidence: 1.0)
+2025-08-04 23:40:10,816 - INFO - Created new ingredient: Cytarabine 1 G (ID: 6179)
+2025-08-04 23:40:10,818 - INFO - Saved mapping: cytarabine 1 g -> Cytarabine 1 G (confidence: 0.8)
+2025-08-04 23:40:10,819 - INFO - Progress: 10/100 ingredients processed
+2025-08-04 23:40:10,893 - INFO - Skipped mapping for non-pharmaceutical: collage
+2025-08-04 23:40:10,897 - INFO - Saved mapping: large-leaf geiger tree -> Large-leaf geiger tree (confidence: 1.0)
+2025-08-04 23:40:10,899 - INFO - Saved mapping: fluvastatin -> Fluvastatin (confidence: 1.0)
+2025-08-04 23:40:10,988 - INFO - Found existing ingredient: Vitamin C (ID: 6095)
+2025-08-04 23:40:10,990 - INFO - Saved mapping: natural vit.c -> Vitamin C (confidence: 0.8)
+2025-08-04 23:40:11,070 - INFO - Compound ingredient noted: benzophenone-4 -> ['Benzophenone']
+2025-08-04 23:40:11,072 - INFO - Saved mapping: citrate -> Citrate (confidence: 1.0)
+2025-08-04 23:40:11,174 - INFO - Compound ingredient noted: ampicillin-cloxacillin -> ['Ampicillin', 'Cloxacillin']
+2025-08-04 23:40:11,176 - INFO - Saved mapping: cinacalcet -> Cinacalcet (confidence: 1.0)
+2025-08-04 23:40:11,178 - INFO - Saved mapping: tacrolimus -> Tacrolimus (confidence: 1.0)
+2025-08-04 23:40:11,179 - INFO - Saved mapping: natural cream -> Natural cream (confidence: 1.0)
+2025-08-04 23:40:11,180 - INFO - Progress: 20/100 ingredients processed
+2025-08-04 23:40:11,273 - INFO - Compound ingredient noted: omeprazole-tinidazole-doxycycilline -> ['Omeprazole', 'Tinidazole', 'Doxycycilline']
+2025-08-04 23:40:11,354 - INFO - Created new ingredient: K2 (ID: 6180)
+2025-08-04 23:40:11,356 - INFO - Saved mapping: k2 -> K2 (confidence: 0.8)
+2025-08-04 23:40:11,358 - INFO - Saved mapping: dabigatran etexilate -> Dabigatran Etexilate (confidence: 1.0)
+2025-08-04 23:40:11,445 - INFO - Created new ingredient: Gatifloxacine (ID: 6181)
+2025-08-04 23:40:11,448 - INFO - Saved mapping: gatifloxacine -> Gatifloxacine (confidence: 0.8)
+2025-08-04 23:40:11,542 - INFO - Skipped mapping for non-pharmaceutical: malt juice conc.
+2025-08-04 23:40:11,642 - INFO - Skipped mapping for non-pharmaceutical: antiseptic dental wash
+2025-08-04 23:40:11,746 - INFO - Created new ingredient: Licorice Extract (ID: 6182)
+2025-08-04 23:40:11,749 - INFO - Saved mapping: liquorice extr. -> Licorice Extract (confidence: 0.8)
+2025-08-04 23:40:11,850 - INFO - Created new ingredient: Isopropyl Alcohol (ID: 6183)
+2025-08-04 23:40:11,851 - INFO - Saved mapping: isopropyl alcohol -> Isopropyl Alcohol (confidence: 0.8)
+2025-08-04 23:40:11,853 - INFO - Saved mapping: sodium lauryl sulfate -> Sodium lauryl sulfate (confidence: 1.0)
+2025-08-04 23:40:11,942 - INFO - Created new ingredient: Benzoyl Peroxide (ID: 6184)
+2025-08-04 23:40:11,944 - INFO - Saved mapping: benzoyl broxide -> Benzoyl Peroxide (confidence: 0.8)
+2025-08-04 23:40:11,944 - INFO - Progress: 30/100 ingredients processed
+2025-08-04 23:40:11,946 - INFO - Saved mapping: colloidal silver -> Colloidal Silver (confidence: 1.0)
+2025-08-04 23:40:11,947 - INFO - Saved mapping: choline -> Choline (confidence: 1.0)
+2025-08-04 23:40:11,950 - INFO - Saved mapping: chlorobutanol -> Chlorobutanol (confidence: 1.0)
+2025-08-04 23:40:12,054 - INFO - Created new ingredient: Riboflavin 1.3 MG (ID: 6185)
+2025-08-04 23:40:12,058 - INFO - Saved mapping: riboflavin 1.3 mg -> Riboflavin 1.3 MG (confidence: 0.8)
+2025-08-04 23:40:12,151 - INFO - Created new ingredient: Cucumber Extract (ID: 6186)
+2025-08-04 23:40:12,153 - INFO - Saved mapping: cucumis sativus -> Cucumber Extract (confidence: 0.8)
+2025-08-04 23:40:12,266 - INFO - Created new ingredient: Hawthorn Extract (ID: 6187)
+2025-08-04 23:40:12,268 - INFO - Saved mapping: cratageus (hawthorn) extract -> Hawthorn Extract (confidence: 0.8)
+2025-08-04 23:40:12,270 - INFO - Saved mapping: chlorzoxazone -> Chlorzoxazone (confidence: 1.0)
+2025-08-04 23:40:12,347 - INFO - Created new ingredient: Rubella (ID: 6188)
+2025-08-04 23:40:12,349 - INFO - Saved mapping: rubella -> Rubella (confidence: 0.8)
+2025-08-04 23:40:12,469 - INFO - Created new ingredient: Hydrolyzed Corn Starch (ID: 6189)
+2025-08-04 23:40:12,470 - INFO - Saved mapping: hydrolyzed corn starch -> Hydrolyzed Corn Starch (confidence: 0.8)
+2025-08-04 23:40:12,472 - INFO - Saved mapping: fludarabine -> Fludarabine (confidence: 1.0)
+2025-08-04 23:40:12,472 - INFO - Progress: 40/100 ingredients processed
+2025-08-04 23:40:12,474 - INFO - Saved mapping: fatty acid -> Fatty acid (confidence: 1.0)
+2025-08-04 23:40:12,476 - INFO - Saved mapping: fenticonazole -> Fenticonazole (confidence: 1.0)
+2025-08-04 23:40:12,571 - INFO - Compound ingredient noted: calcuim carbonate-vitamins -> ['Calcuim Carbonate', 'Vitamin AMINS']
+2025-08-04 23:40:12,663 - INFO - Found existing ingredient: Empagliflozin (ID: 5295)
+2025-08-04 23:40:12,665 - INFO - Saved mapping: empagliflozine -> Empagliflozin (confidence: 0.8)
+2025-08-04 23:40:12,768 - INFO - Created new ingredient: Phytosterol (ID: 6190)
+2025-08-04 23:40:12,770 - INFO - Saved mapping: phytosterol -> Phytosterol (confidence: 0.8)
+2025-08-04 23:40:12,772 - INFO - Saved mapping: vasopressin -> Vasopressin (confidence: 1.0)
+2025-08-04 23:40:12,774 - INFO - Saved mapping: siliphos -> Siliphos (confidence: 1.0)
+2025-08-04 23:40:12,849 - INFO - Created new ingredient: Chondroitin Sulfate (ID: 6191)
+2025-08-04 23:40:12,851 - INFO - Saved mapping: condroitin sulfate -> Chondroitin Sulfate (confidence: 0.8)
+2025-08-04 23:40:12,951 - INFO - Created new ingredient: Hyaluronic Acid 2% (ID: 6192)
+2025-08-04 23:40:12,954 - INFO - Saved mapping: hyaluronic acid 2% -> Hyaluronic Acid 2% (confidence: 0.8)
+2025-08-04 23:40:12,956 - INFO - Saved mapping: dr.ey.t -> Dr.Ey.T (confidence: 1.0)
+2025-08-04 23:40:12,956 - INFO - Progress: 50/100 ingredients processed
+2025-08-04 23:40:13,053 - INFO - Created new ingredient: Sodium Camosulphonate (ID: 6193)
+2025-08-04 23:40:13,054 - INFO - Saved mapping: sodium camosulphonate -> Sodium Camosulphonate (confidence: 0.8)
+2025-08-04 23:40:13,145 - INFO - Created new ingredient: Mallow Extract (ID: 6194)
+2025-08-04 23:40:13,147 - INFO - Saved mapping: malva sylvestris ext. -> Mallow Extract (confidence: 0.8)
+2025-08-04 23:40:13,149 - INFO - Saved mapping: ipratropium bromide -> Ipratropium bromide (confidence: 1.0)
+2025-08-04 23:40:13,227 - INFO - Created new ingredient: B1 (ID: 6195)
+2025-08-04 23:40:13,229 - INFO - Saved mapping: B1 -> B1 (confidence: 0.8)
+2025-08-04 23:40:13,321 - INFO - Created new ingredient: Cyclopentasiloxan (ID: 6196)
+2025-08-04 23:40:13,322 - INFO - Saved mapping: cyclopentasiloxan -> Cyclopentasiloxan (confidence: 0.8)
+2025-08-04 23:40:13,415 - INFO - Created new ingredient: Anti Tetanic Vaccine (ID: 6197)
+2025-08-04 23:40:13,417 - INFO - Saved mapping: anti tetanic vaccine -> Anti Tetanic Vaccine (confidence: 0.8)
+2025-08-04 23:40:13,505 - INFO - Compound ingredient noted: cetrimide-lidocaine -> ['Cetrimide', 'Lidocaine']
+2025-08-04 23:40:13,604 - INFO - Found existing ingredient: Coenzyme A (ID: 729)
+2025-08-04 23:40:13,606 - INFO - Saved mapping: conezyme a -> Coenzyme A (confidence: 0.8)
+2025-08-04 23:40:13,727 - INFO - Created new ingredient: 26 Nutrients 13 Vitamin AMIN A (ID: 6198)
+2025-08-04 23:40:13,730 - INFO - Saved mapping: 26 nutrients 13 vitamin a -> 26 Nutrients 13 Vitamin AMIN A (confidence: 0.8)
+2025-08-04 23:40:13,834 - INFO - Compound ingredient noted: herbal extract-methyl salicylate -> ['Herbal Extract', 'Methyl Salicylate']
+2025-08-04 23:40:13,834 - INFO - Progress: 60/100 ingredients processed
+2025-08-04 23:40:13,930 - INFO - Found existing ingredient: Vitamin B12 (ID: 4786)
+2025-08-04 23:40:13,932 - INFO - Saved mapping: vit. b12 -> Vitamin B12 (confidence: 0.8)
+2025-08-04 23:40:13,934 - INFO - Saved mapping: sugar test strips -> Sugar test strips (confidence: 1.0)
+2025-08-04 23:40:14,017 - INFO - Found existing ingredient: Niacin (ID: 6101)
+2025-08-04 23:40:14,019 - INFO - Saved mapping: nicotinamid (niacin) -> Niacin (confidence: 0.8)
+2025-08-04 23:40:14,116 - INFO - Skipped mapping for non-pharmaceutical: green magma organic powder
+2025-08-04 23:40:14,215 - INFO - Compound ingredient noted: chamomile-liquorice-fennel-thyme-pepperm -> ['Chamomile', 'Liquorice', 'Fennel', 'Thyme', 'Pepperm']
+2025-08-04 23:40:14,292 - INFO - Created new ingredient: Clove Flower (ID: 6199)
+2025-08-04 23:40:14,295 - INFO - Saved mapping: clove flower -> Clove Flower (confidence: 0.8)
+2025-08-04 23:40:14,404 - INFO - Created new ingredient: Calcium-vitamin D3-vitamin C (ID: 6200)
+2025-08-04 23:40:14,406 - INFO - Saved mapping: calcium-vitamin d3-vitamin c -> Calcium-vitamin D3-vitamin C (confidence: 0.8)
+2025-08-04 23:40:14,500 - INFO - Created new ingredient: Vaccine Rabies (ID: 6201)
+2025-08-04 23:40:14,502 - INFO - Saved mapping: vaccine rabies -> Vaccine Rabies (confidence: 0.8)
+2025-08-04 23:40:14,504 - INFO - Saved mapping: apricot kernel oil -> Apricot kernel oil (confidence: 1.0)
+2025-08-04 23:40:14,586 - INFO - Found existing ingredient: Chlorhexidine (ID: 1245)
+2025-08-04 23:40:14,588 - INFO - Saved mapping: chlorohexedine -> Chlorhexidine (confidence: 0.8)
+2025-08-04 23:40:14,588 - INFO - Progress: 70/100 ingredients processed
+2025-08-04 23:40:14,589 - INFO - Saved mapping: croscarmellose -> Croscarmellose (confidence: 1.0)
+2025-08-04 23:40:14,690 - INFO - Created new ingredient: Calcipotriol (ID: 6202)
+2025-08-04 23:40:14,693 - INFO - Saved mapping: calcipotriol -> Calcipotriol (confidence: 0.8)
+2025-08-04 23:40:14,790 - INFO - Created new ingredient: Arachis (ID: 6203)
+2025-08-04 23:40:14,792 - INFO - Saved mapping: arachis -> Arachis (confidence: 0.8)
+2025-08-04 23:40:14,888 - INFO - Found existing ingredient: Chamomile Extract (ID: 5167)
+2025-08-04 23:40:14,890 - INFO - Saved mapping: chamomile extrace -> Chamomile Extract (confidence: 0.8)
+2025-08-04 23:40:14,892 - INFO - Saved mapping: ipodate sodium -> Ipodate sodium (confidence: 1.0)
+2025-08-04 23:40:14,986 - INFO - Created new ingredient: Herbal Extracts From Chamomile (ID: 6204)
+2025-08-04 23:40:14,988 - INFO - Saved mapping: herbal extracts from chamomile -> Herbal Extracts From Chamomile (confidence: 0.8)
+2025-08-04 23:40:15,087 - INFO - Created new ingredient: Digestive Enzymes (ID: 6205)
+2025-08-04 23:40:15,089 - INFO - Saved mapping: digestive enzymes -> Digestive Enzymes (confidence: 0.8)
+2025-08-04 23:40:15,179 - INFO - Created new ingredient: Cetalkonium (ID: 6206)
+2025-08-04 23:40:15,181 - INFO - Saved mapping: cetalkonium -> Cetalkonium (confidence: 0.8)
+2025-08-04 23:40:15,256 - INFO - Created new ingredient: Vaccine Meningitis (ID: 6207)
+2025-08-04 23:40:15,258 - INFO - Saved mapping: vaccine meningitis -> Vaccine Meningitis (confidence: 0.8)
+2025-08-04 23:40:15,259 - INFO - Saved mapping: isoleucine -> Isoleucine (confidence: 1.0)
+2025-08-04 23:40:15,259 - INFO - Progress: 80/100 ingredients processed
+2025-08-04 23:40:15,334 - INFO - Compound ingredient noted: l-threonin -> ['Threonin']
+2025-08-04 23:40:15,457 - INFO - Compound ingredient noted: chlorohexidine-thymol-chlorocresol-menth -> ['Chlorohexidine', 'Thymol', 'Chlorocresol', 'Menth']
+2025-08-04 23:40:15,564 - INFO - Created new ingredient: Bha (salicylic Acid) (ID: 6208)
+2025-08-04 23:40:15,566 - INFO - Saved mapping: bha (salicylic acid) -> Bha (salicylic Acid) (confidence: 0.8)
+2025-08-04 23:40:15,660 - INFO - Created new ingredient: Certoparin Sodium 3000 I.u (ID: 6209)
+2025-08-04 23:40:15,661 - INFO - Saved mapping: certoparin sodium 3000 i.u -> Certoparin Sodium 3000 I.u (confidence: 0.8)
+2025-08-04 23:40:15,666 - INFO - Saved mapping: markyrene -> Markyrene (confidence: 1.0)
+2025-08-04 23:40:15,777 - INFO - Compound ingredient noted: tannic-fusidic-econazole-triamcinolone -> ['Tannic', 'Fusidic', 'Econazole', 'Triamcinolone']
+2025-08-04 23:40:15,779 - INFO - Saved mapping: hydro-active colloid formulation -> Hydro-Active Colloid Formulation (confidence: 1.0)
+2025-08-04 23:40:15,781 - INFO - Saved mapping: rebamipide -> Rebamipide (confidence: 1.0)
+2025-08-04 23:40:15,783 - INFO - Saved mapping: acefylline -> Acefylline (confidence: 1.0)
+2025-08-04 23:40:15,784 - INFO - Saved mapping: tigecycline -> Tigecycline (confidence: 1.0)
+2025-08-04 23:40:15,784 - INFO - Progress: 90/100 ingredients processed
+2025-08-04 23:40:15,786 - INFO - Saved mapping: paricalcitol -> Paricalcitol (confidence: 1.0)
+2025-08-04 23:40:15,854 - INFO - Created new ingredient: Rutin 150 MG (ID: 6210)
+2025-08-04 23:40:15,855 - INFO - Saved mapping: rutin 150 mg -> Rutin 150 MG (confidence: 0.8)
+2025-08-04 23:40:15,927 - INFO - Found existing ingredient: Chondroitin Sulfate (ID: 6191)
+2025-08-04 23:40:15,929 - INFO - Saved mapping: chondriotin sulfate -> Chondroitin Sulfate (confidence: 0.8)
+2025-08-04 23:40:15,988 - INFO - Created new ingredient: Amla Extract (ID: 6211)
+2025-08-04 23:40:15,990 - INFO - Saved mapping: amla extract -> Amla Extract (confidence: 0.8)
+2025-08-04 23:40:16,087 - INFO - Found existing ingredient: Sunflower Oil (ID: 2547)
+2025-08-04 23:40:16,088 - INFO - Saved mapping: helianthus annuus oil -> Sunflower Oil (confidence: 0.8)
+2025-08-04 23:40:16,177 - INFO - Created new ingredient: Tea Tree Oil (ID: 6212)
+2025-08-04 23:40:16,178 - INFO - Saved mapping: tea treeoil -> Tea Tree Oil (confidence: 0.8)
+2025-08-04 23:40:16,273 - INFO - Created new ingredient: Grindelia Extract (ID: 6213)
+2025-08-04 23:40:16,274 - INFO - Saved mapping: grindelia extract -> Grindelia Extract (confidence: 0.8)
+2025-08-04 23:40:16,353 - INFO - Created new ingredient: Lactoferrin 100 MG (ID: 6214)
+2025-08-04 23:40:16,354 - INFO - Saved mapping: lactoferrin 100 mg -> Lactoferrin 100 MG (confidence: 0.8)
+2025-08-04 23:40:16,434 - INFO - Created new ingredient: Aha 3% (ID: 6215)
+2025-08-04 23:40:16,436 - INFO - Saved mapping: aha 3% -> Aha 3% (confidence: 0.8)
+2025-08-04 23:40:16,516 - INFO - Created new ingredient: Apple Stem Cells (ID: 6216)
+2025-08-04 23:40:16,517 - INFO - Saved mapping: apple stem cells -> Apple Stem Cells (confidence: 0.8)
+2025-08-04 23:40:16,517 - INFO - Progress: 100/100 ingredients processed
+2025-08-04 23:40:16,517 - INFO - 
+=== FINAL MAPPING SUMMARY ===
+2025-08-04 23:40:16,517 - INFO - Total processed: 100
+2025-08-04 23:40:16,517 - INFO - Mapped to existing: 46
+2025-08-04 23:40:16,518 - INFO - Created new ingredients: 40
+2025-08-04 23:40:16,518 - INFO - Compound ingredients: 10
+2025-08-04 23:40:16,518 - INFO - Non-pharmaceutical (skipped): 4
+2025-08-04 23:40:16,518 - INFO - Success rate: 86.0%
+2025-08-04 23:40:16,518 - INFO - Database connection closed

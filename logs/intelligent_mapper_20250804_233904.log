@@ -1,0 +1,198 @@
+2025-08-04 23:39:04,959 - INFO - Connected to database successfully
+2025-08-04 23:39:05,002 - INFO - Loaded 3461 existing ingredients
+2025-08-04 23:39:05,003 - INFO - Starting intelligent mapping of 100 ingredients
+2025-08-04 23:39:05,041 - INFO - Saved mapping: red ginseng -> Red Ginseng (confidence: 1.0)
+2025-08-04 23:39:05,043 - INFO - Saved mapping: whey protein isolate -> Whey Protein Isolate (confidence: 1.0)
+2025-08-04 23:39:05,141 - ERROR - Error processing vitb12 50mcg: duplicate key value violates unique constraint "active_ingredients_extended_ingredient_name_key"
+DETAIL:  Key (ingredient_name)=(Vitamin B12) already exists.
+
+2025-08-04 23:39:05,232 - ERROR - Error processing hyaluronic acid 5 mg: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:05,233 - ERROR - Error processing coenzyme a: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:05,330 - ERROR - Error processing black seed ext: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:05,331 - ERROR - Error processing chocolate flavor: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:05,421 - ERROR - Error processing viramin c 1000 mg: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:05,421 - ERROR - Error processing levocetirizine: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:05,525 - ERROR - Error processing cytarabine 1 g: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:05,620 - INFO - Skipped mapping for non-pharmaceutical: collage
+2025-08-04 23:39:05,621 - ERROR - Error processing large-leaf geiger tree: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:05,621 - ERROR - Error processing fluvastatin: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:05,739 - ERROR - Error processing natural vit.c: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:05,913 - INFO - Compound ingredient noted: benzophenone-4 -> ['Benzophenone']
+2025-08-04 23:39:05,914 - ERROR - Error processing citrate: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:06,025 - INFO - Compound ingredient noted: ampicillin-cloxacillin -> ['Ampicillin', 'Cloxacillin']
+2025-08-04 23:39:06,026 - ERROR - Error processing cinacalcet: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:06,027 - ERROR - Error processing tacrolimus: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:06,027 - ERROR - Error processing natural cream: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:06,137 - INFO - Compound ingredient noted: omeprazole-tinidazole-doxycycilline -> ['Omeprazole', 'Tinidazole', 'Doxycycilline']
+2025-08-04 23:39:06,211 - ERROR - Error processing k2: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:06,211 - ERROR - Error processing dabigatran etexilate: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:06,305 - ERROR - Error processing gatifloxacine: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:06,398 - INFO - Skipped mapping for non-pharmaceutical: malt juice conc.
+2025-08-04 23:39:06,486 - INFO - Skipped mapping for non-pharmaceutical: antiseptic dental wash
+2025-08-04 23:39:06,562 - ERROR - Error processing liquorice extr.: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:06,651 - ERROR - Error processing isopropyl alcohol: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:06,651 - ERROR - Error processing sodium lauryl sulfate: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:06,751 - ERROR - Error processing benzoyl broxide: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:06,752 - ERROR - Error processing colloidal silver: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:06,752 - ERROR - Error processing choline: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:06,753 - ERROR - Error processing chlorobutanol: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:06,863 - ERROR - Error processing riboflavin 1.3 mg: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:06,958 - ERROR - Error processing cucumis sativus: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,058 - ERROR - Error processing cratageus (hawthorn) extract: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,058 - ERROR - Error processing chlorzoxazone: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,147 - ERROR - Error processing rubella: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,245 - ERROR - Error processing hydrolyzed corn starch: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,246 - ERROR - Error processing fludarabine: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,247 - ERROR - Error processing fatty acid: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,247 - ERROR - Error processing fenticonazole: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,352 - INFO - Compound ingredient noted: calcuim carbonate-vitamins -> ['Calcuim Carbonate', 'Vitamin AMINS']
+2025-08-04 23:39:07,444 - ERROR - Error processing empagliflozine: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,553 - ERROR - Error processing phytosterol: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,553 - ERROR - Error processing vasopressin: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,554 - ERROR - Error processing siliphos: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,657 - ERROR - Error processing condroitin sulfate: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,766 - ERROR - Error processing hyaluronic acid 2%: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,767 - ERROR - Error processing dr.ey.t: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,870 - ERROR - Error processing sodium camosulphonate: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,980 - ERROR - Error processing malva sylvestris ext.: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:07,981 - ERROR - Error processing ipratropium bromide: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:08,070 - ERROR - Error processing B1: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:08,161 - ERROR - Error processing cyclopentasiloxan: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:08,259 - ERROR - Error processing anti tetanic vaccine: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:08,352 - INFO - Compound ingredient noted: cetrimide-lidocaine -> ['Cetrimide', 'Lidocaine']
+2025-08-04 23:39:08,353 - INFO - Progress: 10/100 ingredients processed
+2025-08-04 23:39:08,440 - ERROR - Error processing conezyme a: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:08,551 - ERROR - Error processing 26 nutrients 13 vitamin a: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:08,662 - INFO - Compound ingredient noted: herbal extract-methyl salicylate -> ['Herbal Extract', 'Methyl Salicylate']
+2025-08-04 23:39:08,741 - ERROR - Error processing vit. b12: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:08,741 - ERROR - Error processing sugar test strips: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:08,855 - ERROR - Error processing nicotinamid (niacin): current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:08,970 - INFO - Skipped mapping for non-pharmaceutical: green magma organic powder
+2025-08-04 23:39:09,069 - INFO - Compound ingredient noted: chamomile-liquorice-fennel-thyme-pepperm -> ['Chamomile', 'Liquorice', 'Fennel', 'Thyme', 'Pepperm']
+2025-08-04 23:39:09,144 - ERROR - Error processing clove flower: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:09,251 - ERROR - Error processing calcium-vitamin d3-vitamin c: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:09,352 - ERROR - Error processing vaccine rabies: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:09,353 - ERROR - Error processing apricot kernel oil: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:09,444 - ERROR - Error processing chlorohexedine: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:09,444 - ERROR - Error processing croscarmellose: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:09,540 - ERROR - Error processing calcipotriol: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:09,629 - ERROR - Error processing arachis: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:09,738 - ERROR - Error processing chamomile extrace: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:09,739 - ERROR - Error processing ipodate sodium: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:09,848 - ERROR - Error processing herbal extracts from chamomile: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:09,936 - ERROR - Error processing digestive enzymes: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:10,025 - ERROR - Error processing cetalkonium: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:10,127 - ERROR - Error processing vaccine meningitis: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:10,128 - ERROR - Error processing isoleucine: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:10,233 - INFO - Compound ingredient noted: l-threonin -> ['Threonin']
+2025-08-04 23:39:10,340 - INFO - Compound ingredient noted: chlorohexidine-thymol-chlorocresol-menth -> ['Chlorohexidine', 'Thymol', 'Chlorocresol', 'Menth']
+2025-08-04 23:39:10,444 - ERROR - Error processing bha (salicylic acid): current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:10,535 - ERROR - Error processing certoparin sodium 3000 i.u: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:10,535 - ERROR - Error processing markyrene: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:10,657 - INFO - Compound ingredient noted: tannic-fusidic-econazole-triamcinolone -> ['Tannic', 'Fusidic', 'Econazole', 'Triamcinolone']
+2025-08-04 23:39:10,658 - ERROR - Error processing hydro-active colloid formulation: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:10,658 - ERROR - Error processing rebamipide: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:10,658 - ERROR - Error processing acefylline: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:10,659 - ERROR - Error processing tigecycline: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:10,659 - ERROR - Error processing paricalcitol: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:10,746 - ERROR - Error processing rutin 150 mg: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:10,837 - ERROR - Error processing chondriotin sulfate: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:10,930 - ERROR - Error processing amla extract: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:11,023 - ERROR - Error processing helianthus annuus oil: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:11,116 - ERROR - Error processing tea treeoil: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:11,217 - ERROR - Error processing grindelia extract: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:11,307 - ERROR - Error processing lactoferrin 100 mg: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:11,391 - ERROR - Error processing aha 3%: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:11,555 - ERROR - Error processing apple stem cells: current transaction is aborted, commands ignored until end of transaction block
+
+2025-08-04 23:39:11,556 - INFO - 
+=== FINAL MAPPING SUMMARY ===
+2025-08-04 23:39:11,556 - INFO - Total processed: 16
+2025-08-04 23:39:11,556 - INFO - Mapped to existing: 2
+2025-08-04 23:39:11,556 - INFO - Created new ingredients: 0
+2025-08-04 23:39:11,556 - INFO - Compound ingredients: 10
+2025-08-04 23:39:11,556 - INFO - Non-pharmaceutical (skipped): 4
+2025-08-04 23:39:11,556 - INFO - Success rate: 12.5%
+2025-08-04 23:39:11,558 - INFO - Database connection closed

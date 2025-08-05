@@ -1,0 +1,3 @@
+2025-08-04 22:36:52,206 - INFO - Logging to file: logs\claudeinteractivemapper_20250804_223652.log
+2025-08-04 22:36:52,206 - INFO - Logger initialized: ClaudeInteractiveMapper
+2025-08-04 22:37:43,048 - ERROR - Error in interactive mapping: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>

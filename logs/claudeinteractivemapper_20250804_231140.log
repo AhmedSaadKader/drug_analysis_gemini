@@ -1,0 +1,4 @@
+2025-08-04 23:11:40,254 - INFO - Logging to file: logs\claudeinteractivemapper_20250804_231140.log
+2025-08-04 23:11:40,255 - INFO - Logger initialized: ClaudeInteractiveMapper
+2025-08-04 23:12:24,920 - ERROR - Error processing cephradine: current transaction is aborted, commands ignored until end of transaction block
+

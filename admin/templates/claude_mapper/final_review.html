@@ -1,0 +1,361 @@
+{% extends 'admin/master.html' %}
+
+{% block head_css %}
+{{ super() }}
+<style>
+    .final-review-header {
+        background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+        color: white;
+        border-radius: 15px;
+        padding: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .high-confidence-item {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 15px;
+        border-left: 4px solid #28a745;
+        transition: all 0.3s ease;
+    }
+    
+    .high-confidence-item:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        transform: translateY(-1px);
+    }
+    
+    .high-confidence-item.selected {
+        border-left-color: #007bff;
+        background: #f8f9ff;
+    }
+    
+    .item-header {
+        padding: 20px 25px 15px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .item-content {
+        padding: 15px 25px 20px;
+    }
+    
+    .ingredient-name {
+        font-size: 1.3em;
+        font-weight: 600;
+        color: #1565c0;
+        margin-bottom: 5px;
+    }
+    
+    .frequency-info {
+        background: #e8f5e8;
+        color: #155724;
+        padding: 3px 10px;
+        border-radius: 12px;
+        font-size: 0.85em;
+        display: inline-block;
+    }
+    
+    .suggestion-info {
+        margin-top: 15px;
+    }
+    
+    .action-badge {
+        padding: 6px 12px;
+        border-radius: 15px;
+        font-size: 0.9em;
+        font-weight: 500;
+        margin-right: 10px;
+    }
+    
+    .action-map { background: #cce5ff; color: #0056b3; }
+    .action-create { background: #d4edda; color: #155724; }
+    .action-none { background: #f8d7da; color: #721c24; }
+    
+    .confidence-perfect {
+        background: #28a745;
+        color: white;
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-size: 0.85em;
+        font-weight: 600;
+    }
+    
+    .reasoning-text {
+        color: #666;
+        font-style: italic;
+        margin-top: 8px;
+    }
+    
+    .target-info {
+        background: #f8f9fa;
+        padding: 10px;
+        border-radius: 6px;
+        margin-top: 10px;
+        border-left: 3px solid #007bff;
+    }
+    
+    .bulk-actions {
+        background: white;
+        border-radius: 15px;
+        padding: 25px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 20px;
+        z-index: 10;
+    }
+    
+    .btn-bulk-approve {
+        background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+        border: none;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 25px;
+        font-weight: 600;
+        font-size: 1.1em;
+        transition: all 0.3s ease;
+    }
+    
+    .btn-bulk-approve:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3);
+        color: white;
+    }
+    
+    .selection-info {
+        background: #e3f2fd;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    
+    .item-checkbox {
+        transform: scale(1.3);
+        margin-right: 15px;
+    }
+    
+    .no-items {
+        text-align: center;
+        padding: 60px;
+        color: #666;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <!-- Header -->
+    <div class="final-review-header">
+        <h1>🎯 Final Review - High Confidence Items</h1>
+        <p class="mb-0">Review and bulk approve 100% confidence mappings before completing your session</p>
+        <small>Session: {{ mapping_session.name }}</small>
+    </div>
+    
+    {% if high_confidence_items %}
+    <div class="row">
+        <!-- Items List -->
+        <div class="col-md-8">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h3>{{ high_confidence_items|length }} Perfect Confidence Items</h3>
+                <div>
+                    <button type="button" class="btn btn-outline-primary btn-sm" onclick="selectAll()">
+                        ✅ Select All
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary btn-sm ml-2" onclick="selectNone()">
+                        ❌ Select None
+                    </button>
+                </div>
+            </div>
+            
+            <form id="bulk-approve-form" method="POST" action="{{ url_for('claudemappingview.bulk_approve') }}">
+                {% for item in high_confidence_items %}
+                <div class="high-confidence-item" id="item-{{ loop.index }}">
+                    <div class="item-header">
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" 
+                                   name="selected_items" 
+                                   value="{{ item | tojson | e }}"
+                                   class="item-checkbox" 
+                                   id="checkbox-{{ loop.index }}"
+                                   onchange="updateSelection()" 
+                                   checked>
+                            <div class="flex-grow-1">
+                                <div class="ingredient-name">{{ item.ingredient.name }}</div>
+                                <div class="frequency-info">
+                                    Used in {{ "{:,}".format(item.ingredient.frequency) }} products
+                                </div>
+                                <span class="confidence-perfect ml-3">100% Confidence</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item-content">
+                        <div class="suggestion-info">
+                            <div class="d-flex align-items-center mb-2">
+                                {% if item.suggestion.action == 'MAP_TO_EXISTING' %}
+                                    <span class="action-badge action-map">🎯 Map to Existing</span>
+                                {% elif item.suggestion.action == 'CREATE_NEW' %}
+                                    <span class="action-badge action-create">✨ Create New</span>
+                                {% else %}
+                                    <span class="action-badge action-none">❌ No Mapping</span>
+                                {% endif %}
+                            </div>
+                            
+                            <div class="reasoning-text">{{ item.suggestion.reasoning }}</div>
+                            
+                            {% if item.suggestion.target_ingredient %}
+                                <div class="target-info">
+                                    <strong>Target:</strong> {{ item.suggestion.target_ingredient.name }}
+                                    {% if item.suggestion.target_ingredient.description %}
+                                        <br><small>{{ item.suggestion.target_ingredient.description }}</small>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                            
+                            {% if item.suggestion.suggested_name %}
+                                <div class="target-info">
+                                    <strong>New Ingredient:</strong> {{ item.suggestion.suggested_name }}
+                                    <br><small>{{ item.suggestion.suggested_description }}</small>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </form>
+        </div>
+        
+        <!-- Bulk Actions Panel -->
+        <div class="col-md-4">
+            <div class="bulk-actions">
+                <h4>🚀 Bulk Actions</h4>
+                
+                <div class="selection-info">
+                    <div class="d-flex justify-content-between">
+                        <span>Selected Items:</span>
+                        <span id="selected-count" class="font-weight-bold">{{ high_confidence_items|length }}</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>Total Items:</span>
+                        <span class="font-weight-bold">{{ high_confidence_items|length }}</span>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <h6>⚡ Quick Actions:</h6>
+                    <p class="small text-muted">
+                        All selected items have 100% confidence and will be automatically approved with their AI suggestions.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <button type="button" class="btn btn-bulk-approve btn-lg btn-block" onclick="bulkApprove()">
+                        ✅ Approve Selected Items
+                    </button>
+                    
+                    <a href="{{ url_for('claudemappingview.session_complete') }}" 
+                       class="btn btn-outline-secondary btn-block mt-2">
+                        ⏭️ Skip to Completion
+                    </a>
+                    
+                    <a href="{{ url_for('claudemappingview.mapping_interface') }}" 
+                       class="btn btn-outline-primary btn-block mt-2">
+                        🔙 Back to Manual Review
+                    </a>
+                </div>
+                
+                <div class="mt-4">
+                    <h6>📊 Impact Preview:</h6>
+                    <div class="small">
+                        <div>• <span id="map-count">{{ high_confidence_items | selectattr('suggestion.action', 'equalto', 'MAP_TO_EXISTING') | list | length }}</span> items will be mapped to existing ingredients</div>
+                        <div>• <span id="create-count">{{ high_confidence_items | selectattr('suggestion.action', 'equalto', 'CREATE_NEW') | list | length }}</span> new ingredients will be created</div>
+                        <div>• <span id="none-count">{{ high_confidence_items | selectattr('suggestion.action', 'equalto', 'NO_MAPPING') | list | length }}</span> items will be marked as unmappable</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    {% else %}
+    <div class="no-items">
+        <i class="fa fa-check-circle fa-4x text-success mb-3"></i>
+        <h3>No High-Confidence Items Found</h3>
+        <p class="text-muted">All remaining ingredients require manual review or have already been processed.</p>
+        <a href="{{ url_for('claudemappingview.session_complete') }}" class="btn btn-claude btn-lg">
+            🎉 Complete Session
+        </a>
+    </div>
+    {% endif %}
+</div>
+
+<script>
+function selectAll() {
+    document.querySelectorAll('.item-checkbox').forEach(checkbox => {
+        checkbox.checked = true;
+    });
+    updateSelection();
+}
+
+function selectNone() {
+    document.querySelectorAll('.item-checkbox').forEach(checkbox => {
+        checkbox.checked = false;
+    });
+    updateSelection();
+}
+
+function updateSelection() {
+    const checkboxes = document.querySelectorAll('.item-checkbox');
+    const selectedCount = document.querySelectorAll('.item-checkbox:checked').length;
+    
+    document.getElementById('selected-count').textContent = selectedCount;
+    
+    // Update item styling
+    checkboxes.forEach((checkbox, index) => {
+        const item = document.getElementById(`item-${index + 1}`);
+        if (checkbox.checked) {
+            item.classList.add('selected');
+        } else {
+            item.classList.remove('selected');
+        }
+    });
+    
+    // Update action button
+    const approveBtn = document.querySelector('.btn-bulk-approve');
+    if (selectedCount === 0) {
+        approveBtn.disabled = true;
+        approveBtn.textContent = '❌ No Items Selected';
+    } else {
+        approveBtn.disabled = false;
+        approveBtn.textContent = `✅ Approve ${selectedCount} Items`;
+    }
+}
+
+function bulkApprove() {
+    const selectedCount = document.querySelectorAll('.item-checkbox:checked').length;
+    
+    if (selectedCount === 0) {
+        alert('Please select at least one item to approve.');
+        return;
+    }
+    
+    const confirmMessage = `Bulk approve ${selectedCount} high-confidence mappings?\n\n` +
+        `This will process all selected items with their AI suggestions and cannot be undone.`;
+    
+    if (confirm(confirmMessage)) {
+        // Show loading state
+        const approveBtn = document.querySelector('.btn-bulk-approve');
+        const originalText = approveBtn.textContent;
+        approveBtn.textContent = '⏳ Processing...';
+        approveBtn.disabled = true;
+        
+        // Submit form
+        document.getElementById('bulk-approve-form').submit();
+    }
+}
+
+// Initialize selection state
+document.addEventListener('DOMContentLoaded', function() {
+    updateSelection();
+});
+</script>
+{% endblock %}

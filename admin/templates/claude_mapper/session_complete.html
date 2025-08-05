@@ -177,6 +177,12 @@
             <div class="stat-number">{{ completion_stats.actions.get('CREATE_NEW', 0) }}</div>
             <div class="stat-label">New Ingredients</div>
         </div>
+        {% if completion_stats.bulk_approved > 0 %}
+        <div class="stat-card">
+            <div class="stat-number">{{ completion_stats.bulk_approved }}</div>
+            <div class="stat-label">Bulk Approved</div>
+        </div>
+        {% endif %}
     </div>
     
     <div class="row">
@@ -252,6 +258,20 @@
                     <strong>Batch Size:</strong><br>
                     <span class="text-muted">{{ mapping_session.batch_size }} ingredients</span>
                 </div>
+                
+                {% if completion_stats.bulk_approved > 0 %}
+                <div class="mb-3">
+                    <strong>Bulk Approved:</strong><br>
+                    <span class="text-muted">{{ completion_stats.bulk_approved }} high-confidence items</span>
+                </div>
+                {% endif %}
+                
+                {% if completion_stats.auto_processed > 0 %}
+                <div class="mb-3">
+                    <strong>Auto-Processed:</strong><br>
+                    <span class="text-muted">{{ completion_stats.auto_processed }} smart mode items</span>
+                </div>
+                {% endif %}
                 
                 <div class="mb-3">
                     <strong>Quality Score:</strong><br>
